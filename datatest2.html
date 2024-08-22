@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Verileri ile Kutular</title>
+    <style>
+        .kutu {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f4f4f4;
+        }
+        .kutu h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="kutular"></div>
+
+    <script>
+        // JSON verisi (bu veriyi bir sunucudan da alabilirsiniz)
+        const jsonData = {
+            "kutular": [
+                {"baslik": "Başlık 1", "icerik": "Bu birinci kutunun içeriğidir."},
+                {"baslik": "Başlık 2", "icerik": "Bu ikinci kutunun içeriğidir."},
+                {"baslik": "Başlık 3", "icerik": "Bu üçüncü kutunun içeriğidir."}
+            ]
+        };
+
+        // Kutuları yerleştireceğimiz alan
+        const kutularDiv = document.getElementById('kutular');
+
+        // JSON verilerini kullanarak kutuları oluştur
+        jsonData.kutular.forEach(kutu => {
+            const div = document.createElement('div');
+            div.className = 'kutu';
+
+            const h2 = document.createElement('h2');
+            h2.textContent = kutu.baslik;
+
+            const p = document.createElement('p');
+            p.textContent = kutu.icerik;
+
+            div.appendChild(h2);
+            div.appendChild(p);
+
+            kutularDiv.appendChild(div);
+        });
+    </script>
+</body>
+</html>
