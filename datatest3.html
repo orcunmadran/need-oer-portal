@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Verileri Filtreleme</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Arama Formu -->
+        <form id="aramaFormu" class="mb-4">
+            <input type="text" id="aramaKelimesi" class="form-control" placeholder="Anahtar kelime ile arama yapın...">
+        </form>
+
+        <div id="kartlar" class="row">
+            <!-- Kartlar buraya eklenecek -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS ve bağımlılıkları -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        let jsonData = [];
+
+        // JSON dosyasını fetch ile oku
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                jsonData = data.kutular;
+                kartlariGoster(jsonData);
+            })
+            .catch(error => console.error('Veri yüklenirken hata oluştu:', error));
+
+        // Kartları gösterme fonksiyonu
+        function kartlariGoster(veriler) {
+            const kartlarDiv = document.getElementById('kartlar');
+            kartlarDiv.innerHTML = ''; // Önceki kartları temizle
+
+            veriler.forEach(kutu => {
+                const kart = document.createElement('div');
+                kart.className = 'col-md-4 mb-4';
+
+                kart.innerHTML = `
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">${kutu.baslik}</h5>
+                            <p class="card-text">${kutu.icerik}</p>
+                        </div>
+                    </div>
+                `;
+
+                kartlarDiv.appendChild(kart);
+            });
+        }
+
+        // Formdan gelen arama kelimesine göre filtreleme
+        document.getElementById('aramaFormu').addEventListener('submit', function(e) {
+            e.preventDefault(); // Formun submit olmasını engelle
+            const anahtarKelime = document.getElementById('aramaKelimesi').value.toLowerCase();
+
+            const filtrelenmisVeriler = jsonData.filter(kutu =>
+                kutu.baslik.toLowerCase().includes(anahtarKelime) ||
+                kutu.icerik.toLowerCase().includes(anahtarKelime)
+            );
+
+            kartlariGoster(filtrelenmisVeriler);
+        });
+    </script>
+</body>
+</html>
