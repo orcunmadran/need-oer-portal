@@ -3,7 +3,6 @@ fetch('metadata.json')
     .then(response => response.json())
     .then(jsonData => {
         const resourceBox = document.getElementById('oer');
-
         // Create Cards
         jsonData.forEach(resource => {
             const card = document.createElement('div');
@@ -19,7 +18,6 @@ fetch('metadata.json')
                         </div>
                     `;
             resourceBox.appendChild(card);
-
         });
     })
     .catch(error => console.error('Veri yüklenirken hata oluştu:', error));
