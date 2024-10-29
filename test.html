@@ -1,46 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Radio Button Seçimini Alma</title>
-  <script>
-    function getSelectedLanguage() {
-      const selectedLang = document.querySelector('input[name="resourceLang"]:checked');
-      if (selectedLang) {
-        alert("Seçilen dil: " + selectedLang.value);
-      } else {
-        alert("Henüz bir dil seçilmedi.");
-      }
-    }
-  </script>
+    <meta charset="UTF-8">
+    <title>MOOC Modülü Bilgisi</title>
 </head>
 <body>
+    <h1>MOOC Modülü Bilgisi</h1>
+    <div id="module-info"></div>
 
-  <!-- Radio Buttonlar -->
-  <div class="form-check">
-      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang1" value="Bulgarian">
-      <label class="form-check-label" for="resourceLang1">Bulgarian</label>
-  </div>
-  <div class="form-check">
-      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang2" value="English">
-      <label class="form-check-label" for="resourceLang2">English</label>
-  </div>
-  <div class="form-check">
-      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang3" value="Serbian">
-      <label class="form-check-label" for="resourceLang3">Serbian</label>
-  </div>
-  <div class="form-check">
-      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang4" value="Slovenian">
-      <label class="form-check-label" for="resourceLang4">Slovenian</label>
-  </div>
-  <div class="form-check">
-      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang5" value="Turkish">
-      <label class="form-check-label" for="resourceLang5">Turkish</label>
-  </div>
+    <script>
+        // URL'den id parametresini al
+        const url = new URL(window.location.href);
+        const id = parseInt(url.searchParams.get('id'), 10); // id'yi tam sayıya çevir
 
-  <!-- Buton -->
-  <button onclick="getSelectedLanguage()">Seçilen Dili Göster</button>
+        // Harici JSON dosyasını oku
+        fetch('metadata.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Ağ hatası!');
+                }
+                return response.json();
+            })
+            .then(modules => {
+                // Gelen id ile eşleşen modül kaydını bul
+                const module = modules[id];
 
+                // Bilgiyi ekrana yazdır
+                const moduleInfoDiv = document.getElementById('module-info');
+                if (module) {
+                    moduleInfoDiv.innerHTML = `
+                        <p><strong>Başlık:</strong> ${module.Title}</p>
+                        <p><strong>Timestamp:</strong> ${module.Timestamp}</p>
+                        <p><strong>Anahtar Kelimeler:</strong> ${module.Keywords}</p>
+                        <p><strong>Yeterlilik Alanı:</strong> ${module.CompetenceArea}</p>
+                        <p><strong>Alt Yeterlilik Alanı:</strong> ${module.SubCompetenceArea}</p>
+                        <p><strong>Açıklama:</strong> ${module.Description}</p>
+                        <p><strong>Tür:</strong> ${module.Type}</p>
+                        <p><strong>Yazar:</strong> ${module.Author}</p>
+                        <p><strong>Yayınevi:</strong> ${module.Publisher}</p>
+                        <p><strong>Lisans:</strong> ${module.License}</p>
+                        <p><strong>Tarih:</strong> ${module.Date}</p>
+                        <p><strong>Dil:</strong> ${module.Language}</p>
+                        <p><strong>Bağlantı:</strong> <a href="${module.Identifier}" target="_blank">${module.Identifier}</a></p>
+                    `;
+                } else {
+                    moduleInfoDiv.innerHTML = `<p>Modül bulunamadı.</p>`;
+                }
+            })
+            .catch(error => {
+                console.error('Hata:', error);
+            });
+    </script>
 </body>
 </html>

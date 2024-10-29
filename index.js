@@ -21,7 +21,7 @@ function getResources() {
                            (!selectedCompetenceArea || resource.CompetenceArea.includes(selectedCompetenceArea.value))
                 });
             // Create Cards
-            filteredData.forEach(resource => {
+            filteredData.forEach((resource, index) => {
                 const card = document.createElement('div');
                 card.className = 'col-md-4 mb-4';
                 card.innerHTML = `
@@ -29,7 +29,7 @@ function getResources() {
                                 <div class="card-body">
                                     <h5 class="card-title">${resource.Title}</h5>
                                     <p class="card-text">${resource.Description}</p>
-                                    <a href="#" target="_blank" class="btn btn-outline-secondary">resource detail</a>
+                                    <a href="test.html?id=${index}" target="_blank" class="btn btn-outline-secondary">resource detail</a>
                                     <a href=${resource.Identifier} target="_blank" class="btn btn-outline-primary">go to resource</a>
                                 </div>
                             </div>
