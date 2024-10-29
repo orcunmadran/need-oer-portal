@@ -1,6 +1,12 @@
 function getResources() {
-    //Selected language
+    // Selected language
     const selectedLang = document.querySelector('input[name="resourceLang"]:checked');
+    // Selected resource type
+    const selectedResourceType = document.querySelector('input[name="resourceType"]:checked');
+    // Selected resource sub competence area
+    const selectedSubCompetenceArea = document.querySelector('input[name="subCompetenceArea"]:checked');
+    // Selected resource competence area
+    const selectedCompetenceArea = document.querySelector('input[name="competenceArea"]:checked');
     // Clear Cards
     oer.innerHTML = "";
     // Read JSON Data
@@ -8,12 +14,12 @@ function getResources() {
         .then(response => response.json())
         .then(jsonData => {
             const resourceBox = document.getElementById('oer');
-            filteredData = "";
-            if (selectedLang == null){
-                filteredData = jsonData;
-            } else {
-                filteredData = selectedLang.value ? jsonData.filter(resource => resource.Language === selectedLang.value) : jsonData;
-            }
+            const filteredData = jsonData.filter(resource => {
+                    return (!selectedLang || resource.Language === selectedLang.value) &&
+                           (!selectedResourceType || resource.Type.includes(selectedResourceType.value)) &&
+                           (!selectedSubCompetenceArea || resource.SubCompetenceArea.includes(selectedSubCompetenceArea.value)) &&
+                           (!selectedCompetenceArea || resource.CompetenceArea.includes(selectedCompetenceArea.value))
+                });
             // Create Cards
             filteredData.forEach(resource => {
                 const card = document.createElement('div');
@@ -35,9 +41,21 @@ function getResources() {
 }
 function clearResources(){
     oer.innerHTML = "";
-    const selectedOption = document.querySelector('input[name="resourceLang"]:checked');
-    if (selectedOption) {
-        selectedOption.checked = false; // Clear selection
-      }
+    const selectedOptionLanguage = document.querySelector('input[name="resourceLang"]:checked');
+    const selectedOptionResourceType = document.querySelector('input[name="resourceType"]:checked');
+    const selectedOptionSubCompetenceArea = document.querySelector('input[name="subCompetenceArea"]:checked');
+    const selectedOptionCompetenceArea = document.querySelector('input[name="competenceArea"]:checked');
+    if (selectedOptionLanguage) {
+        selectedOptionLanguage.checked = false; // Clear selection
+    }
+    if (selectedOptionResourceType) {
+        selectedOptionResourceType.checked = false; // Clear selection
+    }
+    if (selectedOptionSubCompetenceArea) {
+        selectedOptionSubCompetenceArea.checked = false; // Clear selection
+    }
+    if (selectedOptionCompetenceArea) {
+        selectedOptionCompetenceArea.checked = false; // Clear selection
+    }
     getResources();
 }
