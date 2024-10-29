@@ -8,8 +8,12 @@ function getResources() {
         .then(response => response.json())
         .then(jsonData => {
             const resourceBox = document.getElementById('oer');
-            // Create Filter
-            const filteredData = selectedLang.value ? jsonData.filter(resource => resource.Language === selectedLang.value) : jsonData;
+            filteredData = "";
+            if (selectedLang == null){
+                filteredData = jsonData;
+            } else {
+                filteredData = selectedLang.value ? jsonData.filter(resource => resource.Language === selectedLang.value) : jsonData;
+            }
             // Create Cards
             filteredData.forEach(resource => {
                 const card = document.createElement('div');
@@ -31,4 +35,9 @@ function getResources() {
 }
 function clearResources(){
     oer.innerHTML = "";
+    const selectedOption = document.querySelector('input[name="resourceLang"]:checked');
+    if (selectedOption) {
+        selectedOption.checked = false; // Clear selection
+      }
+    getResources();
 }
