@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Button Seçimini Alma</title>
+  <script>
+    function getSelectedLanguage() {
+      const selectedLang = document.querySelector('input[name="resourceLang"]:checked');
+      if (selectedLang) {
+        alert("Seçilen dil: " + selectedLang.value);
+      } else {
+        alert("Henüz bir dil seçilmedi.");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Radio Buttonlar -->
+  <div class="form-check">
+      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang1" value="Bulgarian">
+      <label class="form-check-label" for="resourceLang1">Bulgarian</label>
+  </div>
+  <div class="form-check">
+      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang2" value="English">
+      <label class="form-check-label" for="resourceLang2">English</label>
+  </div>
+  <div class="form-check">
+      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang3" value="Serbian">
+      <label class="form-check-label" for="resourceLang3">Serbian</label>
+  </div>
+  <div class="form-check">
+      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang4" value="Slovenian">
+      <label class="form-check-label" for="resourceLang4">Slovenian</label>
+  </div>
+  <div class="form-check">
+      <input class="form-check-input" type="radio" name="resourceLang" id="resourceLang5" value="Turkish">
+      <label class="form-check-label" for="resourceLang5">Turkish</label>
+  </div>
+
+  <!-- Buton -->
+  <button onclick="getSelectedLanguage()">Seçilen Dili Göster</button>
+
+</body>
+</html>

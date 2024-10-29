@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Template - NEED Oer Portal</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 
 <body>
 
-<form>
     <main>
         <section class="py-1 text-center container">
             <div class="row py-lg-5">
@@ -260,10 +260,10 @@
                 </div>
 
                 <p>
-                    <button type="submit" class="btn btn-outline-success">Filter Resource (Search)</button>
+                    <button onclick="getResources()" class="btn btn-outline-success">Get Resources</button>
                 </p>
                 <p>
-                    <button type="button" class="btn btn-outline-danger">Reset Filter</button>
+                    <button onclick="clearResources()" class="btn btn-outline-danger">Clear Resources</button>
                 </p>
 
                 <!-- All Resource Boxes Start -->
@@ -274,7 +274,6 @@
             </div>
         </div>
     </main>
-</form>
 
 <footer class="text-muted py-5">
     <div class="container">
@@ -317,7 +316,6 @@
         </div>
     </div>
 </footer>
-<script src="index.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
