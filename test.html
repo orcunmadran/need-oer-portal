@@ -2,10 +2,10 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>MOOC Modülü Bilgisi</title>
+    <title>Resource Detail</title>
 </head>
 <body>
-    <h1>MOOC Modülü Bilgisi</h1>
+    <h1>Resource Detail</h1>
     <div id="module-info"></div>
 
     <script>
@@ -29,19 +29,19 @@
                 const moduleInfoDiv = document.getElementById('module-info');
                 if (module) {
                     moduleInfoDiv.innerHTML = `
-                        <p><strong>Başlık:</strong> ${module.Title}</p>
+                        <p><strong>Title:</strong> ${module.Title}</p>
                         <p><strong>Timestamp:</strong> ${module.Timestamp}</p>
-                        <p><strong>Anahtar Kelimeler:</strong> ${module.Keywords}</p>
-                        <p><strong>Yeterlilik Alanı:</strong> ${module.CompetenceArea}</p>
-                        <p><strong>Alt Yeterlilik Alanı:</strong> ${module.SubCompetenceArea}</p>
-                        <p><strong>Açıklama:</strong> ${module.Description}</p>
-                        <p><strong>Tür:</strong> ${module.Type}</p>
-                        <p><strong>Yazar:</strong> ${module.Author}</p>
-                        <p><strong>Yayınevi:</strong> ${module.Publisher}</p>
-                        <p><strong>Lisans:</strong> ${module.License}</p>
-                        <p><strong>Tarih:</strong> ${module.Date}</p>
-                        <p><strong>Dil:</strong> ${module.Language}</p>
-                        <p><strong>Bağlantı:</strong> <a href="${module.Identifier}" target="_blank">${module.Identifier}</a></p>
+                        <p><strong>Keywords:</strong> ${module.Keywords}</p>
+                        <p><strong>Competence Area:</strong> ${module.CompetenceArea}</p>
+                        <p><strong>Sub-Competence Area:</strong> ${module.SubCompetenceArea}</p>
+                        <p><strong>Description:</strong> ${module.Description}</p>
+                        <p><strong>Type:</strong> ${module.Type}</p>
+                        <p><strong>Author (Creator):</strong> ${module.Author}</p>
+                        <p><strong>Publisher:</strong> ${module.Publisher}</p>
+                        <p><strong>License:</strong> ${module.License}</p>
+                        <p><strong>Date:</strong> ${module.Date}</p>
+                        <p><strong>Language:</strong> ${module.Language}</p>
+                        <p><strong>Identifier:</strong> <a href="${module.Identifier}" target="_blank">${module.Identifier}</a></p>
                     `;
                 } else {
                     moduleInfoDiv.innerHTML = `<p>Modül bulunamadı.</p>`;
