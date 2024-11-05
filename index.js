@@ -28,6 +28,7 @@ function getResources() {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">${resource.Title}</h5>
+                                    <p class="card-text"><small class="text-muted">Resource Language: ${resource.Language}</small></p>
                                     <p class="card-text">${resource.Description}</p>
                                     <a href="test.html?id=${index}" target="_blank" class="btn btn-outline-secondary">resource detail</a>
                                     <a href=${resource.Identifier} target="_blank" class="btn btn-outline-primary">go to resource</a>
