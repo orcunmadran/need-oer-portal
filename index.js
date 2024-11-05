@@ -59,3 +59,7 @@ function clearResources(){
     }
     getResources();
 }
+
+function handleRadioChange(radio) {
+  getResources();
+}
