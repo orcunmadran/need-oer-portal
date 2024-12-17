@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<title>Modül 16: Doğrulama Yöntem ve Araçları</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="This course is designed to help individuals to become smart consumers of news and informed participants in civic life." name="description"/>
+<meta content="ESSENTIAL Projesi Türkiye Ekibi" name="author"/>
+<!-- Le styles -->
+<link href="../css/bootstrap.css" rel="stylesheet"/>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet"/>
+<link href="../css/jquery.tocify.css" rel="stylesheet"/>
+<link href="../css/prettify.css" rel="stylesheet" type="text/css">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- Le fav icon -->
+<link href="../assets/ico/favicon.ico" rel="shortcut icon"/>
+<style>
+    body {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .headerDoc {
+      color: #005580;
+    }
+
+@media (max-width: 767px) {
+    #toc {
+        position: relative;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+    </style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VFJPMP12NF"></script>
+<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+ 		gtag('js', new Date());
+
+ 		gtag('config', 'G-VFJPMP12NF');
+	</script>
+</link></head>
+<body>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span3">
+<div id="toc">
+<center>
+<br/>
+<code class="trainee">Öğrenen Sürümü</code>
+<code class="trainer">Eğitici Sürümü</code>
+<code class="select"><a href="?userType=trainee">Öğrenen Sürümü</a></code>
+<code class="select"><a href="?userType=trainer">Eğitici Sürümü</a></code>
+<a href="#top"><img src="../img/index/essential_logo.jpg" width="75%"/></a>
+<p><a class="btn btn-secondary btn-small" href="index.html">Ana Sayfa</a></p>
+</center>
+</div><!--/.well -->
+</div><!--/span-->
+<div class="span9">
+<div class="hero-unit">
+<h1 id="modul-16-dogrulama-yontem-ve-araclari">Modül 16: Doğrulama Yöntem ve Araçları *</h1>
+</div>
+<!--/CONTENT-->
+<h2 id="modulun-tanimi">Modülün Tanımı</h2>
+<p>Bu modülün temel amacı, doğrulamada kullanılabilecek yöntem ve araçları açıklamaktır.</p>
+<p class="trainer">İkincil amaç, bu Modülün içeriğini başkalarını eğitmek için kullanmak isteyen eğitmenlere rehberlik etmektir.</p>
+<p>Bu amaçlarla, bu modülde doğrulamada kullanılabilecek yöntem ve araçların yanı sıra konunun nasıl öğretileceğine ilişkin yönergeler sunulmaktadır.</p>
+<p>Bu modülü başarıyla tamamlayanlar şunları yapabilir:</p>
+<ul>
+<li>doğrulama ve doğruluk kontrolü kavramlarını ayırt edebilir</li>
+<li>doğrulamanın önemini anlayabilir</li>
+<li>doğrulama esnasında araştırılması gereken dört temel unsuru anlayabilir</li>
+<li>görsel ve video doğrulama yöntemlerini uygulayabilir ve araçlarını kullananabilir</li>
+<li>konum doğrulama yöntemlerini uygulayabilir ve araçlarını kullananabilir</li>
+<li>herhangi bir sosyal medya hesabını doğrulamak için gerekli yöntemleri uygulayabilir ve araçları kullanabilir</li>
+<li>herhangi bir web sitesini doğrulamak için gerekli yöntemleri uygulayabilir ve araçları kullanabilir</li>
+<li>bot ve trolleri tespit etme yöntemlerini uygulayabilir ve gerekli araçları kullanabilir</li>
+</ul>
+<p class="trainer">Ek olarak, bu Modülü başarıyla tamamlayan eğitmenler, konuyu nasıl öğreteceklerini anlarlar.</p>
+<p><em>(*) 16. Modüldeki vaka çalışmaları Teyit.org'dan Esra Özgür tarafından hazırlanmıştır. Teyit.org bu projede Hacettepe Üniversitesinin yardımcı ortağıdır.</em></p>
+<h2 id="modulun-yapisi">Modülün Yapısı</h2>
+<p>Bu Modül aşağıdaki bölümlerden oluşur::</p>
+<ul>
+<li>Amaç, İçeriğin Tanımı ve Öğrenme Çıktıları</li>
+<li>Modülün Yapısı</li>
+<li>Öğrenenler için Yönerge</li>
+<li class="trainer">Eğitmenler için Yönerge (hazırlık, kullanılacak yöntemler ve eğitmenler için ipuçları)</li>
+<li>İçerik (çalışma materyalleri ve alıştırmalar)</li>
+<li>Test</li>
+<li>Kaynakça (yararlanılan kaynaklar ve önerilen kaynaklar ile videolar)</li>
+</ul>
+<p>Modülün ana hedefleri, içerik ve öğrenme çıktıları Modülün Tanımı bölümünde açıklanmıştır. Öğrenenler için Yönerge, öğrenenler için yönlendirme ve önerileri içerir. <span class="trainer">Eğitmenler için Yönerge, eğitimin farklı aşamalarında eğitmenlere rehberlik eder ve konuyu öğretirken faydalı olabilecek ipuçları sağlar.</span> İçerik, tüm çalışma materyallerini ve ilgili alıştırmaları içerir. Test, öğrenenlerin kendilerini ve ilerlemelerini test edebilmeleri için hazırlanmıştır. Genellikle çoktan seçmeli veya doğru/yanlış sorularından oluşur. Kaynakça, yararlanılan kaynaklar ve önerilen kaynaklar şeklinde iki bileşenden oluşur. İçerik hazırlanırken yararlanılan ve atıf yapılan kaynaklar Kaynakça başlığı altında listelenmiştir. Ek Kaynakça, konuyla ilgili daha fazla bilgi edinmek isteyenler için okunması önerilen kaynaklar ve izlenmesi önerilen videoların bir listesinden oluşur.</p>
+<h2 id="ogrenenler-icin-yonerge">Öğrenenler için Yönerge</h2>
+<p>Öğrenenlerden içeriği dikkatle okumaları ve alıştırmaları yapmaları beklenmektedir. Daha fazla bilgi gereksinimi duydukları konularda kaynakçada listelenen kaynaklara başvurabilirler. İçerik üzerindeki çalışmalarını tamamladıktan sonra, ilerlemelerini değerlendirmek için modül sonundaki testi yapmaları önerilir. Test sonuçlarına göre gerekirse çalışma materyali yeniden gözden geçirilebilir.</p>
+<h2 class="trainer" id="egitmenler-icin-yonerge">Eğitmenler için Yönerge</h2>
+<p class="trainer">Bu bölüm, ele alınan konunun nasıl öğretileceğine ve Modül içeriğinin bu amaçla nasıl kullanılabileceğine ilişkin eğiticilere yönelik öneriler ve ipuçları içerir.</p>
+<span class="trainer">
+<h3 id="hazirlik">Hazırlık</h3>
+<p>Eğitim başlamadan önce görsel materyaller (resim ve video klipler) ve araştırmaya dayalı olgusal bilgilerle zenginleştirilmiş bir sunum (PowerPoint/Prezi/Canva) hazırlanması önerilir. Ayrıca bu Modüldeki örneklerin ve alıştırmaların hedef grubun aşina olduğu konulara göre uyarlanması önerilir. Mevcut durum veya iyi bilinen konularla ilgili yerel örneklerin seçilmesi, konuyu daha iyi açıklamaya yardımcı olacaktır. Ayrıca katılımcıların daha çok dikkatini çekecektir. Örnekler ne kadar tanıdık ve popüler olursa, mesaj o kadar iyi iletilecektir.</p>
+<h3 id="baslarken">Başlarken</h3>
+<p>Konuya ısındırmak amacıyla başlangıçta Kahoot veya Mentimeter gibi araçlar kullanılarak katılımcılara konuyla ilgili genel ve kısa bazı sorular (3 ile 5 soru) yöneltilebilir. Böyle bir başlangıç katılımcıların konuyla ilgili mevcut bilgi düzeyleri hakkında bilgi sağlayacağı gibi bir motivasyon kaynağı olarak da kullanılabilir. Bu amaçla kullanılabilecek sorulara bazı örnekler şunlar olabilir: Doğrulama nedir? Herhangi bir doğrulama aracı kullanıyor musunuz?</p>
+<h3 id="kullanilacak-yontemler">Kullanılacak Yöntemler</h3>
+<p>Eğitim sırasında çeşitli öğretim yöntemleri bir arada kullanılabilir:</p>
+<ul>
+<li>Ders anlatma</li>
+<li>Tartışma</li>
+<li>Grup çalışması</li>
+<li>Kendini yansıtma</li>
+</ul>
+<h3 id="egitmenler-icin-ipuclari">Eğitmenler için İpuçları</h3>
+<h4 id="isinma">Isınma</h4>
+<p>Katılımcıları sürece dahil etmenin ve öğrenecekleri şeyler hakkında ortak beklentiler oluşturmanın etkili bir yolu, konuyla ilgili birkaç ön soru sorarak düşünme ve tartışma olanağı yaratmaktır. Bu, grup çalışması ile fikirlerin ve görüşlerin sözlü olarak tartışılması şeklinde yapılabileceği gibi bireysel olarak her katılımcının fikirlerini kağıt üzerine yazması şeklinde de yapılabilir. Etkinlik şu şekilde gerçekleştirilebilir:</p>
+<ul>
+<li>Katılımcılara şunlar sorulabilir:</li>
+<ul>
+<li>Katılımcılara sosyal medyada doğruluğundan şüphe duydukları herhangi bir içerikle (görsel, metin, video vb.) karşılaşıp karşılaşmadıkları</li>
+<li>Şüpheli bir içerikle karşılaştıklarında, bu içeriği doğrulamaya çalışıp çalışmadıkları</li>
+<li>Şüpheli içeriği doğrulamaya çalıştıklarında hangi adımları attıkları</li>
+</ul>
+</ul>
+<h4 id="dersin-amacinin-belirtilmesi">Dersin Amacının Belirtilmesi</h4>
+<p>Amaç netleştirilmelidir. Bu dersin amacı, doğrulamada kullanılabilecek yöntem ve araçları açıklamaktır. Isınma sorularının ardından amaç ve hedefleri netleştirmek daha kolay olacaktır.</p>
+<h4 id="ders-iceriginin-sunulmasi">Ders İçeriğinin Sunulması</h4>
+<p>İçerik sunulurken katılımcılarla etkileşim içinde olmak ve onları derse aktif katılıma teşvik etmek önemlidir.</p>
+<ul>
+<li>Bu modül ile ilgili eğitim verilirken hedef kitlenin kim olduğu son derece önemlidir. Çünkü doğrulama becerileri, bilgisayar veya mobil cihazların ve arama/doğrulama araçlarının verimli kullanılmasını gerektirmektedir. Bu tür teknik beceriler, farklı faktörlere (yaş, eğitim düzeyi gibi) göre değişiklik gösterebilir. Örneğin, ileri yaştaki yetişkinler, bilgisayarı veya mobil cihazları ve arama/doğrulama araçlarını etkin bir şekilde kullanamıyorlarsa doğrulama yöntem ve araçlarını kullanmayı da zor bulabilirler. Bu nedenle, bu tür katılımcılar daha basit araçların (Google ve alt araçları gibi) kullanımına yönlendirilerek eğitilebilirler. Buna karşılık, ilgili araçları kullanmada daha etkili becerilere sahip katılımcılar (örneğin, üniversite öğrencileri), doğrulama yöntem ve araçları hakkında modülde sunulandan daha derinlemesine bilgiye ihtiyaç duyabilirler. Bu durumda, “Önerilen Kaynaklar” başlığı altındaki kaynaklar kullanılabilir.</li>
+<li>Doğrulama yöntem ve araçlarının etkili bir şekilde öğretilmesi için katılımcıların derslerde yöntem ve araçları kullanmalarına öncelik verilmelidir. Mümkünse uygulama soruları/örnek olaylar önceden hazırlanmalı ve katılımcılar derste öğrendikleri yöntem ve araçları kullanarak bu soruları cevaplayabilmelidir.</li>
+<li>Sınıf içi uygulama sırasında katılımcılara nerede zorluk yaşadıkları sorulabilir. Bu sayede konunun hangi kısımlarının tam olarak anlaşılmadığı daha net anlaşılacaktır. Bu konular tekrar edilebilir ve konuyla ilgili örneklerin sayısı ile çeşitliliği artırılabilir.</li>
+<li>Konu anlatılırken günlük hayattan örneklere yer verilmelidir.</li>
+<li>Derste hem yerel hem de uluslararası örnekler kullanılabilir. Bu, katıılımcıların konuyu özümsemesine yardımcı olacaktır.</li>
+</ul>
+<h4 id="bitirirken">Bitirirken</h4>
+<p>Dersin kısa bir özeti yapılmalı, verilmek istenen en önemli mesajların tekrarlanmasını sağlayacak birkaç soru sorulmalıdır. Örneğin, katılımcılara doğrulamada ele alınması gereken unsurların neler olduğu sorulabilir.</p>
+<p>Bitirirken, katılımcıların farklı içerik türlerini doğrulamak için kullanılabilecek bir dizi yöntem ve araç olduğunu anladığından emin olun.</p>
+</span>
+<h2 id="icerik-dogrulama-yontem-ve-araclari">İçerik: Doğrulama Yöntem ve Araçları</h2>
+<h3 id="giris">Giriş</h3>
+<p>Doğrulama yöntem ve araçları hakkında bilgi vermeden önce doğrulamanın ne anlama geldiğini ve neden önemli olduğunu açıklamakta fayda vardır.</p>
+<h3 id="dogrulama-verification-ve-dogruluk-kontrolu-fact-checking-nedir">Doğrulama (Verification) ve Doğruluk Kontrolü (Fact-checking) Nedir?</h3>
+<p>Doğrulama ve doğruluk kontrolü, genellikle birbirinin yerine kullanılan iki ayrı gazetecilik uygulamasıdır. Bu iki kavram birbiriyle yakından ilişkili gibi görünse de bazen kafa karışıklığına neden olabilecek bazı farklılıkları bulunmaktadır (<a href="https://www.poynter.org/fact-checking/2015/will-verification-kill-fact-checking/" target="_blank">Mantzarlis, 2015</a>; <a href="https://datajournalism.com/read/handbook/verification-1/additional-materials/verification-and-fact-checking" target="_blank">Silverman, 2020b</a>). Günümüzde mez/dezenformasyon sorununun yaygınlaşmasına paralel olarak, doğrulama ve doğruluk kontrolü sadece gazetecilik uygulamaları olmaktan çıkmış, her vatandaşın temel düzeyde sahip olması gereken becerilere dönüşmüştür.</p>
+<p>Doğrulama, bir haberin “haber” haline gelmeden önce doğruluğunu değerlendiren bir süreçtir. Özellikle kullanıcı tarafından oluşturulan içeriğe odaklanır. İddiaya ait kaynağın güvenilirliğine daha fazla dikkat eder (<a href="https://www.poynter.org/fact-checking/2015/will-verification-kill-fact-checking/" target="_blank">Mantzarlis, 2015</a>, <a href="https://en.unesco.org/fightfakenews" target="_blank">2018</a>). Doğruluk kontrolü ise, yayınlanmış olan ve kamuya açık bir iddiayı güvenilir ve orijinal kaynaklarla karşılaştıran bir süreç olup, iddianın mantığına, tutarlılığına ve bağlamına da odaklanmaktadır. (<a href="https://www.poynter.org/fact-checking/2015/will-verification-kill-fact-checking/" target="_blank">Mantzarlis, 2015</a>). Aslında, doğruluk kontrolünün önemli ölçüde geleneksel yayıncılıktan siyasi gazetecilik alanına doğru kaydığı söylenebilir. Başka bir deyişle, mevcut anlamıyla doğruluk kontrolü, politikacıların ve diğer kamuya mal olmuş kişilerin ifadelerini kontrol etmeye giderek daha fazla odaklanmaktadır (<a href="https://datajournalism.com/read/handbook/verification-1/additional-materials/verification-and-fact-checking" target="_blank">Silverman, 2020b</a>).</p>
+<p>Çürütme (debunking) ise, doğrulamanın bir alt kümesi olmakla birlikte, doğrulama ile ortak belirli bir dizi beceri gerektirmektedir (<a href="https://en.unesco.org/fightfakenews" target="_blank">Mantzarlis, 2018</a>). Yanlış bilgilerin önüne geçmenin mümkün olmadığı durumlarda bu bilgilerin çürütülmesi önemlidir. Bilginin neden yanlış olduğunu ve gerçekte neyin doğru olduğunu net bir biçimde açıklamak, çürütmenin etkili olmasını sağlar. Çürütme ayrıntılı olarak sunulmazsa, mez/dezenformasyon varlığını sürdürebilir (<a href="https://sks.to/db2020" target="_blank">Lewandowsky ve diğerleri, 2020</a>, s. 4).</p>
+<center>
+<p><img src="../img/module_16/figure_41.jpg" width="65%"/></p>
+<p><a href="https://en.unesco.org/fightfakenews" target="_blank">Mantzarlis, 2018</a>, p. 83</p>
+</center>
+<h3 id="dogrulanabilirlik">Doğrulanabilirlik</h3>
+<p>Herhangi bir içeriği doğrulamadan önce, içeriğin gerçekten meydana gelen bir olayla bağlantılı olduğundan emin olmak son derece önemlidir (<a href="https://firstdraftnews.org/wp-content/uploads/2019/10/Verifying_Online_Information_Digital_AW.pdf?x76851" target="_blank">Urbani, 2019</a>, s. 10). İçerikte iddia edildiği gibi bir olay gerçekte yoksa o içeriği doğrulamanın da bir anlamı olmayacaktır. Bu nedenle, ileri sürülen iddianın doğruluğunu araştırmak için o iddiaya ilişkin delillerin bulunması gerekmektedir. Örneğin, kişisel görüşler kişilerin kendi duygu, düşünce ve fikirlerine dayandığından subjektif oldukları için doğrulanamazlar.</p>
+<h3 id="dogrulamanin-onemi">Doğrulamanın Önemi</h3>
+<p>Teknolojinin gelişimine paralel olarak akıllı telefonların hayatımızın bir parçası haline gelmesi, herkesin kolaylıkla fotoğraf ve video çekmesine, kendi ürettikleri bu içerikleri doğrudan paylaşmasına ve yaygınlaştırmasına olanak sağlamıştır. Özellikle sosyal medya platformlarının yaygınlaşması, akıllı telefon veya bilgisayar gibi bazı temel araçları kullanabilen herkes için böyle bir ortam yaratmıştır. İnsanlar ayrıca, haber değeri taşıyan bazı içerikler üretebilmekte ve bunları sosyal medya hesaplarından paylaşabilmektedir. Haber değeri taşıyan bir içerik söz konusu olduğunda, haber kuruluşları ve platformları da bu tür kullanıcı tarafından oluşturulan içeriklerden yararlanabilmektedir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Wardle, t.y.</a>, s. 25-26). Ancak bu durum, içeriğin kasıtlı veya kasıtsız olarak yanlış bilgi içerme riskinin dikkate alınmasını gerektirmektedir. Örneğin, bazı kişiler haber kuruluşlarını ve kamuoyunu aldatmaya yönelik sahte web siteleri veya sosyal medya hesapları oluşturmakta, görselleri veya videoları manipüle etmekte veya eski haberlere ait yanlış etiketlenmiş içerikler paylaşmaktadır (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Wardle, t.y.</a>, s. 26). Özellikle kriz anlarında ve acil durumlarda (doğal afetler, terör saldırıları, kazalar gibi) kişilerin gönderileri yanlış hatırlanabilir veya yanlış ilişkilendirilebilir ve sınırlı bir bakış açısına sahip olabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Buttry, t.y.</a>, s. 16). Bu içeriklerin kullanılması ve diğer kullanıcılar tarafından paylaşılması yanlış bilgilerin yayılmasına neden olmaktadır. Nitekim yalan haber ve yanlış bilgilerin en hızlı ve geniş çerçevede yayıldığı ortamların başında çevrimiçi platformlar gelmektedir (<a href="https://www.science.org/doi/10.1126/science.aap9559" target="_blank">Vosoughi, Roy ve Aral, 2018,</a> s. 1146). Bu nedenle, insan hayatını ciddi ölçüde etkileyebilecek mez/dezenformasyon sorununa karşı doğrulama çok önemli bir role sahiptir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Wardle, t.y.</a>, s. 26).</p>
+<p>Doğrulama, ücretsiz çevrimiçi araçların ve geleneksel gazetecilik tekniklerinin kullanımıyla yapılabilecek önemli bir beceridir. Kullanıcı üretimi içeriğin doğrulanması söz konusu olduğunda, teknoloji yüzde yüz başarı sağlamamaktadır. Öte yandan geleneksel araştırma teknikleri ve insan gözü de tek başına yeterli değildir. Bu nedenle en ideal yol, doğrulama sürecinde geleneksel gazetecilik teknikleri ile teknolojinin yani otomasyonun bir arada kullanılmasıdır (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Wardle, n.d.</a>, s. 27). </p>
+<p>Kullanıcı üretimi içerik veya sosyal medya aracılığıyla elde edilen bilgiler söz konusu olduğunda, özellikle doğrulanması gereken dört temel unsur vardır (<a href="https://firstdraftnews.org/wp-content/uploads/2019/10/Verifying_Online_Information_Digital_AW.pdf?x76851" target="_blank">Urbani, 2019</a>, s. 11; <a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 98-100; <a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Wardle, t.y.</a>, s. 27):</p>
+<ol>
+<li>Köken: İçeriğin orijinalliğini doğrulama (orijinal bir hesap/içerik mi?) İçeriğin farklı versiyonlarını aramak, ilk versiyona ulaşmaya çalışmak, ilgili diğer içerikleri incelemek.</li>
+<li>Kaynak: İçeriği kim oluşturdu/yükledi? İçeriği oluşturan, yükleyen veya paylaşan kişi/kuruluş/hesabın araştırılması. Bu kişilerle/hesaplarla bağlantılı olabilecek diğer hesapların araştırılması.</li>
+<li>Tarih: Etkinlik/olay tarihinin doğrulanması (içerik ne zaman üretildi?)</li>
+<li>Konum: Etkinlik konumunun doğrulanması (içerik/hesap/web sitesi nerede oluşturuldu? İçerik parçası nerede çekildi/bulundu?)</li>
+</ol>
+<p>Bunlara ek olarak, hesabın/web sitesinin neden oluşturulduğu veya içeriğin neden çekildiği/bulunduğu gibi sorgulamalar aracılığıyla içeriği oluşturma/paylaşma motivasyonunu anlamak diğer unsurların doğrulama sürecine katkı sağlayabilir (<a href="https://firstdraftnews.org/wp-content/uploads/2019/10/Verifying_Online_Information_Digital_AW.pdf?x76851" target="_blank">Urbani, 2019</a>, s. 50). Köken, kaynak, tarih, konum gibi bilgilerle orijinal kaynak ve içeriği doğrulamaya çalıştıktan sonra, farklı kaynaklardan çapraz kontrol yaparak bilgileri karşılaştırmak ve doğruluğunu tartışmak gerekir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 98).</p>
+<p>Özellikle haber olarak aktarılan bilgilerin sahte olup olmadığının nasıl tespit edileceği konusunda yol gösterici olabilecek bazı kaynaklar bulunmaktadır:</p>
+<ul>
+<li>Sahte haberleri nasıl saptarız? (<a href="https://www.factcheck.org/2016/11/how-to-spot-fake-news/" target="_blank">Kiely ve Robertson, 2016</a>; <a href="https://www.ifla.org/resources/page/4/?_sfm_resource_topic=1200582&amp;_sfm_resource_type=All" target="_blank">IFLA, 2017</a>)</li>
+<li>Don’t get fooled: 7 simple steps (<a href="https://newslit.org/7-steps/" target="_blank">News Literacy Project, 2021</a>)</li>
+</ul>
+<center>
+<p><img src="../img/module_16/figure_tr_05.jpg"/></p>
+<p>Kaynak: <a href="https://www.ifla.org/publications/node/11174" target="_blank">IFLA, 2017</a> (CC BY 4.0)</p>
+<br/>
+<p><img src="../img/module_16/figure_42.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://newslit.org/7-steps/" target="_blank">News Literacy Project, 2021</a></p>
+</center>
+<p>Bireylerin doğrulamak için zamanları olmadığında veya doğrulama becerileri eldeki içeriği doğrulamak için yetersiz olduğunda, doğrulama ile profesyonel olarak ilgilenen kütüphanecilere ve doğrulama platformlarına danışılabilir (<a href="https://www.ifla.org/publications/node/11174" target="_blank">IFLA, 2017</a>; <a href="https://www.factcheck.org/2016/11/how-to-spot-fake-news/" target="_blank">Kiely ve Robertson, 2016</a>). Ayrıca karşılaşılan şüpheli bir içerik için doğrulama işlemine başlamadan önce öncelikle bu içeriğin daha önce doğrulanıp doğrulanmadığı kontrol edilebilir. Bu amaçla, <a href="https://toolbox.google.com/factcheck/explorer" target="_blank">Google Fact Check Explorer</a> adlı araç kullanılabilir.</p>
+<center>
+<p><img src="../img/module_16/figure_46.jpg" width="85%"/></p>
+<p>Kaynak: <a href="https://toolbox.google.com/factcheck/explorer" target="_blank">Google Fact Check Explorer</a></p>
+</center>
+<p>Doğrulama işlemi, doğrulanacak içeriğe bağlı olarak birçok farklı detayın araştırılmasını gerektirebilmektedir. Bu kapsamda, görsel ve video doğrulama, konum doğrulama, şüpheli bir sosyal medya hesabının doğrulanması, bir web sitesinin doğrulanması, bot ve trollerin tespiti gibi bir dizi adım bulunmaktadır.</p>
+<h3 id="gorsel-and-video-dogrulama">Görsel and Video Doğrulama</h3>
+<p>Fotoğraf ve videolar ikna edici ve merak uyandırıcı oldukları için özellikle sosyal medyaki iletişimde aktif bir yere sahiptirler. İletişime dahil olan herhangi bir görüntü veya videoyu oluşturmanın yanı sıra, bunlar üzerinde değişiklik yapmak da oldukça kolaydır. Bu durum fotoğraf ve videoları mezenformasyon ve dezenformasyon için kullanılabilecek önemli araçlar haline getirmiştir. Yanıltıcı ve bağlam dışı fotoğraf ve videoların kullanımı ise daha yaygındır (bkz. Bölüm 1, Modül 2) (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/5-verifying-and-questioning-images" target="_blank">Vis, Faulkner ve Guy, 2020</a>).</p>
+<h4 id="gorsel-dogrulama">Görsel Doğrulama</h4>
+<p>Görsel doğrulama süreci yalnızca durağan görsellere değil, aynı zamanda fotoğraflara, iç içe geçirilmiş görsellere, memlere, grafiklere ve ekran görüntülerine de odaklanmaktadır. (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/5-verifying-and-questioning-images" target="_blank">Vis, Faulkner ve Guy, 2020</a>). Bir görselin kaynağının izlenmesi genellikle görseli kimin yüklediği veya çektiği gibi bilgileri bulmayı içermektedir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Barot, t.y.</a>, s. 37). Bu bilgileri bulmak için tersine görsel arama yöntemi uygulanabilir. Tersine görsel arama ile görselin daha önce paylaşılıp paylaşılmadığı, hangi platformlarda paylaşıldığı, hangi bağlamda, kim tarafından paylaşıldığı gibi bilgiler de incelenebilmektedir.</p>
+<p>Fotoğrafların doğrulanmasında aşağıdaki beş soruya odaklanılarak cevaplara ulaşılmaya çalışılabilir (<a href="https://firstdraftnews.org/wp-content/uploads/2019/10/Verifying_Online_Information_Digital_AW.pdf?x76851" target="_blank">Urbani, 2019</a>):</p>
+<ol>
+<li>Fotoğrafın aslına mı bakıyorsunuz?</li>
+<li>Fotoğrafı kimin çektiğini biliyor musunuz?</li>
+<li>Fotoğrafın nerede çekildiğini biliyor musunuz?</li>
+<li>Fotoğrafın ne zaman çekildiğini biliyor musunuz?</li>
+<li>Fotoğrafın neden çekildiğini biliyor musunuz?</li>
+</ol>
+<p>Bu soruları şu şekilde takip etmek mümkündür:</p>
+<center>
+<p><img src="../img/module_16/figure_tr_02.jpg" width="95%"/></p>
+<p>Source: <a href="https://firstdraftnews.org/wp-content/uploads/2019/10/Verifying_Online_Information_Digital_AW.pdf?x76851" target="_blank">Urbani, 2019</a></p>
+<p>(Türkçe çeviri: <a href="https://teyit.org/first-draftin-gorsel-dogrulama-rehberi-artik-turkce" target="_blank">Teyit, 2019</a>)</p>
+</center>
+<p>Bu sorulara ek olarak, sosyal medyada yer alan görsellerin sorgulanmasına ilişkin aşağıdaki beş soru da görselin doğrulama sürecini destekleyecektir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/5-verifying-and-questioning-images" target="_blank">Vis, Faulkner ve Guy, 2020</a>).</p>
+<ol>
+<li>Görseli içeren gönderi nedir?</li>
+<li>Görseli içeren gönderi neyi göstermektedir?</li>
+<li>Görseli içeren gönderiyi kim hazırlamış?</li>
+<li>Görseli içeren gönderi ilk ortaya çıktığında ne anlama geliyordu?</li>
+<li>Görseli içeren gönderi şimdi ne anlama geliyor?</li>
+</ol>
+<p>Bu soruların ilk üçü, diğer doğrulama soruları gibi, daha çok görüntünün kökeni ve kaynağı ile ilgilidir. Son iki soru ise görselin anlamı üzerine düşünmeye ve görselin kullanımı sırasında üretilen farklı anlamları sorgulamaya yöneltmektedir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/5-verifying-and-questioning-images" target="_blank">Vis, Faulkner ve Guy, 2020</a>). Bu iki soru, bilgi bozukluğu kapsamında karşımıza çıkan yanıltıcı içerik, bağlamdan koparma ve benzeri kullanımları tanımamıza ve değerlendirmemize yardımcı olabilir (bkz. Bölüm 1, Modül 2).</p>
+<p>Tersine görsel arama yöntemi ile görsellerin kökeni ve kaynağı araştırılabilir, benzer görseller karşılaştırılabilir ve görselin EXIF verileri kontrol edilebilir. EXIF verileri, görselin herhangi bir tarih bilgisi olup olmadığını kontrol etmede yol gösterici olabilir. Ayrıca, görselin konum bilgisi de araştırılması gereken bir diğer unsurdur.</p>
+<h5 id="tersine-gorsel-arama">Tersine Görsel Arama</h5>
+<p><a href="https://images-google.com/" target="_blank">Google Images</a>, <a href="https://yandex.com/images/?lr=87" target="_blank">Yandex Image Search</a>, <a href="https://www.bing.com/?scope=images&amp;nr=1&amp;FORM=NOFORM" target="_blank">Bing</a> ve <a href="https://tineye.com/" target="_blank">TinEye</a> gibi platformlarda tersine görsel arama yapılabilmektedir. Tersine görsel arama yapmak için görsel arama platformlarında görseli veya görselin bağlantısı (linki, URL’i) aranır. Bu arama sırasında internette bu görsel ile eşleşme olup olmadığı kontrol edilir. Bir eşleşme varsa, bunlar sonuç listesinde sunulurlar. Aynı görselin farklı bağlantıları gelirse bu bağlantılardaki görsellerin farklı boyutları/çözünürlükleri incelenebilir. Genellikle en yüksek boyutlu/çözünürlüklü görselin orijinal kaynağa götürmesi beklenir. Kaynağın orijinal olup olmadığı eldeki görsel ile karşılaştırılarak anlaşılabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Barot, t.y.</a>, s. 37; <a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 98-99). Google tersine görsel arama özelliği mobil cihazlarda bulunmamakta, görsele ait bağlantı ancak bir tarayıcının masaüstü sürümünde açılırsa kullanılabilmektedir. Mobil cihazlarla tersine görsel arama yapılmak istenirse <a href="https://yandex.com/images/?lr=87" target="_blank">Yandex Image Search</a>, <a href="https://www.bing.com/?scope=images&amp;nr=1&amp;FORM=NOFORM" target="_blank">Bing</a> ve <a href="https://tineye.com/" target="_blank">TinEye</a> kullanılabilir.</p>
+<div class="well">
+<p>Örnek: Sosyal medyada yer alan bir haberde, aşağıdaki görselin Britney Spears tarafından paylaşıldığı belirtilmektedir. Tersine görsel arama ile bunun doğruluğunu araştıralım.</p>
+<center>
+<p><img src="../img/module_16/figure_50.jpg" width="75%"/></p>
+</center>
+<p><a href="https://www.google.com/imghp?hl=en" target="_blank">Google Görseller</a>:</p>
+<center>
+<p><img src="../img/module_16/figure_49.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.google.com/imghp?hl=en" target="_blank">Google Görseller</a></p>
+<br/>
+<p><img src="../img/module_16/figure_55.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.google.com/imghp?hl=en" target="_blank">Google Görsel Arama</a></p>
+</center>
+<p>Arama yapacağımız görselin bağlantısını arama kutusuna yapıştırarak aramamızı yapıyoruz. Sonuçlar arasında aynı görselin olduğu bir sosyal medya hesabının bulunduğu görülüyor.</p>
+<center>
+<p><img src="../img/module_16/figure_53.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.google.com.tr/search?tbs=sbi:AMhZZiu_1BdQp96BGPn9ezX6ZkpQZ_1k4okZHtmonrAKhDo3okMgsVs3DASadHdDgz5l57aKqTXzixtevNkNT1RAiRd7pX-3j3Bzm2fzPXoACVKvsAc1x0jozYlOY12M3cB3w3bYCBFSS6FDKceJQKvGILeBS91FrISGiVayr8AEHrIbNHnfc8g3LirIcJvMhETsNt6libIYhQpcnDvnGp2c1297pYaJB1kSkdvcM-NX9KWh95kWRlp8iQ3lB7Y86kXAupTa_1Jt6yAC4R6aAICZnwoHyDe4SOM4c6CtsrnfMT86-WeqKHMSXssNNhU8BkPcSdAYBnTHG4S4Fnw0sxCQpQ7OcxKcOn9Fg&amp;hl=en-TR" target="_blank">Google Görsel Arama Sonuçları</a></p>
+<br/>
+<p><img src="../img/module_16/figure_60.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://twitter.com/britneyspears" target="_blank">Britney Spears’ın Twitter Hesabı</a></p>
+</center>
+<p>Sonuç listesindeki sosyal medya hesabına tıklandığında hesabın mavi tik sahibi olduğu görülüyor. Yani, doğrulanmış bir hesap olduğu ve Britney Spears’a ait olduğu anlaşılıyor. Ayrıca kişi ile ilgili bir web bağlantısı, konum bilgisi, hesap oluşturma tarihi gibi bazı ek bilgiler de bulunmaktadır.</p>
+<center>
+<p><img src="../img/module_16/figure_56.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://twitter.com/britneyspears/status/1364364506298675202" target="_blank">Britney Spears’ın Paylaştığı Tweet</a></p>
+</center>
+<p>Hesapta paylaşılan tweetler incelendiğinde araştırmamıza konu olan görselin paylaşılan içerikler arasında yer aldığı görülmektedir.</p>
+<center>
+<p><img src="../img/module_16/figure_58.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://twitter.com/britneyspears/status/1364364506298675202/photo/3" target="_blank">Britney Spears’ın Paylaştığı Tweet</a></p>
+</center>
+</div>
+<p>Google tersine görsel arama özelliği zaman zaman yetersiz kalırken Yandex daha iyi sonuçlar üretebilmektedir (<a href="https://www.bellingcat.com/resources/how-tos/2019/12/26/guide-to-using-reverse-image-search-for-investigations/" target="_blank">Toler, 2019</a>). <a href="https://images-google.com/" target="_blank">Google Images</a>, <a href="https://yandex.com/images/?lr=87" target="_blank">Yandex Image Search</a>, <a href="https://tineye.com/" target="_blank">TinEye</a> ve <a href="https://www.bing.com/?scope=images&amp;nr=1&amp;FORM=NOFORM" target="_blank">Bing</a>’e ek olarak, <a href="https://chrome.google.com/webstore/detail/reveye-reverse-image-sear/keaaclcjhehbbapnphnmpiklalfhelgf?hl=en" target="_blank">RevEye Chrome extension</a> kullanarak tarayıcıda bir görsel üzerinde mouse ile sağa tıklayıp aynı anda birden fazla platformda benzer görseller aranabilir.</p>
+<center>
+<p><img src="../img/module_16/figure_61.jpg" width="50%"/></p>
+<p>Kaynak: <a href="https://chrome.google.com/webstore/detail/reveye-reverse-image-sear/keaaclcjhehbbapnphnmpiklalfhelgf?hl=en" target="_blank">RevEye Tersine Görsel Arama</a></p>
+</center>
+<p>Tersine görsel aramada arama motorlarının yetersiz kaldığı durumlar da vardır. Bu araçlar özellikle Twitter, Instagram, Facebook gibi sosyal ağlarda görsel bulma konusunda her zaman başarılı olamayabilmektedir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/how-to-analyze-social-media-accounts" target="_blank">Zadrozny, 2020</a>).</p>
+<h5 id="exif-verisi">EXIF Verisi</h5>
+<p>Görsel doğrulamada uygulanacak bir diğer yöntem ise görsel üzerinde herhangi bir montaj olup olmadığının kontrol edilmesidir. Bunu araştırmak için görselin EXIF verileri kontrol edilebilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Barot, t.y.</a>, s. 38; <a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 99). EXIF verilerini kontrol etmek için <a href="http://fotoforensics.com/" target="_blank">Foto Forensics</a>, <a href="https://www.verexif.com/en/" target="_blank">View and Remove EXIF Online</a>, <a href="http://exif.regex.info/exif.cgi" target="_blank">Jeffrey's Image Metadata Viewer</a> gibi araçlar kullanılabilir.</p>
+<p><a href="http://fotoforensics.com/" target="_blank">Foto Forensics</a>: Bu araç montajlı bir görseli/görüntüyü anlamak için kullanılabilir. Bir görüntünün EXIF’inin (üstverilerinin) bulunmasını ve görüntünün hata düzeyi analizinin (ELA) görülmesini sağlar. Bu araç aynı zamanda, kameranın modeli, görüntünün zaman damgası ve orijinal görüntünün boyutları gibi bilgileri de sağlayabilmektedir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 99).</p>
+<div class="well">
+<p>Örnek: Aşağıdaki fotoğrafın Dimetoka’daki camiye Yunanistan bayrağı asıldığını gösterdiği iddiasına bakalım.</p>
+<center>
+<p><img src="../img/module_16/figure_40.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://teyit.org/fotografin-dimetokadaki-camiye-yunan-bayragi-asildigini-gosterdigi-iddiasi" target="_blank">Fotoğrafın Dimetoka’daki camiye Yunanistan bayrağı asıldığını gösterdiği iddiası</a></p>
+</center>
+<p>Türkiye’de <a href="https://teyit.link/ztQvceC" target="_blank">medyada</a> hızla yayılan bir iddiaya göre, Dimetoka’daki bir Osmanlı camisinin minaresine Yunanistan bayrağı asılmıştı. Ancak iddia doğru değildir. Görselin orijinali 2015 yılına ait olmakla birlikte, Yunanistan bayrağı da sonradan eklenmiştir. <a href="https://teyit.link/SZlosPW" target="_blank">DHA</a> tarafından servis edilen görsel, tersine görsel arama ile araştırıldığında, Yunanistan uzantılı Evros bölgesinden yayın yapan e-evros.gr adlı bir sitede yayınlanan 2015 tarihli bir içeriğe <a href="https://archive.md/exEOC" target="_blank">ulaşılmaktadır</a>.</p>
+<p>Fotoğrafa daha yakından bakıldığında, sonradan eklenen bayrağın ışık ve propozisyon açısından fotoğrafın kalanıyla uyumsuz olduğunu anlaşılabilmektedir. Montajlanan fotoğrafta bayrak epey emanet durmakta ve olağan açıda da değildir. Fotoforensics üzerinde yapılan analiz de görselin manipüle edildiğini doğrulamaktadır (<a href="https://teyit.org/fotografin-dimetokadaki-camiye-yunan-bayragi-asildigini-gosterdigi-iddiasi" target="_blank">Teyit, 2020, 1 Haziran</a>).</p>
+<center>
+<p><img src="../img/module_16/figure_07.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://fotoforensics.com/analysis.php?id=9d2b49f473bad097c3dd79442aa88acb2d548e1b.59291" target="_blank">Fotoğrafın Dimetoka’daki camiye Yunanistan bayrağı asıldığını gösterdiği iddiası - Fotoforensics hata düzeyi analizi (ELA)</a></p>
+</center>
+</div>
+<p>Twitter, Facebook, Instagram gibi sosyal medya platformlarının çoğu (Flickr hariç), görseller platformlarına yüklendiğinde görsellerin içerdiği üstverilerin önemli bir kısmını temizlemektedir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Barot, t.y.</a>). Dolayısıyla, bu tür platformlarda görsellerin EXIF verilerine ulaşmak zor olabilmektedir.</p>
+<h5 id="benzerlik">Benzerlik</h5>
+<p>Tersine görsel arama ve EXIF verilerinin kontrolünün yanı sıra, iki fotoğrafın aynı kişiye ait olma olasılığını söyleyen <a href="https://www.faceplusplus.com/" target="_blank">Face++</a> gibi araçlar da bulunmaktadır (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/how-to-analyze-social-media-accounts" target="_blank">Zadrozny, 2020</a>). Bu araçlar özellikle, bir sosyal medya hesabında yer alan profil fotoğrafını araştırırken yardımcı olabilir.</p>
+<div class="well">
+<p>Örnek: Fotoğraf BioNTech CEO’su Uğur Şahin ile ailesine mi ait?</p>
+<p>Pfizer ile birlikte Covid-19 aşısı geliştiren Alman biyoteknoloji firması BioNTech’in CEO’su Uğur Şahin Türkiye’de doğdu ve 4 yaşındayken ailesiyle birlikte Almanya’ya göç etti. Altı kişilik bir aile portresi, Şahin ailesinin göç hikayesiyle eşleştirildi ve bu fotoğraf, Şahin ailesinin Almanya'daki ilk yıllarını gösterdiği iddiasıyla dünya çapında viral oldu.</p>
+<center><p><img src="../img/module_16/figure_tr_01.jpg" width="50%"/></p></center>
+<p>Fotoğraf tersine görsel arama yöntemi ile aratıldığında, görselin aslında uzun süredir internette dolaşımda olduğu anlaşılıyordu. Eski paylaşımlar detaylı incelendiğinde ise fotoğrafın sanatçı Candida Höfer’in “Türken in Deutschland” isimli sergisinde <a href="https://archive.vn/lUwqS" target="_blank">yer aldığı</a> ve Aksaray’dan Almanya’ya göçen bir aileyi gösterdiği ortaya çıktı. Uğur Şahin ve ailesi ise İskenderun’dan göçmüştü, neticede fotoğraf Şahin ailesine ait değildi (<a href="https://teyit.org/analiz-fotografin-ugur-sahin-ile-ailesini-gosterdigi-iddiasi" target="_blank">Teyit, 2020, 18 Kasım)</a></p>
+</div>
+<h5 id="konum-bilgisi">Konum Bilgisi</h5>
+<p>Fotoğrafın çekildiği yeri ve zamanı doğrulamaya yardımcı olması için araçlardaki plakalar, hava koşulları, önemli noktalar/kentsel simgeler, giyim tarzı, tabelalar/yazılar, tanınan bir dükkan/bina olup olmadığı, çekim yapılan arazi/ortam türü gibi ipuçları kullanılabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Barot, t.y.</a>).</p>
+<p>Tüm bunlar, fotoğraf ayrıntıları söz konusu olduğunda önemli bilgilerin elde edilmesine yardımcı olabilir ve <a href="https://www.google.ng/maps/" target="_blank">Google Maps</a>, <a href="https://www.google.com/intl/en/streetview/" target="_blank">Google Street View</a>, <a href="https://yandex.com.tr/harita/profile?ll=32.854049%2C39.920756&amp;z=12" target="_blank">Yandex Maps</a>, <a href="https://earth.google.com/web/" target="_blank">Google Earth</a> gibi araçlar yardımıyla kontrol edilebilirler (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 102). Konum doğrulama ile ilgili daha detaylı bilgi “Konum Doğrulama” başlığı altında yer almaktadır.</p>
+<h4 id="video-dogrulama">Video Doğrulama</h4>
+<p>Görsellerde olduğu gibi videolarda da kolaylıkla değişiklik yapılabilmektedir. Özellikle, kullanıcı üretimi videolar orijinal biçimlerinde görünmeyebilirler (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Browne, t.y.</a>, s. 47). Videoların doğrulanmasında da tıpkı görsellerde olduğu gibi aşağıdaki beş soruya odaklanarak cevaplara ulaşmak mümkündür (<a href="https://firstdraftnews.org/wp-content/uploads/2019/10/Verifying_Online_Information_Digital_AW.pdf?x76851" target="_blank">Urbani, 2019</a>):</p>
+<ol>
+<li>Videonun aslına mı bakıyorsunuz?</li>
+<li>Videoyu kimin çektiğini biliyor musunuz?</li>
+<li>Videonun nerede çekildiğini biliyor musunuz?</li>
+<li>Videonun ne zaman çekildiğini biliyor musunuz?</li>
+<li>Videonun neden çekildiğini biliyor musunuz?</li>
+</ol>
+<center>
+<p><img src="../img/module_16/figure_tr_06.jpg" width="95%"/></p>
+<p>Kaynak: <a href="https://firstdraftnews.org/wp-content/uploads/2019/10/Verifying_Online_Information_Digital_AW.pdf?x76851" target="_blank">Urbani, 2019</a> (Türkçe çeviri: <a href="https://teyit.org/first-draftin-gorsel-dogrulama-rehberi-artik-turkce" target="_blank">Teyit, 2019</a>)</p>
+</center>
+<p>İlgili soruların cevapları şekilde gösterildiği gibi aranabilir. Bu aşamada videoyla ilişkili üstveriler, orijinal kaynak, tarih ve konumla ilgili ayrıntıların elde edilmesine de yardımcı olabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Browne, t.y.</a>, s. 47).</p>
+<p>Video doğrulama sürecinde ilk adım, videonun kökenini sorgulamaktır. Videolar genellikle açıklamalar, etiketler, yorumlar ve benzer tanımlayıcı bilgiler içerirler. Bu bilgiler kullanılarak çeşitli anahtar kelimeler oluşturulabilir. Bu anahtar kelimelerle arama yaparak, eşleşen en eski videolar bulunabilir. Örneğin, <a href="https://www.youtube.com/" target="_blank">YouTube</a>’da arama yapıyorsanız “Filtreler” menüsünden “yükleme tarihi” seçeneği seçilerek videolar buna göre sıralanabilir. Böylece eşleşen en eski videolara erişilebilir. Videodaki tanımlayıcı bilgiler yabancı bir dilde ise bu bilgilerin çevirisi için <a href="https://translate.google.com/" target="_blank">Google Translate</a> gibi çeviri araçları kullanılabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Browne, t.y.</a>, s. 48).</p>
+<center>
+<p><img src="../img/module_16/figure_68.jpg" width="95%"/></p>
+<p>Kaynak: <a href="https://www.youtube.com/results?search_query=%22pandora+papers%22+AND+Trump&amp;sp=CAI%253D" target="_blank">YouTube Arama</a></p>
+</center>
+<p>Tersine görsel arama, videonun en eski sürümünü bulmak için de kullanılabilmektedir. <a href="https://www.google.com/imghp?hl=en" target="_blank">Google Görseller</a> ve TinEye gibi platformlarda videonun küçük resimleri ile tersine arama yaparak fotoğraf veya görsellerin ilk kullanıldığı versiyonlara ulaşılabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Browne, t.y.</a>, s. 49). Tersine görsel arama hakkında detaylı bilgi için bkz. “Görsel Doğrulama”.</p>
+<p><a href="https://www.invid-project.eu/tools-and-services/invid-verification-plugin/" target="_blank">InVID</a> ise videoları karelere bölmeye, bu kareleri tersine görsel arama yöntemiyle birden fazla arama motorunda aramayı, kareleri ve görselleri yakınlaştırarak incelemeyi ve durağan görüntüleri analiz etmek için çeşitli filtreler uygulamayı sağlayan bir internet tarayıcı eklentisidir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/6-how-to-think-about-deepfakes-and-emerging-manipulation-technologie" target="_blank">Gregory, 2020</a>). Arama çubuğuna ilgili bir bağlantı yapıştırıp arama yaptığınızda, videonun önizleme görüntüsü belirir. Bu görüntü tersine görsel arama araçları ile aranarak videonun başka nerede yayınlanmış olabileceği belirlenebilir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/4-monitoring-for-fakes-and-information-operations-during-breaking-news" target="_blank">Lytvynenko, 2020</a>).</p>
+<center>
+<p><img src="../img/module_16/figure_28.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.invid-project.eu/tools-and-services/invid-verification-plugin/" target="_blank">InVID Eklentisi</a></p>
+</center>
+<p>Video doğrulamada araştırılması gereken bir diğer unsur da videonun kaynağıdır. Bir diğer deyişle, videonun hangi kaynaktan geldiği ve kim tarafından platforma/platformlara yüklendiği araştırılabilir.      </p>
+<p>Öncelikle, videoyu yükleyen/paylaşan hesap hakkında hızlı bir araştırma yapılabilir. Bir sosyal medya hesabının nasıl araştırılacağına ilişkin ayrıntılar için bkz. “Sosyal Medya Hesabı Doğrulama”. Videoyu paylaşan kişinin/hesabın izleri ve çevrimiçi geçmişi araştırılırken aşağıdaki sorular da kullanılabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Browne, t.y.</a>, s. 49; <a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 101):</p>
+<ul>
+<li>Video açıklamaları tutarlı mı?</li>
+<li>Videoların tarihleri var mı?</li>
+<li>Hesaptaki videolarda bir logo varsa bu logo farklı videolarda aynı şekilde mi kullanılıyor?</li>
+<li>Yükleyici, haber kaynaklarındaki ve diğer YouTube hesaplarındaki videoları mı kullanıyor yoksa yalnızca kullanıcı üretimi içeriği mi yüklüyor?</li>
+<li>Video açıklamalarındaki video adlarında .AVI veya .MP4 gibi dosya uzantıları var mı? (Bu, videonun bir cihazla doğrudan yüklendiğini gösterebilir).</li>
+<li>YouTube videosunun açıklamasında “Uploaded via YouTube Capture” mı yazıyor? (Bu, videonun akıllı telefonla kaydedildiğini gösterebilir).</li>
+</ul>
+<p>Kaynağın ilişkili olabilecek diğer hesaplarına ulaşmak da kaynak hakkında daha fazla bilgi edinmeye yardımcı olabilir. Bunun için şunlara bakmakta fayda vardır:</p>
+<ul>
+<li>Kullanıcı üretimi her içerik, URL’de görünen tekil bir kodla tanımlanır. Örneğin, Facebook ve YouTube’da bu kod, URL’deki “v=” ile sonraki “&amp;” arasında bulunmaktadır. Bu kodu bulmak için Twitter, Facebook gibi platformlara bakarak bağlantılı başka bir hesap olup olmadığı kontrol edilebilir.</li>
+<li>Yükleyicinin video profili, kendisine ait başka bir adres veya hesap bilgisi olup olmadığını bulmak için kontrol edilebilir.</li>
+<li>İlişkili hesapların ne kadar süredir aktif olduğu ve bu hesapların yükleyicinin son konumu, faaliyetleri, güvenilirliği, eğilimleri veya gündemi gibi belirli bilgileri içerip içermediği kontrol edilebilir.</li>
+</ul>
+<p>Tüm bu soruların cevapları, kaynağın güvenilirliği hakkında genel bir fikir verecektir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Browne, t.y.</a>, s. 50; <a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 100). Video doğrulamada videonun içeriğinin kontrol edilmesi de son derece önemlidir. Bu amaçla öncelikle videonun nerede çekildiği ve kaydedildiği ile ilgili konum bilgileri aranabilir. Bunun için konum doğrulama başlığı altında belirtilen ipuçlarına başvurulabilir (bkz. “Konum Doğrulama”).</p>
+<p>Video içeriği ile ilgili incelenebilecek bir diğer nokta ise tarih bilgisidir. Eylem, siyasi miting gibi planlanmış bir etkinliğin videolarının tarihlerini doğrulamak daha kolay olabilmektedir. Bu tür olayların başka fotoğraf ve videoları olabileceğinden bunları karşılaştırarak destekleyici bilgiler elde etmek mümkündür. Ancak, daha belirsiz videoların tarihlerini doğrulamak epey zor olabilmektedir. Hem videolar hem de görseller için tarih doğrulama işlemi sırasında aşağıdaki bilgiler kontrol edilebilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Browne, t.y.</a>, s. 52-53; <a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 100-101):</p>
+<ul>
+<li>O gün yaşanan olaylarla ilgili haberler farklı haber kaynaklarından aranabilir.</li>
+<li>Fotoğraf ve videolarda tarih veya saati belirlemek için saat, televizyon ekranları, gazete sayfaları gibi unsurlar kontrol edilebilir.</li>
+<li><a href="https://www.youtube.com/" target="_blank">YouTube</a>, <a href="https://www.google.com.tr/" target="_blank">Google</a>, <a href="https://tineye.com/" target="_blank">TinEye</a> gibi araç ve platformlar aracılığıyla görsel ve video araması yapılabilmektedir. Böylece mevcut içeriğin daha önce farklı platformlarda paylaşılıp paylaşılmadığı görülebilmektedir. Ancak bu noktada YouTube’un yükleme başlangıç zamanı olarak Pasifik Saat Dilimi'ni (GMT-8) temel aldığını göz önünde bulundurmak gerekmektedir. Çünkü, saat farkından dolayı bu durum yanıltıcı olabilir.</li>
+<li>Videodaki olayın gerçekleştiği yer ve o günün hava durumu kontrol edilebilir. Aynı olayla ilgili hava durumu tahminlerinin ve diğer gönderilerin benzer olup olmadığı karşılaştırılabilir. Bu amaçla arama yapmak için <a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a> arama motoru kullanılabilir.</li>
+</ul>
+<div class="well">
+<p>Örnek: “8 Mart 2011’de ABD Kaliforniya’da hava nasıldı?”</p>
+<center>
+<p><img src="../img/module_16/figure_30.jpg" width="85%"/></p>
+<p>Kaynak: <a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha Arama</a></p>
+<br/>
+<p><img src="../img/module_16/figure_32.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.wolframalpha.com/input/?i=%E2%80%9CWhat+was+the+weather+like+in+California%2C+USA+on+March+8%2C+2011%3F%22" target="_blank">Wolfram Alpha Arama Sonucu</a></p>
+</center>
+</div>
+<p>Elde edilen tüm ipuçları ve kanıtlar birleştirilerek, mantıklı olmayan bir şey olup olmadığı değerlendirilebilir. Öte yandan, videolarda anlamsız bir şey olduğunda video düzenleme yazılımları (VLC Media Player, Avidemux Video Editor, Vegas Pro vb.) üzerinden de bazı teknik incelemeler yapılabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Browne, t.y.</a>, s. 52).</p>
+<h5 id="deepfake">Deepfake</h5>
+<p>Deepfakes, bir kişinin yüzünün, sesinin veya eylemlerinin gerçekçi simülasyonlarının oluşturulmasına izin veren yeni görsel-işitsel manipülasyon biçimleridir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/6-how-to-think-about-deepfakes-and-emerging-manipulation-technologie" target="_blank">Gregory, 2020</a>). Başka bir deyişle, yapay zekȃ teknolojilerinin görüntü ve videolar üzerinde yapılan manipülasyonlara dahil olması deepfake olarak adlandırılmaktadır. Deepfake, temel olarak Çekişmeli Üretici Ağlar (GAN) adı verilen bir makine öğrenme tekniğine dayanmaktadır. GAN, bir görseli tanımak için bir dizi algoritma kullanarak kendini eğitmekte ve bu sayede görselin gerçek özelliklerini öğrenerek sahte görseller üretebilir hale gelmektedir (<a href="https://www.wired.com/2017/04/googles-dueling-neural-networks-spar-get-smarter-no-humans-required/#:~:text=07%3A00%20AM-,Google's%20Dueling%20Neural%20Networks%20Spar%20to%20Get%20Smarter%2C%20No%20Humans,create%2C%20it%20does%20not%20understand.&amp;text=The%20day%20Richard%20Feynman%20died,%2C%20I%20do%20not%20understand.%22" target="_blank">Metz, 2017</a>; <a href="https://www.theguardian.com/technology/2018/nov/12/deep-fakes-fake-news-truth" target="_blank">Schwartz, 2018</a>; <a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/6-how-to-think-about-deepfakes-and-emerging-manipulation-technologie" target="_blank">Gregory, 2020</a>).</p>
+<p>Deepfake, insanların söylemedikleri veya yapmadıkları bir şeyi yapmış gibi göstererek onlara ciddi zarar verme potansiyeline sahiptir. Örneğin, rıza dışı cinsel görüntüler ve videolar oluşturmak için bir kişinin yüzünü kullanabilir. Ek olarak, deepfake’in dezenformasyon için kullanılma potansiyeli de endişe yaratmaktadır (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/6-how-to-think-about-deepfakes-and-emerging-manipulation-technologie" target="_blank">Gregory, 2020</a>).</p>
+<p>Deepfake olup olmadığı konusunda özellikle bakılması gereken detaylar şunlardır (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/6-how-to-think-about-deepfakes-and-emerging-manipulation-technologie" target="_blank">Gregory, 2020</a>):</p>
+<ul>
+<li>Alın/saç çizgisinde belirgin kusurlar veya sabit yüz hareketi</li>
+<li>Dişlerde detay eksikliği</li>
+<li>Son derece pürüzsüz cilt</li>
+<li>Göz kırpma hareketinin olmaması</li>
+<li>Konuşmacıda anlık hareketlerin, jest ve mimiklerin bulunmaması</li>
+<li>Bir kişinin başını çevirdiğinde veya hareket ettirdiğinde oluşan tutarsızlıklar/bozukluklar</li>
+</ul>
+<p>Deepfake’i tespit etmek her zaman kolay olmasa da belirli ipuçları ve görsel/video doğrulama yöntemleri (benzerlik, tersine görsel arama) kullanılarak deepfake olup olmadığı anlaşılabilir (bkz. “Görsel Doğrulama” ve “Video Doğrulama”) (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/6-how-to-think-about-deepfakes-and-emerging-manipulation-technologie" target="_blank">Gregory, 2020</a>; <a href="https://www.niemanlab.org/2018/11/how-the-wall-street-journal-is-preparing-its-journalists-to-detect-deepfakes/" target="_blank">Marconi ve Daldrup, 2018</a>).</p>
+<p>Örnek: Bozuk asfalt yol görüntüleri İstanbul'dan değil Çin’den</p>
+<p>Şiddetli bir yağmurun İstanbul’u etkisi altına almasının ardından, çeşitli araba ve otobüslerin bozuk asfalt yoldaki deliklerden geçtiği anları gösteren video, İstanbul’dan olduğu iddiasıyla dolaşıma girdi.</p>
+<center>
+<p><img src="../img/module_16/figure_tr_03.jpg" width="75%"/></p>
+</center>
+<p>Videonun sağ alt köşesinde görülen Mandarin alfabesindeki logoyu Yandex görsel yardımıyla metin haline getirip, kelimeyi Google’da aradığımızda videonun 15 Haziran 2020’de Bilibili isimli Çin video platformunda <a href="http://web.archive.org/web/20210122173750/https://www.bilibili.com/video/BV17Z4y1u7gN" target="_blank">paylaşıldığı</a> görülüyor. Videoda görünen tabelalar ve geçen araçlara ait detaylar da videonun Çin’in Guangdong bölgesinde çekildiğini doğruluyor. Aynı video daha önce dünyadaki farklı şehirlerle de ilişkilendirilmiş ve bu iddialar çeşitli doğrulama platformları tarafından incelenmiş (<a href="https://teyit.org/analiz-bozuk-asfalt-yola-ait-goruntulerin-istanbuldan-oldugu-iddiasi" target="_blank">Teyit, 2021, 25 Ocak</a>)</p>
+<h3 id="konum-dogrulama">Konum Doğrulama</h3>
+<p>Doğrulama sürecinde incelenebilecek bir diğer unsur da içeriğin konum bilgisidir. Bunun için öncelikle içeriğin konum bilgisi içerip içermediği kontrol edilmelidir. Flickr, Picasa, Instagram, Twitter gibi platformlar kullanıcılarına konum ekleme seçeneği sunmaktadır. İçeriğin konum bilgisi, mevcut uydu fotoğrafları ve otomatik konum bilgisi içeren fotoğraflar ile karşılaştırılarak doğrulanmaya çalışılabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 101). Bunun için <a href="https://www.google.com/maps" target="_blank">Google Haritalar</a>, <a href="https://www.google.com/intl/en/streetview/" target="_blank">Google Sokak Görünümü</a>, <a href="https://yandex.com.tr/harita/profile?ll=32.854049%2C39.920756&amp;z=12" target="_blank">Yandex Haritalar</a>, <a href="https://www.bing.com/maps?FORM=Z9LH2" target="_blank">Bing Haritalar</a>, <a href="https://earth.google.com/web/" target="_blank">Google Earth</a>, <a href="http://wikimapia-org.303.si/" target="_blank">Wikimapia</a>, <a href="https://geofeedia.com/" target="_blank">Geofeedia</a> ve benzer platformlar kullanılabilir. Karşılaştırma yaparken, doğrulama için aşağıdaki özellikler kontrol edilebilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 101):</p>
+<ul>
+<li>Sokak detayları (binalardaki işaret ve yazılar, sokak levhaları/yön işaretleri, ilan panoları vb.)</li>
+<li>Manzaralar (dağ sıraları, ağaç hatları, kayalıklar, nehirler vb.)</li>
+<li>Binalar ve kentsel simgeler (kiliseler, minareler, stadyumlar, köprüler vb.)</li>
+<li>Hava koşulları (örneğin, gün ışığı veya gölge gibi detaylar yaklaşık olarak saati belirlemeye yardımcı olabilir)</li>
+<li>Araç plakaları</li>
+<li>Bayraklar</li>
+<li>Giysiler</li>
+<li>Konuşulan dil (özellikle videolarda, aksan ve lehçelerin coğrafi konumla uyumluluğu kontrol edilebilir)</li>
+</ul>
+<p>Binalardaki işaretler/yazılar, sokak levhaları, yön işaretleri, ilan panoları gibi sokak detaylarında yabancı dil kullanılıyorsa, bunlar <a href="https://translate.google.com/" target="_blank">Google Translate</a> ve benzeri çeviri araçları kullanılarak tercüme edilebilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 101).</p>
+<p><a href="https://www.google.com/intl/en/streetview/" target="_blank">Google Sokaka Görünümü</a> veya <a href="https://www.google.com/maps" target="_blank">Google Haritalar</a>da yer alan fotoğraflar içerikteki ayrıntıları, otomatik konum bilgisine sahip fotoğraflarla eşleştirmek için kullanılabilir (<a href="https://www.bellingcat.com/resources/how-tos/2015/07/25/searching-the-earth-essential-geolocation-tools-for-verification/" target="_blank">Higgins, 2015</a>; <a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 101).</p>
+<div class="well">
+<p>Örnek: Diyelim ki rastladığımız bir haberde İtalya’da Kolezyum yakınlarındaki Celimontana Meydanı’nda meydana gelen bir olayla ilgili olduğu iddia edilen bir görsel veya video var. Haberdeki konum bilgisini kontrol etmek istediğimizde Google Street View’i kullanabiliriz.</p>
+<p>İlk olarak, Google Haritalarda “Piazza Celimontana” araması yaparız:</p>
+<center>
+<p><img src="../img/module_16/figure_34.jpg" width="50%"/></p>
+<p>Kaynak: <a href="https://www.google.com/maps/place/Piazza+Celimontana,+00184+Roma+RM,+Italy/@41.8888988,12.492408,17z/data=!4m13!1m7!3m6!1s0x132f61b8071d8a29:0xc2c86a21564b00c9!2sPiazza+Celimontana,+00184+Roma+RM,+Italy!3b1!8m2!3d41.8868262!4d12.495852!3m4!1s0x132f61b8071d8a29:0xc2c86a21564b00c9!8m2!3d41.8868262!4d12.495852" target="_blank">Google Haritalarda “Piazza Celimontana, Roma, Italy” araması</a></p>
+<br/>
+<p><img src="../img/module_16/figure_35.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.google.com/maps/place/Piazza+Celimontana,+7268,+00184+Roma+RM,+Italy/@41.8894431,12.4916938,656m/data=!3m1!1e3!4m5!3m4!1s0x132f61c7f8047ae1:0x9a32e687c3dc4c57!8m2!3d41.8869551!4d12.4960819" target="_blank">Google Haritalarda “Piazza Celimontana, Roma, Italy” araması</a></p>
+</center>
+<p>Harita görünümünde Piazza Celimontana’nın Kolezyum’a yakın olduğu görülebilir. Görünümü yakınlaştırarak sokak detayları (tanınmış binalar, bayraklar gibi) incelenebilir.</p>
+<center>
+<p><img src="../img/module_16/figure_36.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.google.com/maps/place/Piazza+Celimontana,+7268,+00184+Roma+RM,+Italy/@41.8869851,12.4959655,3a,75y,207.65h,100.59t/data=!3m10!1e1!3m8!1sG5hbTteJMF4jElkPyi6AJw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DG5hbTteJMF4jElkPyi6AJw%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D108.97565%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!9m2!1b1!2i56!4m7!3m6!1s0x132f61c7f8047ae1:0x9a32e687c3dc4c57!8m2!3d41.8869551!4d12.4960819!14m1!1BCgIgARICCAI" target="_blank">“Piazza Celimontana, Roma, Italy”e ait Google Sokak Görünümü</a></p>
+<br/>
+<p><img src="../img/module_16/figure_37.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.google.com/maps/place/Piazza+Celimontana,+7268,+00184+Roma+RM,+Italy/@41.8869851,12.4959655,3a,75y,108.98h,90t/data=!3m7!1e1!3m5!1sG5hbTteJMF4jElkPyi6AJw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DG5hbTteJMF4jElkPyi6AJw%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D108.97565%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m7!3m6!1s0x132f61c7f8047ae1:0x9a32e687c3dc4c57!8m2!3d41.8869551!4d12.4960819!14m1!1BCgIgARICCAI" target="_blank">“Piazza Celimontana, Roma, Italy”e ait Google Sokak Görünümü </a></p>
+</center>
+<p><a href="https://earth.google.com/web/" target="_blank">Google Earth</a> ise geçmiş uydu görüntülerini de sağlamaktadır. Bu nedenle, Google Earth'ün arazi görünümü eski fotoğraflar ve videolar için de kullanılabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 101).</p>
+<center>
+<p><img src="../img/module_16/figure_38.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://earth.google.com/web/search/Piazza+Celimontana,+Roma,+Metropolitan+City+of+Rome,+Italy/@0.00000003,-56.19899994,-0.00000023a,22251752.77375655d,35y,359.99999994h,0.00000373t,0r/data=CqUBGnsSdQolMHgxMzJmNjFiODA3MWQ4YTI5OjB4YzJjODZhMjE1NjRiMDBjORk0HluFg_FEQCH4TzdQ4P0oQCo6UGlhenphIENlbGltb250YW5hLCBSb21hLCBNZXRyb3BvbGl0YW4gQ2l0eSBvZiBSb21lLCBJdGFseRgBIAEiJgokCTRKCYtIiDRAETRKCYtIiDTAGRPpgP2SZRTAISPlJaUf01rA" target="_blank">“Piazza Celimontana, Roma, Italy” için Google Earth araması</a></p>
+<br/>
+<p><img src="../img/module_16/figure_39.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://earth.google.com/web/search/Piazza+Celimontana,+Roma,+Metropolitan+City+of+Rome,+Italy/@41.88846098,12.49432392,41.62236397a,756.2666641d,35y,-0h,44.9999606t,0r/data=CqUBGnsSdQolMHgxMzJmNjFiODA3MWQ4YTI5OjB4YzJjODZhMjE1NjRiMDBjORk0HluFg_FEQCH4TzdQ4P0oQCo6UGlhenphIENlbGltb250YW5hLCBSb21hLCBNZXRyb3BvbGl0YW4gQ2l0eSBvZiBSb21lLCBJdGFseRgBIAEiJgokCTRKCYtIiDRAETRKCYtIiDTAGRPpgP2SZRTAISPlJaUf01rA" target="_blank">“Piazza Celimontana, Roma, Italy”e ait Google Earth görünümü</a></p>
+</center>
+</div>
+<p>Twitter, Facebook ve Instagram gibi sosyal ağlar, kullanıcılara konum ekleme seçeneği sunsa da, genellikle buna yönelik üstverileri silmektedirler (Flickr hariç). Bunun yerine, görüntüyü yükleyen mobil cihazdan GPS verilerini belirlemek için Geofeedia gibi platformlardan yararlanılabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 98-99).</p>
+<p>Bu tekniklerin ve araçların kullanılmasına ek olarak, resmi haber kuruluşlarının benzer görseller yayınlayıp yayınlamadığı veya olayın gerçekleştiği yerden başkaları tarafından sosyal medyaya yüklenen başka görsellerin olup olmadığı da kontrol edilebilir. Böylece olayın geldiği noktayı farklı açılardan görmek ve görüntülerin güvenilirliğini belirlemek mümkün olabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Barot, t.y.</a>, s. 40).</p>
+<h3 id="sosyal-medya-hesabi-dogrulama">Sosyal Medya Hesabı Doğrulama</h3>
+<p>Sosyal medya hesaplarını araştırmak için kullanılabilecek bazı yaklaşımlar ve araçlar vardır.</p>
+<h4 id="kullanici-adi-ve-kimlik">Kullanıcı adı ve kimlik</h4>
+<p>Sosyal medyadaki bir kullanıcı hesabının gerçek olup olmadığını araştırırken önce hesabın mavi tik sahibi olup olmadığı kontrol edilir. Hesap adının yanında mavi tik varsa bu, hesabın ilgili platform (Facebook, Twitter, Instagram gibi) tarafından onaylandığı anlamına gelmektedir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman ve Tsubaki, t.y.</a>, s. 99-100). Mouse ile mavi tik işaretinin üzerine geldiğinizde, bunun doğrulanmış bir hesap olduğuna dair bir açıklama görünecektir. Eğer böyle bir açıklama görünmüyorsa mavi tik işareti oraya Photoshop ile eklenmiş olabilir (<a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Wardle, t.y.</a>, s. 28). Sosyal medya hesaplarının onaylanması için hesabın özgün, benzersiz, etkili ve dikkat çekici olması gibi platformlar tarafından aranan bazı kriterler bulunmaktadır (<a href="https://help.instagram.com/854227311295302/?helpref=hc_fnav" target="_blank">Instagram help center, 2021</a>; <a href="https://help.twitter.com/en/managing-your-account/about-twitter-verified-accounts" target="_blank">Twitter help center, 2021</a>). Hesabınızın hangi platformda onaylanmasını istiyorsanız ilgili platformun belirttiği kriterleri inceleyerek başvuruda bulunabilirsiniz.</p>
+<center>
+<p><img src="../img/module_16/figure_12.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://twitter.com/GretaThunberg" target="_blank">Onaylanmış Hesap Örneği</a></p>
+</center>
+<p>Bazı kişiler her platformda farklı kullanıcı adı kullanırken, bazı kullanıcılar farklı platformlarda aynı kullanıcı adını tercih edebilmektedir. Bu nedenle, araştırılan kullanıcı adını birkaç farklı siteden kontrol etmek gerekebilir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/how-to-analyze-social-media-accounts" target="_blank">Zadrozny, 2020</a>). Kullanıcı adı ve kimlik araştırması için <a href="https://www.google.com.tr/" target="_blank">Google</a>, <a href="https://namechk.com/" target="_blank">Namechk</a>, <a href="https://www.namecheckr.com/" target="_blank">Namecheckr</a>, <a href="https://www.spokeo.com/" target="_blank">Spokeo</a>, <a href="https://webmii.com/" target="_blank">Webmii</a>, <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>, <a href="http://haveibeenpwned.com" target="_blank">haveibeenpwned.com</a>, <a href="http://dehashed.com" target="_blank">Dehashed.com</a> gibi araç ve platformlar kullanılabilir.</p>
+<div class="well">
+<p>Örnek: Diyelim ki karşılaştığımız bir sosyal medya hesabının Britney Spears’a ait olup olmadığını ve Britney Spears’ın başka hesapları olup olmadığını araştırıyoruz.</p>
+<p><a href="https://www.google.com.tr/" target="_blank">Google</a>: Kullanıcı adları veya kişisel kimlik bilgileri ilk önce Google’da aranabilir. Google tarafından dizinlenen bir kullanıcı hakkında herhangi bir bilgi varsa, bu bilgi o kullanıcının izinin sürülmesine yardımcı olabilir.</p>
+<center>
+<p><img src="../img/module_16/figure_13.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.google.com/" target="_blank">Google Arama</a></p>
+<br/>
+<p><img src="../img/module_16/figure_14.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.google.com/search?q=Britney+Spears&amp;sxsrf=AOaemvKLsrEzLFoHMWoFs49lKo1JcaEgKQ%3A1631168905164&amp;source=hp&amp;ei=iak5YYTOB5WrwbkPmKi94Aw&amp;iflsig=ALs-wAMAAAAAYTm3mcdwK6S76cNWXQtIu86NbuQrdFOq&amp;oq=Britney+Spears&amp;gs_lcp=Cgdnd3Mtd2l6EAwyBAgjECcyBAgAEEMyBAgAEEMyBAguEEMyBQgAEMsBMgUIABDLATIFCC4QywEyBQgAEMsBMgUIABDLATIFCAAQywE6CwguEIAEEMcBENEDOgsILhCABBDHARCjAjoFCAAQgAQ6BQguEIAEOgcIABDHAxBDOgcILhBDEJMCOhAILhDHARDRAxAKEMsBEJMCOgcIABAKEMsBOgcILhAKEMsBOgQIABAKOgQILhAKOgcIIxCxAhAnOggIABAHEAoQHjoGCAAQBxAeUMwKWOiWAWCTyQ1oAHAAeAOAAeANiAGZQZIBETAuNy4xLjMuNC4zLjEuMC4xmAEAoAEB&amp;sclient=gws-wiz&amp;ved=0ahUKEwjEtqLZofHyAhWVVTABHRhUD8wQ4dUDCAs" target="_blank">Britney Spears ile ilgili Google Arama Sonuçları</a></p>
+</center>
+<p><a href="https://namechk.com/" target="_blank">Namechk</a> ve <a href="https://www.namecheckr.com/" target="_blank">Namecheckr</a>: Bir kullanıcı adı veya e-posta bilgisinin farklı platformlarda yer alıp almadığını araştırmak için kullanılabilir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/how-to-analyze-social-media-accounts" target="_blank">Zadrozny, 2020</a>).</p>
+</div>
+<div class="well">
+<p>Örnek: Britney Spears’ın Instagram hesabında kullandığı “britneyspears” kullanıcı adıyla Namechk ve Namecheckr platformlarında bir arama yapalım:</p>
+<center>
+<p><img src="../img/module_16/figure_15.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://namechk.com/" target="_blank">“britneyspears” kullanıcı adıyla Namechk araması</a></p>
+<br/>
+<p><img src="../img/module_16/figure_16.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://namechk.com/namechk-plugin-search-results/?n=britneyspears&amp;g-recaptcha-response=03AGdBq27dFfs6AMO0DT4_IA7OuCRhjzOttKnkWI4aw2vSTb4eQHdqhciiYx6J0PSb_lPH_Vcnr98Gt2j7PoWaKVusFpe_ljY5hvouk_Zsy8zAnidCnKV2nhUTEvrMMD8DfcXLQkz_JqNPHsgzFys0x7WztCSLsPLhB468N1h8uvKGmLty-iItXH5uLTP0BcFysEjxigdDR1Yw7lBzcb_uVU_KZNtvbjVg8Q2A2wCAKhJ6EjNvUN_sVPtMGAbulmCnA-tEYyJtt7SJeqQA5zx1QEcxIjn6kPGBhFqmwo6QxIfH1Q8Ou8_qeOX464B6nBnMMkqyfPo3V_2ZWkovfNHg51VpYgVadtoHI8GStIC2RNy2ONeSM_N9u_wactvYFyWxFa35yTnFjyY9V1lRRYHutUyymH8Alr263fLgGFZgRI-_BwuxnbVImzYCp143qXOBggVr02cdwIJF" target="_blank">“britneyspears” kullanıcı adıyla yapılan Namechk arama sonuçları</a></p>
+</center>
+<p>“britneyspears” kullanıcı adını kullanan platformlar, arama sonucunda “kayıtlı” (registered) (kırmızı renk) veya “kullanılamıyor” (unavailable) olarak görüntülenmektedir. Böylece aranan kişinin ilgili diğer sosyal medya hesaplarını kontrol edebilmek mümkün olmaktadır.</p>
+<center>
+<p><img src="../img/module_16/figure_17.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.namecheckr.com/" target="_blank">“britneyspears” kullanıcı adıyla yapılan Namecheckr </a>arama sonuçları</p>
+</center>
+<p><a href="https://www.spokeo.com/" target="_blank">Spokeo</a>: Bu araç yardımıyla bir kişiyi isim, e-posta, telefon veya kullanıcı adına göre aramak mümkündür (<a href="https://s3.eu-central-1.amazonaws.com/datajournalismcom/handbooks/Verification-Handbook-1.pdf" target="_blank">Verification handbook, t.y.</a>).</p>
+</div>
+<div class="well">
+<p>Örnek: Britney Spears adıyla Spokeo’da bir arama yapalım:</p>
+<center>
+<p><img src="../img/module_16/figure_18.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.spokeo.com/" target="_blank">Britney Spears adıyla yapılan Spokeo</a> araması</p>
+<br/>
+<p><img src="../img/module_16/figure_20.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.spokeo.com/Britney-Spears?loaded=1" target="_blank">Britney Spears adıyla yapılan Spokeo</a> arama sonuçları</p>
+</center>
+<p>Arama sonucunda Britney Spears adlı kişilerin coğrafi bölgeleri, adresleri, telefon numaraları, e-postaları ve iletişimde oldukları diğer bazı kişilerin isimleri gibi bilgilere ulaşmak mümkündür.</p>
+<center>
+<p><img src="../img/module_16/figure_22.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.spokeo.com/Britney-Spears?loaded=1" target="_blank">Britney Spears adıyla yapılan Spokeo</a> Gelişmiş Arama</p>
+</center>
+<p>Gerekli bilgiler doğrultusunda gelişmiş arama seçeneği kullanılarak Spokeo’daki aramalar (yaş, eyalet, ülke gibi) filtrelenebilir.</p>
+<p><a href="https://webmii.com/" target="_blank">Webmii</a>: Bir kişinin adıyla onunla ilgili web bağlantıları aranabilir (<a href="https://s3.eu-central-1.amazonaws.com/datajournalismcom/handbooks/Verification-Handbook-1.pdf" target="_blank">Verification handbook, t.y.</a>).</p>
+</div>
+<div class="well">
+<p>Örnek: Webmii’de Britney Spears adıyla arama yaptığımızda, kişinin web’de varlık gösterdiği platformların bağlantı adreslerini görmek mümkündür.</p>
+<center>
+<p><img src="../img/module_16/figure_23.jpg" width="65%"/></p>
+<p>Kaynak: <a href="https://webmii.com/" target="_blank">Britney Spears</a> adıyla yapılan <a href="https://webmii.com/" target="_blank">Webmii</a> araması</p>
+<br/>
+<p><img src="../img/module_16/figure_01.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://webmii.com/people?n=%22Britney%20Spears%22#gsc.tab=0&amp;gsc.q=%22Britney%20Spears%22&amp;gsc.sort=date&amp;gsc.page=1" target="_blank">Britney Spears adıyla yapılan Webmii</a> arama sonuçları</p>
+</center>
+<p><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>: LinkedIn’deki iş geçmişine ve bağlantılarına bakarak bir kişinin kimliği ve hikȃyesi hakkında fikir edinilebilir (<a href="https://s3.eu-central-1.amazonaws.com/datajournalismcom/handbooks/Verification-Handbook-1.pdf" target="_blank">Verification handbook, t.y.</a>).</p>
+</div>
+<div class="well">
+<p>Örnek: 2021 Nobel Barış Ödülü kazananlarından Maria Ressa’nın kimliği hakkında bilgi almak ve profesyonel iş bağlantılarını görmek için LinkedIn’de bir arama yapalım:</p>
+<center>
+<p><img src="../img/module_16/figure_02.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+<br/>
+<p><img src="../img/module_16/figure_03.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://ph.linkedin.com/pub/dir/+/+?trk=homepage-basic_intent-module-people" target="_blank">Maria Ressa</a> adıyla yapılan <a href="https://ph.linkedin.com/pub/dir/+/+?trk=homepage-basic_intent-module-people" target="_blank">LinkedIn araması</a></p>
+</center>
+<p>Arama sonuçları, aynı ada sahip birden fazla hesap olduğunu göstermektedir. Bu hesaplardan hangisinin gazeteci Maria Ressa hakkında ipuçları içerdiği tespit edilebilir.</p>
+<center>
+<p><img src="../img/module_16/figure_04.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://ph.linkedin.com/pub/dir?firstName=Maria+&amp;lastName=Ressa&amp;trk=people-guest_people-search-bar_search-submit" target="_blank">Maria Ressa adıyla yapılan LinkedIn arama sonuçları</a></p>
+</center>
+<p>Arama sonuçlarında ilk sırada yer alan hesaba tıklandığında, gazeteci Maria Ressa ile ilgili ülke, dil, etkinlikler gibi bilgilerin kişinin bilgileriyle uyumlu olduğu görülmektedir.</p>
+<center>
+<p><img src="../img/module_16/figure_05.jpg" width="85%"/></p>
+<p>Kaynak: <a href="https://ph.linkedin.com/in/maria-ressa-473166?trk=people-guest_people_search-card" target="_blank">Maria Ressa’nın LinkedIn hesabı</a></p>
+</center>
+</div>
+<p>Bunlara ek olarak <a href="about:blank">haveibeenpwned.com</a> ve <a href="about:blank">Dehashed.com</a>, kullanıcı bilgilerini içeren veri ihlallerini araştırmak ve bir e-posta adresini veya telefon numarasını doğrulamak için kullanılabilir. Ayrıca, <a href="https://pipl.com/" target="_blank">Pipl</a> ve <a href="https://www.skopenow.com/" target="_blank">Skopenow</a> gibi ücretli hizmet veren ve Amerika Birleşik Devletleri’nde yaşayan kişileri aramak için kullanılan platformlar da vardır (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/how-to-analyze-social-media-accounts" target="_blank">Zadrozny, 2020</a>).</p>
+<h4 id="iliskiler">İlişkiler</h4>
+<p>Bir kişinin çevrimiçi ortamda kimlerle etkileşime girdiğine bakarak hayatı ve eğilimleri hakkında pek çok şey öğrenmek mümkündür. Bu amaçla, bir hesabın en eski takipçilerine ve arkadaşlarına bakılabilir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/how-to-analyze-social-media-accounts" target="_blank">Zadrozny, 2020</a>). <a href="https://tweetbeaver.com/" target="_blank">TweetBeaver</a> adlı aracı kullanarak büyük hesaplar arasındaki bağlantıları aramak, daha küçük hesapların akışını (zaman tünelini) ve beğenilerini incelemek mümkündür. TweetBeaver’ı kullanabilmek çin bir Twitter hesabınızın olması ve oturum açmanız gerekmektedir.</p>
+<div class="well">
+<p>Örnek: Britney Spears’a ait olduğu düşünülen Twitter hesabındaki kullanıcı adının üzerinden gidelim. Bu hesap sahibinin, Britney Spears’ın kız kardeşi Jamie Lynn Spears’ın Twitter hesabı ile takipleşme durumunu TweetBeaver üzerinden kontrol edebiliriz.</p>
+<center>
+<p><img src="../img/module_16/figure_06.jpg" width="85%"/></p>
+<p>Source: <a href="https://tweetbeaver.com/" target="_blank">TweetBeaver</a></p>
+</center>
+<p>TweetBeaver’da yer alan farklı seçenekler içerisinden iki hesabın takipleşme durumu seçilir. Daha sonra kontrol edilecek hesapların adları ilgili alanlara yazılarak sorgulanır.</p>
+<center>
+<p><img src="../img/module_16/figure_08.jpg" width="85%"/></p>
+<p>Kaynak: <a href="https://tweetbeaver.com/mutualfollow.php" target="_blank">TweetBeaver ile Britney Spears ve kız kardeşinin Twitter’da takipleşme durumunu takip etme</a></p>
+</center>
+<p>Arama sonucunda iki hesabın birbirini takip ettiği görülmektedir.</p>
+<center>
+<p><img src="../img/module_16/figure_09.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://tweetbeaver.com/mutualfollow.php" target="_blank">Britney Spears ve kız kardeşinin Twitter’da birbirlerini takip durumları</a></p>
+</center>
+</div>
+<p>Ayrıca <a href="https://twitter.com/search-advanced?lang=en" target="_blank">Twitter Gelişmiş Arama</a> (<a href="https://twitter.com/search-advanced?lang=en" target="_blank">Twitter Advanced Search</a>), bir hesabın ilk tweetlerine ulaşmak veya belirli bir zaman diliminde gönderilen tweetleri incelemek için kullanılabilir. Twitter Gelişmiş Arama’nın filtreleme özelliklerini (kelime, yıl vb.) kullanarak çeşitli aramalar yapmak mümkündür.</p>
+<center>
+<p><img src="../img/module_16/figure_10.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://twitter.com/search-advanced?lang=en" target="_blank">Twitter Gelişmiş Arama</a></p>
+</center>
+<p>Kullanıcılar bazen sosyal medyadaki gönderilerini (tweet’ler, Facebook gönderileri gibi) silebilmektedir. Şüpheli içerik barındıran paylaşımlar <a href="https://archive.org/" target="_blank">Wayback Machine</a>, <a href="https://archive.is/" target="_blank">archive.today</a> gibi arşiv hizmeti veren sitelerde daha önce kaydedilmişse, silinen gönderilere bu siteler üzerinden ulaşılabilmektedir.</p>
+<h4 id="fotograflar">Fotoğraflar</h4>
+<p>Profil fotoğrafları, bir sosyal medya hesabını araştırmaya ve hesap sahibinin kimliğini doğrulamaya yardımcı olan bir başka unsurdur. Profil fotoğrafı ile tersine görsel arama yapılarak çeşitli ipuçları elde edilebilir. Görsel arama ile ilgili daha detaylı bilgi için bkz. “Görsel Doğrulama”.</p>
+<h3 id="internet-sitelerinin-arastirilmasi">İnternet Sitelerinin Araştırılması</h3>
+<p>Web siteleri, medya manipülasyonu ile uğraşan kişiler tarafından gelir elde etmek, kişisel bilgi toplamak (e-posta ve diğer), güvenli bir çevrimiçi alan oluşturmak gibi amaçlarla kullanılabilmektedir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/4-monitoring-for-fakes-and-information-operations-during-breaking-news" target="_blank">Silverman, 2020a</a>). Ayrıca, web sitelerinde yer alan içerikler, sosyal medyada paylaşılan şüpheli içeriklerle ilgili olabilirler. Bu nedenle, web sitelerinde yer alan metin, görsel, video ve benzeri içeriklerin doğrulanması gerekebilmektedir.</p>
+<p>Sosyal medya platformlarında paylaşılan içeriklerin silinmesine benzer bir durum web sitelerinde de yaşanmaktadır. Bir web sitesindeki herhangi bir içeriğin (metin, görsel, video veya tümü) bağlantısının silinmesi sonucunda o içerik erişilemez hale gelmektedir. Web sitelerine verilen bağlantılar veya bu sitelerdeki içerikler <a href="https://archive.org/" target="_blank">Wayback Machine</a>, <a href="https://archive.is/" target="_blank">archive.today</a> gibi arşiv hizmeti veren sitelerde kayıtlı ise silinen içeriklere bu siteler üzerinden ulaşılabilir. Arşiv hizmeti veren siteler, yalnızca kanıt niteliğinde olabilecek sayfalara/içeriklere erişim sağlamakla kalmaz, aynı zamanda yanlış bilgi yayan sitelere/hesaplara doğrudan bağlantı verilmesini de engeller. Bu araçlar sayesinde, bir web sitesinin zaman içindeki değişimini izlemek de mümkündür (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/4-monitoring-for-fakes-and-information-operations-during-breaking-news" target="_blank">Silverman, 2020a</a>). Wayback Machine, belirli bir sayfanın farklı zamanlarda kaydedilen farklı sürümlerini karşılaştırarak farklılıkları izlemenize olanak tanır (<a href="https://gijn.org/2021/05/05/tips-for-using-the-internet-archives-wayback-machine-in-your-next-investigation/" target="_blank">Graham, 2021</a>).</p>
+<center>
+<p><img src="../img/module_16/figure_11.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://web.archive.org/web/*/https://datajournalism.com/" target="_blank">“https://datajournalism.com/” adresli web sitesinin Wayback Machine üzerinde arşivlenen sayfalarından bir kesit</a></p>
+</center>
+<p>Web sitesini doğrulamanın ilk adımı, web sitesinin içeriği hakkında fikir sahibi olmaktır (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/4-monitoring-for-fakes-and-information-operations-during-breaking-news" target="_blank">Silverman, 2020a</a>).</p>
+<ul>
+<li>Sitenin neyle ilgili olduğunu anlamak için siteyi kimin yönettiği, sitenin amacı ve sitedeki diğer açıklamaların yer alabileceği “Hakkında” bölümüne bakılabilir. Sitede herhangi bir açıklama bulunmaması site hakkında şüpheli bir işaret olarak değerlendirilebilir. Bu, sitenin aceleyle oluşturulmuş olabileceği veya sahiplik ve yayın durumuyla ilgili bazı bilgilerin gizlendiği izlenimi yaratmaktadır. Ayrıca, “Hakkında” bölümünde herhangi bir kişi, tüzel kişi veya şirket adının olup olmadığı, varsa bunların sitenin diğer bölümlerinde de geçip geçmediği kontrol edilebilir. İsimler geçiyorsa, bu bilgilerin farklı sayfalarda tutarlı olup olmadığı kontrol edilebilir.</li>
+<li>Web sitesinde yayınlanan makaleler varsa, bunların yazar bilgisi ve bağlantı adresi içerip içermediğine bakılabilir. Tıklanabilir bağlantılar varsa yazarın biyografisine, sosyal medya hesaplarına veya yazar hakkında bilgi içeren diğer ilgili sayfalara yönlendirilip yönlendirilmediği kontrol edilebilir.</li>
+<li>Site ile ilişkili sosyal medya hesaplarına bağlantı olup olmadığı kontrol edilebilir. Bu bağlantılar genellikle Facebook, Twitter, Instagram gibi sosyal medya platformlarının ikonları şeklinde bulunur. Mouse ile bu simgenin üzerine gelindiğinde, tarayıcının sol alt köşesinde hangi bağlantı adresine yönlendirdiği görülebilir. Aceleyle oluşturulan web sitelerine ait sosyal medya hesaplarının kimlikleri tam olarak doldurulmadığı için bağlantı kullanıcı adı olmadan “facebook.com/” olarak yayınlanmaktadır.</li>
+<li>Sitede sunulan içeriğin (metin, görsel ve benzeri) özgünlüğünün kontrol edilebilmesi için içeriğin başka bir yerden kopyalanıp kopyalanmadığı, sitede yanlış/yanıltıcı bilgi paylaşılıp paylaşılmadığı veya belli bir gündemi/konuyu öne çıkarma çabası olup olmadığı incelenebilir.</li>
+</ul>
+<p>Web sitesi hakkında kontrol edilebilecek bir diğer şey, alan adı ve oluşturulma tarihi gibi siteyle ilgili bazı temel kayıt bilgileridir. Bazı durumlarda alan adını tescil ettirmek için ödeme yapan kişi veya kurumlar hakkında bilgi almak mümkündür. Bunun için <a href="https://who.is/" target="_blank">who.is</a>, <a href="https://whois.net/" target="_blank">whois.net</a> or <a href="https://lookup.icann.org/" target="_blank">ICANN LookUp</a> gibi platformlar kullanılabilir. Alan adı aramaları için <a href="https://domainbigdata.com/" target="_blank">DomainBigData</a> adlı araç da kullanılabilir. Alan adı aramanız kayıt şirketinin bilgilerini “Kayıt gizli”, “WhoisGuard Protected” veya “Perfect Privacy LLC” olarak gösteriyorsa bu, alan adının gizliliğinin korunduğunu göstermektedir. Öte yandan, alan adının son kayıt tarihi, kayıt süresinin ne zaman sona ereceği, sitenin barındırıldığı sunucunun IP adresi gibi bilgiler görülebilmektedir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/4-monitoring-for-fakes-and-information-operations-during-breaking-news" target="_blank">Silverman, 2020a</a>).</p>
+<p>Örnek: “<a href="http://www.theinformation.com/" target="_blank">The Information</a>” adlı sitenin alan adı bilgilerine bakalım:</p>
+<center>
+<p><img src="../img/module_16/figure_48.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://who.is/" target="_blank">“The Information” adlı web sitesi ile ilgili who.is üzerinde yapılan arama</a></p>
+</center>
+<p>Arama sonucunda, kayıtlı site sahibine ait bilgilerinin bulunduğu bölümde “Perfect Privacy LLC” ifadesi yer almaktadır. Bu durumda, alan adının gizliliğinin korunduğu anlaşılmaktadır.</p>
+<center>
+<p><img src="../img/module_16/figure_51.jpg" width="75%"/></p>
+<br/>
+<p><img src="../img/module_16/figure_52.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://who.is/whois/theinformation.com" target="_blank">“The Information” adlı web sitesi ile ilgili who.is üzerinde yapılan arama sonucu</a></p>
+</center>
+<p>Web sitelerinin doğrulanmasında daha derinlemesine analiz için içerik ve kaynağın yanı sıra sitenin kaynak kodu da incelenebilir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/4-monitoring-for-fakes-and-information-operations-during-breaking-news" target="_blank">Silverman, 2020a</a>). </p>
+<div class="well">
+<p>Örnek: Referans verilen rapor Türkiye’nin yangına müdaheledeki başarısını mı gösteriyor?</p>
+<p>2021 yazı Akdeniz havzası için oldukça zorlayıcı geçti, özellikle de Türkiye için. İklim krizinin de etkisiyle kontrol altına alması gittikçe zorlaşan orman yangınlarına müdahale devam ederken ortaya atılan <a href="https://archive.md/yE3Nf" target="_blank">iddia</a> şöyleydi: Avrupa merkezli bir kurum tarafından yayınlanan raporlara göre Türkiye yangınla mücadelede örnek teşkil eden bir performans sergiliyordu.</p>
+<center><p><img src="../img/module_16/figure_tr_04.jpg" width="50%"/></p></center>
+<p>Haber için seçilen başlık ve görsel kaynak olarak “Avrupalı” bir kuruma atıfta bulunurken, haber metninde iddianın Avrupa Orman Yangını Bilgi Sistemi 2020 raporuna dayandırıldığı belirtilmişti.</p>
+<p>Ancak raporda Türkiye'nin yangınlara müdahalede hızlı olduğunu gösteren bir veri olmadığı gibi “yangın başına düşen alan” şeklinde bir sıralama da yer almıyor. Aksine, raporda Türkiye’nin Avrupa, Ortadoğu ve Kuzey Afrika’da 2020 yılında orman yangınlarından en çok alan kaybı olan dördüncü ülke olduğu görülüyor (<a href="https://teyit.org/analiz-turkiyenin-orman-yanginlarina-hizli-mudahalesiyle-dunyaya-ornek-oldugu-iddiasi" target="_blank">Teyit, 3 Ağustos 2021</a>).</p>
+</div>
+<h3 id="botlar-and-troller">Botlar and Troller</h3>
+<p>Botlar ve troller hakkında genel bilgiler Modül 4'te ele alınmaktadır. Bu modül ise bot ve trollerin nasıl tespit edilebileceğine dair bilgiler içermektedir.</p>
+<h4 id="bot-nedir">Bot Nedir?</h4>
+<p>“Bot, insanlar tarafından kendisine atanan görevleri otomatik olarak gerçekleştirebilen bir yazılım uygulamasıdır.” (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>). Kamusal alanlardaki tartışmalarda adı sıkça anılan ve Facebook, Twitter, LinkedIn gibi sosyal ağlarda aktif olan botlar, sosyal botlardır. Bu botlar, sosyal ağlarda belirli ideolojik mesajları yaymak ve belli bir konunun, kişinin, içeriğin veya etiketin (hashtag) önemli sayıda destekçisi olduğu izlenimi yaratmak için kullanılabilirler. Sosyal medya botları genellikle üç ana kategori altında bulunur (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>):</p>
+<ol>
+<li>Zamanlanmış bot</li>
+<li>İzleyici bot</li>
+<li>Güçlendirici bot</li>
+</ol>
+<p>Dezenformasyon bağlamında sıklıkla amacı internette kamuoyunu şekillendirmek olan güçlendirici botlara rastlanmaktadır. Bu tür botlar bireylerin veya kuruluşların gerçekte olduğundan daha fazla takipçiye sahip olduğunu göstermek amacıyla da kullanılabilmektedir. Güçlendirici botlar, etiketlerin yayılmasını etkilemek, bir bağlantıyı veya görsel içeriği yaymak, spam göndermek, çevrimiçi olarak birinin itibarını zedelemek veya o kişinin tartışmalı veya yoğun olarak eleştirilen biri gibi görünmesini sağlamak için de kullanılabilir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>).</p>
+<p>Bunlara ek olarak, bazen otomatik bazen de gerçek kişiler tarafından yönetilen, doğal ve yapay faaliyetlerin bir karışımını sergileyen sosyal medya hesaplarına rastlamak mümkündür. Bu tür hesaplara cyborg da denilmektedir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>).</p>
+<h4 id="botlar-nasil-tespit-edilebilir">Botlar Nasıl Tespit Edilebilir?</h4>
+<p>Bot satın almak ve oluşturmak nispeten kolay olsa da, insan benzeri davranışlar sergileyen sofistike bir bot ağı oluşturmak ve sürdürmek daha zordur (Wild ve Godart, 2020). Bir hesabın bot olup olmadığını belirlemeye yardımcı olmak için geliştirilmiş bazı araçlar vardır. Ancak bir araçtan alınan puanın net bir sonucu temsil etmediği ve bunun bir haberin/çıkarımın dayandığı tek nokta olmaması gerektiği unutulmamalıdır. Bu araçlar iyi bir başlangıç noktası olabilirler. Ancak, botları yüzde yüz doğrulukla tespit edebilmek için evrensel bir kriter bulunmamakla birlikte, bir şeyin neye göre bot olarak sınıflandırılacağı konusunda da henüz net bir görüş birliği yoktur (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>).</p>
+<p><a href="https://botometer.osome.iu.edu/" target="_blank">Botometer</a>: Botometer, Indiana University Observatory on Social Media and the Network Science Institute’un ortak projesi olarak başlamıştır. “Botometer (eski adıyla BotOrNot), bir Twitter hesabının etkinliğini kontrol eder ve ona bir puan verir. Daha yüksek puanlar, daha fazla bot benzeri aktivite anlamına gelmektedir.” (<a href="https://botometer.osome.iu.edu/" target="_blank">Botometer, t.y.</a>).</p>
+<center>
+<p><img src="../img/module_16/figure_57.jpg" width="75%"/></p>
+<p>Kaynak: <a href="https://botometer.osome.iu.edu/" target="_blank">Botometer</a></p>
+</center>
+<p><a href="https://www.botsentinel.com" target="_blank">Bot Sentinel</a>: ABD’de şüpheli davranışlarda bulunan Twitter hesaplarının halka açık bir veritabanını sağlamaktadır. Bu veritabanı ile Twitter kurallarını sürekli ihlal eden hesapların bir araya getirilmesi ve “sorunlu” olarak tanımlanması amaçlanmaktadır (<a href="https://www.botsentinel.com/info/about" target="_blank">Bot Sentinel, 2021</a>; <a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>).</p>
+<center>
+<p><img src="../img/module_16/figure_59.jpg" width="85%"/></p>
+<p>Kaynak: <a href="https://www.botsentinel.com/" target="_blank">Bot Sentinel</a></p>
+</center>
+<p>İncelenmek üzere yeni eklenen hesaplar ve bunların şüpheli olup olmadığı Bot Sentinel web sitesinde görülebilir.</p>
+<center>
+<p><img src="../img/module_16/figure_62.jpg" width="85%"/></p>
+<p>Kaynak: <a href="https://www.botsentinel.com/" target="_blank">Bot Sentinel’e yeni eklenen hesaplar ve bunlara ait veriler</a></p>
+</center>
+<p>Bot tespitinde bu araçlardan yararlanmanın yanı sıra sosyal ağlardaki yapay hareketlerin izlenmesi de önemlidir. Twitter veya diğer sosyal ağlarda otomatik davranış sergileyen şüpheli hesaplardan tipik sinyalleri yakalamak için aşağıdaki noktalar incelenebilir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>):</p>
+<ol>
+<li>Gerçek olmayan profil resmi: Bot hesapları ve yapay harketleri tespit etmek için profil fotoğrafı ile ilgili şu ipuçları dikkate alınabilir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>):
+          <ul>
+<li>Herhangi bir profil fotoğrafının olmaması</li>
+<li>Profilde çalıntı bir fotoğraf kullanmak</li>
+<li>Profil resmi olarak çizgi film karakterlerini veya hayvanları kullanmak</li>
+</ul>
+</li>
+<li>Otomatik olarak oluşturulmuş kullanıcı adları: Twitter’daki tüm kullanıcı adları tekildir. Bu nedenle, botlar henüz kullanılmamış kullanıcı adları oluşturmak için genellikle şu kriterleri kullanırlar (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>):</li>
+</ol>
+<table>
+<tbody>
+<tr>
+<td>
+<p>“Kullanıcı adı ve ardından dört basamaklı bir sayı”</p>
+</td>
+<td>
+<p>“(a-zA-Z ve 0-9) içeren ve rastgele on iki karakterden oluşan kullanıcı adı”</p>
+</td>
+<td>
+<p>“Twitter tarafından oluşturulmuş varsayılan (default) kullanıcı adının kullanıldığını gösteren rastgele sekiz basamaklı bir sayının ardından gelen herhangi bir ad”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hero_2345</p>
+<p>hero_3476</p>
+<p>hero_9812</p>
+</td>
+<td>
+<p>fH23pGr50LaX</p>
+<p>7At35kd89QwS</p>
+<p>Xr16xHW4n6DK</p>
+</td>
+<td>
+<p>George89567438</p>
+<p>Mary91827364</p>
+<p>Peter25384128</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<ol>
+<li>Hesap yaşına uymayan hareketler: Aşağıdaki durumlarla karşılaşıldığında hesapla ilgili şüphelenmek gerekebilir. Bu durumda, hesabın tweet hareketlerini daha yakından incelemek gerekir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>):
+          <ul>
+<li>Yeni oluşturulan bir hesabın çok sayıda takipçisi varsa veya</li>
+<li>Yeni oluşturulan bir hesap kısa sürede çok fazla sayıda tweet attıysa veya</li>
+<li>Eski bir hesap çok aktif olup çok az takipçisi varsa</li>
+</ul>
+</li>
+<li>Şüpheli tweet örüntüleri: İnsanların tweet attıkları gün ve saatlerle ilgili bazı tercihleri olabilir. Ancak, bir kişinin belirli günlerde sürekli paylaşım yapıp diğer günlerde sessiz kalması pek olası değildir (<a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild ve Godart, 2020</a>).</li>
+</ol>
+<h4 id="troll-nedir">Troll Nedir?</h4>
+<p>“Troll, çevrimiçi bir toplulukta veya sosyal ağda kışkırtıcı veya konu dışı gönderiler göndererek kasıtlı olarak çevrimiçi çatışma başlatan veya diğer kullanıcıları rahatsız etmek ve bölünmeler yaratmak için rahatsız eden kişidir. Amaçları, başkalarını duygusal bir tepki vermeye kışkırtmak ve tartışmaları rayından çıkarmaktır.” (<a href="https://medium.com/dfrlab/trolltracker-bots-botnets-and-trolls-31d2bdbf4c13" target="_blank">DFRLab, 2018</a>).</p>
+<h4 id="troller-nasil-tespit-edilebilir">Troller Nasıl Tespit Edilebilir?</h4>
+<p>Troller genellikle ideolojik açıdan uyumlu oldukları yalan haberleri destekleyen ve savunan, insanlarla tartışan, diğer kullanıcılara ve tanınmış kişilere hakaret içeren yorumlar gönderen, belirli fikirlerden hoşlanmayan ve bu fikirleri yayınlayanları korkutan bir profil sergilerler (<a href="https://www.cits.ucsb.edu/fake-news/spread#spread-trolls" target="_blank">The Center for Information Technology and Society, t.y.</a>).</p>
+<p>Bot hesapların nasıl tespit edileceği ile ilgili adımlar, troll olduğundan şüphelenilen hesaplara da uygulanabilir. Bu bağlamda, kullanılan profil fotoğrafı, takipçi sayısı, hesabın açılma tarihi, paylaşım kalıpları gibi bilgiler bir hesabın troll olup olmadığı konusunda fikir verebilir.</p>
+<p>Örnek: Ne kadar etkili olabilirler?</p>
+<p>Bot ve troll hesaplar sıklıkla aktivistleri karalamak ve iktidarı eleştirmek için kullanılan hashtagleri (etiketleri) etkilemek ya da dezenformasyon yaymak amacıyla kullanılıyor.</p>
+<p>Bot hesaplar kamusal tartışmaları spamlemek için kullanıldı</p>
+<p>Sosyal medya etiketleri diğer ülkelere benzer şekildeMeksika’da da politik tartışmalara dikkat çekmek için kullanılıyor. #YaMeCanse (yoruldum), #SobrinaEBN ve #Acapulco gibi farklı etiketler farkı tartışmalar sırasında viral olmuştu.</p>
+<center>
+<p><img src="../img/module_16/figure_63.jpg" width="85%"/></p>
+<p>(#SobrinaEBN etiketini spamlemek için atıldığı anlaşılan tweetler, Kaynak: <a href="https://www.youtube.com/watch?v=klq4NZce8NA&amp;t=56s&amp;ab_channel=ArturoIlizaliturriS%C3%A1nchez" target="_blank">Sánchez, 2015, 22 Temmuz</a>)</p>
+</center>
+<p>Etiketlerin trend haline gelmesinden kısa süre sonra binlerce hesabın etikete de yer veren rastgele paylaşımlar yapmaya başladığı görüldü. Araştırmacılar bu saldırının ardında kimin olduğunu bulmak zor olsa da paylaşımların etiketleri spamlemek için bot hesaplar aracılığıyla yapıldığını belirtti. Amaç Twitter’ın spam karşıtı özelliğini tetikleyerek etiketi trend topic listesinden çıkarabilmekti. Yapılan ağ analizi de etiketi büyüten organik paylaşımlarla sonrasında gelen bot temelli paylaşımların farkını gösterir nitelikteydi (<a href="https://firstdraftnews.org/articles/sockpuppets-and-spambots-how-states-manipulate-social-networks/" target="_blank">Trewinnard, 2016, 11 February</a>).</p>
+<p>Bot saldırısı mı değil mi?</p>
+<p>2021 yazında Türkiye’nin 270 farklı noktasında çıkan orman yangınları 9 kişinin hayatını kaybetmesine neden oldu. Yangınların etkisini artırdığı ve kriz yönetiminin yetersiz bulunduğu sırada viral hale gelen #HelpTurkey etiketi farklı bir tartışmaya konu oldu. Yetkililer etiketin ve paylaşımların Türkiye’yi acz içinde göstermek için suni olarak başlatıldığını açıkladı. Fakat #HelpTurkey etiketi kullanılarak atılan ilk 500 bin tweeti çekerek yapılan analiz paylaşımların serpilmesinin organik olduğunu ortaya koydu. Kampanyanın kitleselleşmesine neden olan onlarca çok takipçili ve onaylı hesap vardı. Bu gibi vakalar bot ve troller hakkında şüphe yaratmanın da bot ve troll akitivitelerinin kendisi gibi bilgi kirliliğine neden olabileceğini gösterdi (<a href="https://teyit.org/dosya-vaka-calismasi-helpturkey-etiketinin-hikayesi" target="_blank">Teyit, 2021, 4 Ağustos</a>).</p>
+<p>Troll aktivitesi nedeniyle kapanmanın eşiğine gelen Hint restoranı</p>
+<p>Restoran sahibi Shrina Begum kendisini insan eti satmakla suçlayan telefonların sebebini anlayamayıp söylentileri araştırmaya karar verdiğinde Channel23news.com adlı bir web sitenin, Karri Twist isimli restoranın insan eti satarken yakalandığını ve sahibinin tutuklandığını iddia eden <a href="https://archive.is/Hu4rA" target="_blank">bir haber</a> yayınladığını farketti.</p>
+<center>
+<p><img src="../img/module_16/figure_64.jpg" width="65%"/></p>
+<p>(Channel23News.com’da yayınlanan ve Karri Twist’te insan eti satıldığını belirten yanlış haber)</p>
+</center>
+<p>Hikaye viral hale geldikten sonra yürütülen çevrimiçi bir araştırma, Channel23News.com'un ve ona benzer en az 18 diğer şaka sitesinin alan adının 25 yaşındaki Korry Scherer’a ait olduğunu gösterdi. İnsanları inandırıcı sahte haberler oluşturmaya ve bunları Facebook'ta paylaşarak etkileşim almaya davet eden bu sitelerdeki paylaşımlar 12 ayda 13 milyondan fazla etkileşim almış (<a href="https://www.buzzfeednews.com/article/craigsilverman/create-your-own-fake-news-sites-are-booming-on-facebook-and#.beEWJKWGx" target="_blank">Silverman ve Spary, 2017, 29 Mayıs</a>).</p>
+<h3 id="vaka-calismalari">Vaka Çalışmaları</h3>
+<h4 id="vaka-calismasi-1-pakistan-da-islam-da-haramdir-diye-agac-sokuldugu-iddiasi">Vaka Çalışması 1: Pakistan'da 'İslam'da haramdır' diye ağaç söküldüğü iddiası</h4>
+<p>Hindistan ve Pakistan arasındaki gerginlik devam ederken, sosyal medyada dolaşıma giren çeşitli iddialar iki ülke arasındaki tansiyondan beslenmeyi sürdürüyor. 8 Ağustos 2021'de, bir videonun Pakistan’da, İslam’a aykırı olduğu gerekçesiyle fidan söküldüğünü gösterdiği iddia edildi. Politikacıların ve tanınmış kişilerin doğrulanmış Twitter hesapları aracılığıyla yaptığı paylaşımlar iddianın hızla yayılmasına neden oldu. Hindistan'daki iki büyük siyasi partiden biri olan Bharatiya Janata üyesi ve eski ordu komutanı Surendra Punia videoyu <a href="https://archive.md/pgqPD" target="_blank">tweetleyenler</a> arasındaydı.</p>
+<center>
+<p><img src="../img/module_16/figure_65.jpg" width="65%"/></p>
+</center>
+<p>Voice For İndia isimli hesap tarafından viral hale getirilen iddia, Türkiye'de de birçok haber sitesinde İslamafobik ifadelerle birlikte yer adı.</p>
+<center>
+<p><img src="../img/module_16/figure_47.jpg" width="85%"/></p>
+<p>(Kaynak: <a href="https://archive.is/DirOP" target="_blank">Caption</a>, 2021,11 Ağustos)</p>
+</center>
+<p>Videonun kaydedildiği yer ve zamandan emin olmak adına videodan seçilen birkaç belirgin kesit tersine görsel arama için kullanılabilir. Bu arama bizi videoya yer veren Pakistan merkezli haber sitelerine ulaştırıyor. Örneğin Khabarnaamaa adlı haber sitesi, ağaçların Khyber’in Bara Mandi bölgesinde protesto amacıyla söküldüğünden <a href="https://archive.md/zleq7" target="_blank">bahsediyor</a>.</p>
+<p>Habere göre hükümet tarafından başlatılan “10 Milyar Ağaç Tsunamisi” isimli ağaçlandırma <a href="https://twitter.com/ImranKhanPTI/status/1292028530289709058" target="_blank">kampanyasında</a> ağaçlar ihtilaflı araziye dikilmiş ve taraflardan izin alınmamıştı. Olaydan sonra hükümet yetkilileri tarafından yapılan açıklamalara da <a href="https://archive.pakistantoday.com.pk/2020/08/09/saplings-planted-on-disputed-land-in-khyber-uprooted/" target="_blank">Pakistan Today</a>, <a href="https://archive.is/KqrBv" target="_blank">Dawn</a>, <a href="https://archive.is/p0FzX" target="_blank">The News</a> ve <a href="https://archive.is/Wo49k" target="_blank">Samaa</a> gibi haber sitelerinden ulaşılabiliyor. Ayrıca Hindistan merkezli bir doğrulama platformu olan Boomlive gibi diğer doğrulama platformları tarafından yapılan <a href="https://www.boomlive.in/fake-news/video-of-men-uprooting-saplings-in-pakistan-viral-with-islamophobic-claim-9238" target="_blank">araştırmalara</a> da anahtar kelime aramalarıyla ulaşılabiliyor.</p>
+<p>Video gerçek olsa da, videodakilerin ağaçları ağaç dikmek günah olduğu için söktüğü iddiası yanlış. Bağlamı anlamak için çaba sarf etmek, doğrulama için uygun araçları bilmek kadar önemli. Basit bir anahtar kelime araması, yanlış bilginin yayılmasını engelleyebilir (<a href="https://teyit.org/islamda-haramdir-gerekcesiyle-agaclar-sokuldugu-iddiasi" target="_blank">Teyit, 2020, 12 Ağustos</a>).</p>
+<h4 id="vaka-calismasi-2-videonun-dogu-turkistanli-bir-cocugun-pazarda-satildigini-gosterdigi-iddiasi">Vaka Çalışması 2: Videonun Doğu Türkistanlı bir çocuğun pazarda satıldığını gösterdiği iddiası</h4>
+<p>Çin’in Doğu Türkistan politikası ve Uygurlara sistematik olarak zulmedildiği iddiaları sık sık gündeme geliyor. Sosyal medyada yayınlanan bir videonun, Çin Komünist Partisi'nin ailesi tutsak Doğu Türkistanlı bir çocuğu pazarda sattığını gösterdiği <a href="https://archive.md/zZ2Fk" target="_blank">iddia edildi</a>. Görüntüler farklı dillerde de paylaşıldı.</p>
+<center>
+<p><img src="../img/module_16/figure_25.jpg" width="75%"/></p>
+</center>
+<p>Uygurlar Çin’in kuzey batısındaki Sincan Uygur Özerk Bölgesi’ndeki en büyük azınlık grup. Uzun süredir Uygur nüfusuna karşı soykırıma varan baskılar uyguladığı <a href="https://www.bbc.com/news/world-asia-china-22278037" target="_blank">iddia edilen</a> Çin tüm bu iddiaları reddederken giderek bu belirsizliğin etrafında şekillenen iddiaların sayısı da artıyor. İddia konusu video özelindeki tersine görsel arama, iddianın <a href="https://archive.md/tNBxm" target="_blank">Arapça</a> ve <a href="https://archive.md/h4PBd" target="_blank">Japonca</a> gibi dillerde de yayıldığını gösteriyor.</p>
+<p>İddiaya gelen yorumlar ipucu barındırıyor olabilir</p>
+<p>Videoda iki erkek arasındaki Çince bir konuşma duyuluyor. Ayrıca, videodaki çocuk iç mekanda olsa da, arka plandaki seslerden konuşmanın dış mekanda kaydedilmiş olabileceği anlaşılıyor. İddia bu konuşmanın görüntülerdeki kız çocuğu hakkındaki bir pazarlıktan olduğu yönünde. Japonca iddia paylaşımlarının altındaki <a href="https://archive.md/xk0Uu" target="_blank">yorumlardan</a> birinde aynı sese fakat farklı görüntüye sahip bir video paylaşıldığı görülüyor. Üstelik bu kez görüntü ve ses de uyumlu.</p>
+<p>Yorumdaki videonun köşesinde görülen TikTok logosu ve kullanıcı numarası, videonun Çin’de kullanılan TikTok yani ‘Douyin’de paylaşıldığını gösteriyor.</p>
+<p>Video “v15366798929” kodlu kullanıcı tarafından paylaşılmış. <a href="https://yandex.com.tr/gorsel/search?rpt=imageview&amp;url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F2071397%2FBY8ZuXx7yrmlBw3PtvZz5w7564%2Forig&amp;cbir_id=2071397%2FBY8ZuXx7yrmlBw3PtvZz5w7564" target="_blank">Yandex’in görsel arama motorunun</a> yardımıyla videodaki metin tercüme edilebiliyor. Çince “你敢讲我就敢麦” yazıyor: “Eğer konuşmaya cesaret edersen, buğday yemeye cüret ederim.” Ayrıca videoya eklenen altyazıda da konuşulanları görmek mümkün. <a href="https://lens.google/" target="_blank">Google Lens</a> kullanılarak çevrilen altyazıda, bir ürünün fiyatı ve genel olarak ürünle ilgili konuşmalar yapıldığı anlaşılıyor.</p>
+<p>Videolardaki seslerin birbiriyle aynı olduğundan emin olmak için ise <a href="https://www.audacityteam.org/" target="_blank">Audacity</a> ses düzenleme programından yararlanıyoruz. Twitter’da aynı ses kullanılarak paylaşılmış <a href="https://archive.md/wlcN7" target="_blank">farklı videolar</a> bulmak da mümkün.</p>
+<p>(Kırmızı renkle işaretlenmiş alan orijinal videodaki ses dalgalarını, yeşil renkle işaretlenmiş alan ise iddia videosundaki ses dalgalarını gösteriyor.)</p>
+<p>Videodaki çocukla ilgili bilgilere de paylaşımlara yapılan yorumlar sayesinde erişilebiliyor. Bazı Japonca paylaşımlarda çocuğun Guangdong’da modellik için eğitim <a href="https://archive.md/OYYKP" target="_blank">aldığı</a>, kızın babasının hesabında kıza ait farklı fotoğraflar da <a href="https://archive.md/2Py4P" target="_blank">olduğu</a> belirtilmiş. İddia videosudaki görüntülerin okulda çekilmiş olabileceğine dair ipuçları da var: Arkadan geçen, aynı logoya sahip tişört giymiş bir başka çocuk ve kupalar gibi.</p>
+<p>Çin’le ilişkili iddiaları araştırırken dil bariyerinin ve kültürel farklılıkların üstesinden gelmeye yardımcı olabilecek araçları akılda tutmak önemli (<a href="https://teyit.org/videonun-dogu-turkistanli-bir-cocugun-pazarda-satildigini-gosterdigi-iddiasi" target="_blank">Teyit, 2020, 22 Ekim</a>).</p>
+<h2 id="alistirmalar">Alıştırmalar</h2>
+<script charset="UTF-8" src="https://essential.bilgiyonetimi.net/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js"></script>
+<h3 id="alistirma-1">Alıştırma 1</h3>
+<center>
+<p><img src="../img/module_16/figure_29.jpg" width="75%"/></p>
+</center>
+<p><strong>İddia</strong>: Fotoğrafın Fransa'da gökyüzünde kalp şeklinde şimşek çaktığını gösterdiği iddiası.</p>
+<p><strong>İddia Linki</strong>: <a href="https://archive.is/kQKTe" target="_blank">https://archive.is/kQKTe</a></p>
+<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="282" src="https://essential.bilgiyonetimi.net/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=167" title="EM - TR:  M16 - A1" width="843"></iframe></p>
+<p><strong>Alıştırma 1 Doğrulama Notu:</strong></p>
+<p>İkinci soruyu yanıtlamak için yapmış olduğunuz doğruluk kontrolü neticesinde “Doğru” yanıtını işaretlemiş olmalısınız. Doğruluk kontrolü için şu adımlar uygulanabilir:</p>
+<ol>
+<li>Tersine görsel arama fotoğrafın <a href="https://www.reddit.com/r/interestingasfuck/comments/9pjauj/a_heart_shaped_lightning_bolt_during_a/" target="_blank">Reddit</a> ve <a href="https://9gag.com/gag/aA3YzLd" target="_blank">9gag</a> paylaşımlarına ulaşmayı sağlıyor. Bu sitelerdeki paylaşımlarda fotoğrafın sağında “jeanyvesvilla.com” ifadesi görülebiliyor.</li>
+<li>jeanyvesvilla.com adresi şu anda ulaşılabilir değil ancak Jean Yves Villa ismi ile arama yapıldığında fotoğraf sanatçısının <a href="https://www.facebook.com/jeanyves.villa" target="_blank">Facebook sayfasına</a> ulaşılabiliyor.</li>
+<li>Facebook sayfasındaki şimşek fotoğrafları arasında <a href="https://www.facebook.com/photo.php?fbid=1210482768996991&amp;set=pb.100001058396668.-2207520000..&amp;type=3" target="_blank">iddia fotoğrafını</a> bulmak mümkün.</li>
+<li>Bu paylaşımın açıklamasında fotoğrafın 31 Temmuz 2016’da, Avignon yakınlarındaki Sorgues şehrinde Jean-Yves Villa tarafından çekildiği belirtilmiş.</li>
+</ol>
+<h3 id="alistirma-2">Alıştırma 2</h3>
+<center>
+<p><img src="../img/module_16/figure_31.jpg" width="75%"/></p>
+</center>
+<p><strong>İddia:</strong> Sovyetler Birliğinde bağışıklık sistemlerinin gelişmesi için dışarıda uyutulan bebeklere ait olduğu iddia edilen fotoğraf</p>
+<p><strong>İddia linki:</strong> <a href="https://archive.is/IHuly" target="_blank">https://archive.is/IHuly</a></p>
+<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="282" src="https://essential.bilgiyonetimi.net/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=168" title="EM - TR:  M16 - A2" width="843"></iframe></p>
+<p><strong>Alıştırma 2 Doğrulama Notu:</strong></p>
+<p>İkinci soruyu yanıtlamak için yapmış olduğunuz doğruluk kontrolü neticesinde “Doğru” yanıtını işaretlemiş olmalısınız. Doğruluk kontrolü için şu adımlar uygulanabilir:</p>
+<ol>
+<li>Tersine görsel arama görselin kullanıldığı <a href="https://twitter.com/EastViewPeeps/status/983439968822476800" target="_blank">çeşitli</a> <a href="https://twitter.com/rusencenter/status/1185502145942044672" target="_blank">paylaşımlara</a> erişmemizi sağlıyor. Bunların arasındaki bir <a href="https://scienceinfo.net/rare-historical-photos-show-how-amazingly-the-world-has-changed.html" target="_blank">internet sitesinde</a> fotoğrafın altında “Çocuklar 1958'de Moskova'daki doğum hastanesinde öğle yemeğinden sonra dışarıda uyuyorlar” açıklaması görülebiliyor.<br>(Aynı fotoğrafın bazı farklı versiyonlarının altında Kiril alfabesi ile yazılmış bir not görülüyor. Not <a href="https://yandex.com.tr/gorsel/search?rpt=imageview&amp;url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F2186050%2FweNydGC21ZaXlPCebG9hcA1884%2Forig&amp;cbir_id=2186050%2FweNydGC21ZaXlPCebG9hcA1884" target="_blank">Yandex görsel aramanın</a> görsellerdeki yazıları metin haline getirebilme özelliği kullanılarak tercüme edilebilir)</br></li>
+<li>“soviet”, “baby”, “outside” gibi anahtar kelime aramaları <a href="https://www.rbth.com/about" target="_blank">Russia Beyond</a> isimli, seyahat, eğitim, dil ve Rusya kültürü hakkında içerikler üreten internet sitesine erişmemizi sağlıyor. “<a href="https://www.rbth.com/history/331340-why-kids-sleep-outside-cold-ussr" target="_blank">Why did kids sleep in the freezing cold in Soviet kindergartens?</a>” (Sovyet anaokullarında çocuklar neden dondurucu soğukta uyudu?) başlıklı yazı iddia fotoğrafı ve benzerlerinin hikayesini ve arkalarındaki kültürel alışkanlığı açıklıyor.</li>
+<li>İddia görselinde kaynak olarak “Dmitry Baltermants/MAMM/MDF” notu yer alıyor. Dimitry Balternants Sovyet fotomuhabir. “MAMM/MDF” ise Multimedya Sanat Müzesi, Moskova’nın (Multimedia Art Museum, Moscow) kısaltması. Fotoğrafın müze ile iletişime geçilerek de tekrar teyit edilebilir.</li>
+</ol>
+<h3 id="alistirma-3">Alıştırma 3</h3>
+<center>
+<p><img src="../img/module_16/figure_43.jpg" width="75%"/></p>
+<p>(Tweet: “Hükümetin güvenlik adı altında yaptıkları bizi yalnızca daha hasta, zayıf ve bağımlı hale getiriyor. Londra’daydık ve yakında Manchester’a gideceğiz!”. Pankart: “Maske zorunluluğuna hayır”)</p>
+</center>
+<p><strong>İddia:</strong> Fotoğrafın Londra’daki maske karşıtı mitingi gösterdiği iddiası.</p>
+<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="282" src="https://essential.bilgiyonetimi.net/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=169" title="EM - TR:  M16 - A3" width="843"></iframe></p>
+<p><strong>Alıştırma 3 Doğrulama Notu:</strong></p>
+<p>İkinci soruyu yanıtlamak için yapmış olduğunuz doğruluk kontrolü neticesinde “Yanlış” yanıtını işaretlemiş olmalısınız. Doğruluk kontrolü için şu adımlar uygulanabilir:</p>
+<ol>
+<li>Fotoğrafın Londra’dan olup olmadığını doğrulamak için işe yarayabilecek ipuçları: (1) Fotoğrafın sol köşesindeki tabelada “..latz” yazıyor. Lokasyon tespiti için kullanılabilir. (2) İnsanların ellerinde tuttukları diğer kartların üzerinde yazanlar tam anlaşılmasa da İngilizce olmadığından şüphelenebileceğimiz kelimeler var.</li>
+<li>Fotoğrafı tersine görsel arama yöntemi ile aradığımızda pankartın yanlarındaki işaretlerin ait olduğu hareketin <a href="https://www.unteilbar.org/aktionen/unteilbar-2018/" target="_blank">sitesine</a> ulaşabiliyoruz. Sitede <a href="https://www.unteilbar.org/wp-content/uploads/2019/04/IMG_6238.jpg" target="_blank">fotoğrafın orjinaline</a> ulaşılabiliyor. Orjinal fotoğrafta yer alan Alexanderplatz metro tabelasından fotoğrafın Berlin’de yapılan bir buluşmadan olduğu anlaşılıyor. Orjinal pankartta “#bölünmez- Dışlama yerine dayanışma” anlamına gelen “#unteilbar - Solidarität statt ausgrenzung” yazıyor.</li>
+<li>Google Maps üzerinden Alexanderplatz metro çıkışlarının olduğu sokak görünümleri incelenerek fotoğrafın çekildiği noktaya da ulaşılabilir.</li>
+</ol>
+<p>Fotoğraf 13 Ekim 2018’de Berlin’de farklı bir eylemde çekilmiş. Dolayısıyla, iddianın “Yanlış” olduğunu anlıyoruz.</p>
+<h2 id="test">Test</h2>
+<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="282" src="https://essential.bilgiyonetimi.net/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=170" title="EM - TR:  M16 - T1" width="843"></iframe></p>
+<h2 id="kaynakca">Kaynakça</h2>
+<p><a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Barot, T. (t.y.).</a> Verifying images. C. Silverman (Ed.), Verification handbook: An ultimate guideline on digital age sourcing for emergency coverage (s. 35-41) içinde.</p>
+<p><a href="https://www.botsentinel.com/info/about" target="_blank">Bot Sentinel. (2021).</a> About.</p>
+<p><a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Browne, M. (t.y.).</a> Verifying video. C. Silverman (Ed.), Verification handbook: An ultimate guideline on digital age sourcing for emergency coverage (s. 47-53) içinde.</p>
+<p><a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Buttry, S. (t.y.).</a> Verification fundamentals: Rules to live by. C. Silverman (Ed.), Verification handbook: An ultimate guideline on digital age sourcing for emergency coverage (s. 15-18) içinde.</p>
+<p><a href="https://medium.com/dfrlab/trolltracker-bots-botnets-and-trolls-31d2bdbf4c13" target="_blank">DFRLab. (2018, 9 Ekim).</a> #TrollTracker: Bots, botnets, and trolls. Medium.</p>
+<p><a href="https://gijn.org/2021/05/05/tips-for-using-the-internet-archives-wayback-machine-in-your-next-investigation/" target="_blank">Graham, M. (2021, 5 Mayıs).</a> Tips for using the Internet Archive’s Wayback Machine in your next investigation. Global Investigative Journalism Network.</p>
+<p><a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/6-how-to-think-about-deepfakes-and-emerging-manipulation-technologie" target="_blank">Gregory, S. (2020).</a> How to think about deepfakes and emerging manipulation technologies. C. Silverman (Ed.), Verification handbook: For disinformation and media manipulation içinde. European Journalism Centre.</p>
+<p><a href="https://www.bellingcat.com/resources/how-tos/2015/07/25/searching-the-earth-essential-geolocation-tools-for-verification/" target="_blank">Higgins, E. (2015, 25 Temmuz).</a> Searching the Earth: Essential geolocation tools for verification. Bellingcat.</p>
+<p><a href="https://www.ifla.org/publications/node/11174" target="_blank">IFLA. (2017).</a> How to spot fake news.</p>
+<p><a href="https://help.instagram.com/854227311295302/?helpref=hc_fnav" target="_blank">Instagram help center. (2021).</a> Verified badges.</p>
+<p><a href="https://www.factcheck.org/2016/11/how-to-spot-fake-news/" target="_blank">Kiely, E. ve Robertson, L. (2016).</a> How to spot fake news. FactCheck.org.</p>
+<p><a href="https://sks.to/db2020" target="_blank">Lewandowsky, S., Cook, J., Ecker, U. K. H., Albarracín, D., Amazeen, M. A., Kendeou, P. … Zaragoza, M. S. (2020).</a> The Debunking Handbook 2020. doi:10.17910/b7.1182</p>
+<p><a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/4-monitoring-for-fakes-and-information-operations-during-breaking-news" target="_blank">Lytvynenko, J. (2020).</a> Monitoring for fakes and information operations during breaking news. C. Silverman (Ed.), Verification handbook: For disinformation and media manipulation içinde. European Journalism Centre.</p>
+<p><a href="https://en.unesco.org/fightfakenews" target="_blank">Mantzarlis, A. (2018).</a> Module 5: Fact-checking 101. In C. Ireton and J. Posetti (Ed.), Journalism, fake news &amp; disinformation: Handbook for journalism education and training (s. 81-95) içinde. France: UNESCO.</p>
+<p><a href="https://www.poynter.org/fact-checking/2015/will-verification-kill-fact-checking/" target="_blank">Mantzarlis, A. (2015, 21 Ekim).</a> Will verification kill fact-checking?. Poynter.</p>
+<p><a href="https://www.niemanlab.org/2018/11/how-the-wall-street-journal-is-preparing-its-journalists-to-detect-deepfakes/" target="_blank">Marconi, F., ve Daldrup, T. (2018, 15 Kasım).</a> How The Wall Street Journal is preparing its journalists to detect deepfakes. NiemanLab.</p>
+<p><a href="https://www.wired.com/2017/04/googles-dueling-neural-networks-spar-get-smarter-no-humans-required/#:~:text=07%3A00%20AM-,Google's%20Dueling%20Neural%20Networks%20Spar%20to%20Get%20Smarter%2C%20No%20Humans,create%2C%20it%20does%20not%20understand.&amp;text=The%20day%20Richard%20Feynman%20died,%2C%20I%20do%20not%20understand.%22" target="_blank">Metz, C. (2017, 4 Kasım).</a> Google's dueling neural networks ppar to get smarter, no humans required. Wired.</p>
+<p><a href="https://newslit.org/7-steps/" target="_blank">News Literacy Project. (2021).</a> Don’t get fooled: 7 simple steps.</p>
+<p><a href="https://www.youtube.com/watch?v=klq4NZce8NA&amp;t=56s&amp;ab_channel=ArturoIlizaliturriS%C3%A1nchez" target="_blank">Sánchez, A. I. (2015, 22 Temmuz).</a> Atacan bots hashtag #SobrinaEPN [Video ]. YouTube.</p>
+<p><a href="https://www.theguardian.com/technology/2018/nov/12/deep-fakes-fake-news-truth" target="_blank">Schwartz, O. (2018, 12 Kasım).</a> You thought fake news was bad? Deep fakes are where truth goes to die. The Guardian.</p>
+<p><a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/4-monitoring-for-fakes-and-information-operations-during-breaking-news" target="_blank">Silverman, C. (2020a).</a> Investigating websites. C. Silverman (Ed.), Verification handbook: For disinformation and media manipulation içinde. European Journalism Centre.</p>
+<p><a href="https://datajournalism.com/read/handbook/verification-1/additional-materials/verification-and-fact-checking" target="_blank">Silverman, C. (2020b).</a> Verification and fact checking. C. Silverman (Ed.), Verification handbook: For disinformation and media manipulation içinde. European Journalism Centre.</p>
+<p><a href="https://www.buzzfeednews.com/article/craigsilverman/create-your-own-fake-news-sites-are-booming-on-facebook-and#.beEWJKWGx" target="_blank">Silverman, C. ve Spray, S. (2017, 29 Mayıs).</a> Trolls are targeting Indian restaurants with a create-your-own fake news site. Buzzfeed.</p>
+<p><a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Silverman, C. ve Tsubaki, R. (t.y.).</a> Creating a verification process and checklist(s). In C. Silverman (Ed.), Verification handbook: An ultimate guideline on digital age sourcing for emergency coverage (s. 97-103) içinde.</p>
+<p><a href="https://teyit.org/dosya-vaka-calismasi-helpturkey-etiketinin-hikayesi" target="_blank">Teyit. (2021, 4 Ağustos)</a>. Vaka çalışması: #HelpTurkey etiketinin hikayesi. Teyit.</p>
+<p><a href="https://teyit.org/analiz-turkiyenin-orman-yanginlarina-hizli-mudahalesiyle-dunyaya-ornek-oldugu-iddiasi" target="_blank">Teyit. (2021, 3 Ağustos).</a> A Haber’in referans verdiği raporun Türkiye’nin yangına müdaheledeki başarısını gösterdiği iddiası. Teyit.</p>
+<p><a href="https://teyit.org/analiz-bozuk-asfalt-yola-ait-goruntulerin-istanbuldan-oldugu-iddiasi" target="_blank">Teyit. (2021, 25 Ocak).</a> Bozuk asfalt yol görüntülerinin İstanbul’dan olduğu iddiası. Teyit.</p>
+<p><a href="https://teyit.org/analiz-fotografin-ugur-sahin-ile-ailesini-gosterdigi-iddiasi" target="_blank">Teyit. (2020, 18 Kasım).</a> Fotoğrafın Uğur Şahin ile ailesini gösterdiği iddiası. Teyit.</p>
+<p><a href="https://teyit.org/videonun-dogu-turkistanli-bir-cocugun-pazarda-satildigini-gosterdigi-iddiasi" target="_blank">Teyit. (2020, 22 Ekim).</a> Videonun Doğu Türkistanlı bir çocuğun pazarda satıldığını gösterdiği iddiası. Teyit.</p>
+<p><a href="https://teyit.org/islamda-haramdir-gerekcesiyle-agaclar-sokuldugu-iddiasi" target="_blank">Teyit. (2020, 12 Ağustos).</a> Videonun Pakistan’da ‘İslam’da haramdır’ diye ağaç söküldüğünü gösterdiği iddiası. Teyit.</p>
+<p><a href="https://teyit.org/fotografin-dimetokadaki-camiye-yunan-bayragi-asildigini-gosterdigi-iddiasi" target="_blank">Teyit. (2020, 1 Haziran).</a> Fotoğrafın Dimetoka’daki camiye Yunanistan bayrağı asıldığını gösterdiği iddiası. Teyit.</p>
+<p><a href="https://www.cits.ucsb.edu/fake-news/spread#spread-trolls" target="_blank">The Center for Information Technology and Society. (t.y.).</a> How is fake news spread? Bots, people like you, trolls, and microtargeting.</p>
+<p><a href="https://www.bellingcat.com/resources/how-tos/2019/12/26/guide-to-using-reverse-image-search-for-investigations/" target="_blank">Toler, A. (2019, 26 Aralık).</a> Guide to using reverse image search for investigations. In Bellingcat.</p>
+<p><a href="https://firstdraftnews.org/articles/sockpuppets-and-spambots-how-states-manipulate-social-networks/" target="_blank">Trewinnard, T. (2016, 11 Şubat).</a> Sockpuppets and spambots: How states manipulate social networks. First Draft.</p>
+<p><a href="https://help.twitter.com/en/managing-your-account/about-twitter-verified-accounts" target="_blank">Twitter help center. (2021).</a> About verified accounts.</p>
+<p><a href="https://firstdraftnews.org/wp-content/uploads/2019/10/Verifying_Online_Information_Digital_AW.pdf?x76851" target="_blank">Urbani, S. (2019).</a> Verifying online information. First Draft.</p>
+<p><a href="https://s3.eu-central-1.amazonaws.com/datajournalismcom/handbooks/Verification-Handbook-1.pdf" target="_blank">Verification handbook. (t.y.).</a> Verification tools: verifying identity.</p>
+<p><a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/5-verifying-and-questioning-images" target="_blank">Vis, F., Faulkner, S. ve Guy, H. (2020).</a> Verifying and questioning images. C. Silverman (Ed.), Verification handbook: For disinformation and media manipulation içinde. European Journalism Centre.</p>
+<p><a href="https://www.science.org/doi/10.1126/science.aap9559" target="_blank">Vosoughi, S., Roy, D. ve Aral, S. (2018).</a> The spread of true and false news online. Science, 359, 1146-1151. doi: 10.1126/science.aap9559</p>
+<p><a href="http://verificationhandbook.com/downloads/verification.handbook.pdf" target="_blank">Wardle, C. (t.y.).</a> Verifying user-generated content. In C. Silverman (Ed.), Verification handbook: An ultimate guideline on digital age sourcing for emergency coverage (s. 25-32) içinde.</p>
+<p><a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/3-spotting-bots-cyborgs-and-inauthentic-activity" target="_blank">Wild, J. ve Godart, C. (2020).</a> Spotting bots, cyborgs and inauthentic activity. C. Silverman (Ed.), Verification handbook: For disinformation and media manipulation içinde. European Journalism Centre.</p>
+<p><a href="https://datajournalism.com/read/handbook/verification-3/investigating-actors-content/how-to-analyze-social-media-accounts" target="_blank">Zadrozny, B. (2020).</a> Investigating social media accounts. C. Silverman (Ed.), Verification handbook: For disinformation and media manipulation içinde. European Journalism Centre.</p>
+<h3 id="onerilen-kaynaklar">Önerilen Kaynaklar</h3>
+<p><a href="https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit#gid=930747607" target="_blank">Bellingcat’s online investigation toolkit. (2021, 11 Ekim).</a> [version 6.8].</p>
+<p><a href="https://i-intelligence.eu/uploads/public-documents/OSINT_Handbook_2020.pdf" target="_blank">Bielska, A., Kurz, N. R., Baumgartner, Y., ve Benetis, V. (2020).</a> Open source intelligence tools and resources handbook. I-INTELLIGENCE.</p>
+<p><a href="https://www.bellingcat.com/resources/how-tos/2019/10/15/a-beginners-guide-to-flight-tracking/" target="_blank">Fiorella, G. (2019).</a> A beginner’s guide to flight tracking. Bellingcat.</p>
+<p><a href="https://fullfact.org/online/how-spot-misleading-images-online/" target="_blank">Full Fact. (2020, 9 Ekim).</a> How to spot misleading images online.</p>
+<p><a href="https://support.google.com/websearch/answer/1325808?hl=en" target="_blank">Google search help. (2021).</a> Search with an image on Google.</p>
+<p><a href="https://factcheckingday.com/articles/15/a-5-point-guide-to-bellingcats-digital-forensics-tool-list" target="_blank">IFCN Poynter. (t.y.).</a> A 5-point guide to Bellingcat’s digital forensics tool list.</p>
+<p><a href="https://gijn.org/2021/08/24/four-quick-ways-to-verify-images-on-a-smartphone/" target="_blank">Joseph, R. (2021, 24 Ağustos).</a> Four quick ways to verify images on a smartphone. Global Investigative Journalism Network: Tools and techniques.</p>
+<p><a href="https://www.bellingcat.com/resources/how-tos/2019/03/21/bellingcats-invitation-is-waiting-for-your-response-an-investigative-guide-to-linkedin/" target="_blank">Patin, N. (2019).</a> Bellingcat’s invitation is waiting for your response: An investigative guide to LinkedIn. Bellingcat.</p>
+<p><a href="https://datajournalism.com/read/handbook/verification-2" target="_blank">Silverman, C. (Ed.). (2020).</a> Verification handbook for investigative reporting.</p>
+<p><a href="https://towardsdatascience.com/identifying-trolls-and-bots-on-reddit-with-machine-learning-709da5970af1" target="_blank">Skowronski, J. (2019, 30 Temmuz).</a> Identifying trolls and bots on Reddit with machine learning (Part 2). Towards data science.</p>
+<p><a href="https://spotthetroll.org/" target="_blank">The Clemson University Media Forensics Hub. (t.y.).</a> Spot the troll [game].</p>
+<p><a href="https://help.twitter.com/en/using-twitter/twitter-advanced-search" target="_blank">Twitter help center. (2021).</a> How to use advanced search.</p>
+<h3 id="onerilen-videolar">Önerilen Videolar</h3>
+<p><a href="https://www.youtube.com/watch?v=ZZFiKBrAA0A" target="_blank">First Draft. (2021, 15 Haziran).</a> How to check photos online using a reverse image search on your phone: Training.</p>
+<p><a href="https://www.youtube.com/watch?v=B3pzA_i3spo" target="_blank">First Draft. (2020, 29 Mayıs).</a> How to use your phone to find out where a photo or video was taken: Training.</p>
+<p><a href="https://www.youtube.com/watch?v=zyEx_1ToChw" target="_blank">First Draft. (2020, 29 Mayıs).</a> How to quickly verify social profiles on your phone: Training video with Laura Garcia.</p>
+<p><a href="https://www.youtube.com/watch?v=90By3lUJQ18" target="_blank">First Draft. (2020, 24 Haziran).</a> How to verify imposter social media accounts using your mobile phone #Mojo: Training.</p>
+</div><!--/span-->
+</div><!--/row-->
+</div><!--/.fluid-container-->
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/jquery.tocify.js"></script>
+<script src="../js/prettify.js"></script>
+<script src="../js/user_control.js"></script>
+<script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3,h4,h5"
+            }).data("toc-tocify");
+
+            prettyPrint();
+            $(".optionName").popover({ trigger: "hover" });
+
+        });
+    </script>
+</body>
+</html>

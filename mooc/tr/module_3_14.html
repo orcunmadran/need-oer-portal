@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<title>Modül 14: Etkili Arama Stratejileri</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="This course is designed to help individuals to become smart consumers of news and informed participants in civic life." name="description"/>
+<meta content="ESSENTIAL Projesi Türkiye Ekibi" name="author"/>
+<!-- Le styles -->
+<link href="../css/bootstrap.css" rel="stylesheet"/>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet"/>
+<link href="../css/jquery.tocify.css" rel="stylesheet"/>
+<link href="../css/prettify.css" rel="stylesheet" type="text/css">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- Le fav icon -->
+<link href="../assets/ico/favicon.ico" rel="shortcut icon"/>
+<style>
+    body {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .headerDoc {
+      color: #005580;
+    }
+
+@media (max-width: 767px) {
+    #toc {
+        position: relative;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+    </style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VFJPMP12NF"></script>
+<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+ 		gtag('js', new Date());
+
+ 		gtag('config', 'G-VFJPMP12NF');
+	</script>
+</link></head>
+<body>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span3">
+<div id="toc">
+<center>
+<br/>
+<code class="trainee">Öğrenen Sürümü</code>
+<code class="trainer">Eğitici Sürümü</code>
+<code class="select"><a href="?userType=trainee">Öğrenen Sürümü</a></code>
+<code class="select"><a href="?userType=trainer">Eğitici Sürümü</a></code>
+<a href="#top"><img src="../img/index/essential_logo.jpg" width="75%"/></a>
+<p><a class="btn btn-secondary btn-small" href="index.html">Ana Sayfa</a></p>
+</center>
+</div><!--/.well -->
+</div><!--/span-->
+<div class="span9">
+<div class="hero-unit">
+<h1 id="modul-14-etkili-arama-stratejileri">Modül 14: Etkili Arama Stratejileri</h1>
+</div>
+<!--/CONTENT-->
+<h2 id="modulun-tanimi">Modülün Tanımı</h2>
+<p>Bu modülün ana amacı, etkili bir arama stratejisi geliştirmek için gerekli olan bazı arama fonksiyonlarını ve işleçleri açıklamaktır.</p>
+<p class="trainer">İkincil amaç ise Modül içeriğini öğrenenleri eğitmek için kullanmak isteyen eğitmenlere rehberlik etmektir.</p>
+<p>Bu amaçlardan hareketle bu modülde; Boole mantığı, denetimli söz dağarcıkları (controlled vocabularies), alan araması (field searching), yakınlık arama (proximity searching), kesme (truncation) ve joker (wildcards) karakterleri, aramaları kısıtlama sınırları ve konunun nasıl öğretileceğine ilişkin yönergeler ele alınmaktadır.</p>
+<p>Bu Modülü başarıyla tamamlayanlar,</p>
+<ul>
+<li>etkili bir arama stratejisinin neden önemli olduğunu anlar,</li>
+<li>Boole mantığını kavrar ve işleçleri tanımlar (VE, VEYA, DEĞİL - AND, OR, NOT),</li>
+<li>denetimli söz dağarcıklarının (controlled vocabularies) önemini anlar,</li>
+<li>alan aramasını (field searching) anlar ve temel alanları tanımlar,</li>
+<li>yakınlık işleçlerini tanımlar ve ayırt eder,</li>
+<li>kesme (truncation) ve joker (wildcards) karakterlerinin neden ve nasıl kullanılacağını anlar.</li>
+</ul>
+<p class="trainer">Ek olarak, bu modülü başarıyla tamamlayan eğitmenler, konuyu nasıl öğreteceklerini anlarlar.</p>
+<h2 id="modulun-yapisi">Modülün Yapısı</h2>
+<p>Bu Modül aşağıdaki bölümlerden oluşmaktadır:</p>
+<ul>
+<li>Modülün Tanımı (amaç, içeriğin tanımı ve öğrenme çıktıları)</li>
+<li>Modülün Yapısı</li>
+<li>Öğrenenler için Yönerge</li>
+<li class="trainer">Eğitmenler için Yönerge (hazırlık, kullanılacak yöntemler ve eğitmenler için ipuçları)</li>
+<li>İçerik (çalışma materyalleri ve alıştırmalar)</li>
+<li>Test</li>
+<li>Kaynakça (yararlanılan kaynaklar ve önerilen kaynaklar ile videolar)</li>
+</ul>
+<p>Modülün ana hedefleri, içerik ve öğrenme çıktıları Modülün Tanımı bölümünde açıklanmıştır. İçerik, tüm çalışma materyallerini ve ilgili alıştırmaları içerir. Test, öğrenenlerin kendilerini ve ilerlemelerini test edebilmeleri için hazırlanmıştır. Genellikle çoktan seçmeli veya doğru/yanlış sorularından oluşur. Kaynakça, yararlanılan kaynaklar ve önerilen kaynaklar şeklinde iki bileşenden oluşur. İçerik hazırlanırken yararlanılan ve atıf yapılan kaynaklar Kaynakça başlığı altında listelenmiştir. Ek Kaynakça, konuyla ilgili daha fazla bilgi edinmek isteyenler için okunması/izlenmesi önerilen kaynaklar ve videoların listesinden oluşur. Öğrenenler için Yönerge, öğrenenlere yönelik talimat ve önerileri içerir. <span class="trainer">Eğitmenler için Yönerge, eğitimin farklı aşamalarında eğitmenleri yönlendirir ve konunun öğretiminde kullanılacak faydalı ipuçları sağlar.</span></p>
+<h2 id="ogrenenler-icin-yonerge">Öğrenenler için Yönerge</h2>
+<p>Öğrenenlerden içeriği dikkatle okumaları, önerilen videoları izlemeleri ve alıştırmaları yapmaları beklenmektedir. Daha fazla bilgi gereksinimi duydukları konularda kaynakçalarda listelenen kaynaklara başvurabilirler. İçerik üzerindeki çalışmalarını tamamladıktan sonra, ilerlemelerini değerlendirmek için modül sonundaki testi yapmaları önerilir.</p>
+<h2 class="trainer" id="egitmenler-icin-yonerge">Eğitmenler için Yönerge</h2>
+<p class="trainer">Bu bölüm, ele alınan konunun (etkili arama stratejilerinin kullanımı) nasıl öğretileceğine ve Modül içeriğinin bu amaçla nasıl kullanılabileceğine ilişkin eğiticilere yönelik öneri ve ipuçları içerir. Test sonuçlarına göre gerekirse çalışma materyali yeniden gözden geçirilebilir.</p>
+<span class="trainer">
+<h3 id="hazirlik">Hazırlık</h3>
+<p>Görsel materyallerle desteklenen ve veri tabanı ya da arama motorlarında yapılan arama sonuçlarını gösteren bir sunum (PowerPoint/Prezi/Canva) hazırlanması önerilir. Kurs sırasında veri tabanları/arama motorları üzerinde gerçek zamanlı uygulama yapılması/yaptırılması önerilir.</p>
+<h3 id="baslarken">Başlarken</h3>
+<p>Konuya ısındırmak amacıyla başlangıçta Kahoot veya Mentimeter gibi araçlar kullanılarak katılımcılara konuyla ilgili genel ve kısa bazı sorular (3 ile 5 soru) yöneltilebilir. Böyle bir başlangıç öğrenenlerin konuyla ilgili mevcut bilgi düzeyleri hakkında bilgi sağlayacağı gibi bir motivasyon kaynağı olarak da kullanılabilir. Bu amaçla kullanılabilecek sorulara bazı örnekler şunlar olabilir: Boole işleçleri nelerdir? Kesme işaretleri (truncations) nelerdir? Sözcük grubu (phrase) aramasında "tırnak işaretini" nasıl kullanabiliriz?</p>
+<h3 id="kullanilacak-yontemler">Kullanılacak Yöntemler</h3>
+<p>Eğitim sırasında çeşitli öğretim yöntemleri bir arada kullanılabilir:</p>
+<ul>
+<li>Ders anlatma</li>
+<li>Grup çalışması</li>
+<li>Bireysel çalışma</li>
+<li>Kendini yansıtma</li>
+</ul>
+<h3 id="egitmenler-icin-ipuclari">Eğitmenler için İpuçları</h3>
+<h4 id="isinma">Isınma</h4>
+<p>Katılımcıları sürece dahil etmenin ve öğrenecekleri şeyler hakkında ortak beklentiler oluşturmanın etkili bir yolu konu hakkında birkaç ön soru sormaktır. Örneğin, öğrenenlerden önceden belirlenmiş bir veya birkaç konu/sorgu ile ilgili çevrimiçi arama yapmaları istenebilir. Etkinlik şu şekilde gerçekleştirilebilir:</p>
+<ul>
+<li>farklı arama stratejilerini uygulamayı gerektiren sorgular hazırlayın</li>
+<li>her bir sorgu için uygun veri tabanı seçin</li>
+<li>katılımcılardan bu sorguları yanıtlamak için çevrimiçi arama yapmalarını isteyin</li>
+<li>katılımcılardan arama stratejilerini ve sonuçlarını kaydetmelerini isteyin</li>
+<li>katılımcılardan ulaştıkları sonuçları diğer katılımcılarla paylaşmalarını ve tartışmalarını isteyin.</li>
+</ul>
+<p>Arama sonuçlarının paylaşılmasından sonra, katılımcıların farklı arama stratejilerinin farklı sonuçlar getirdiğini anladıklarından emin olun. Öğrenenler, etkili arama stratejilerinin faydalarını anlamalıdır.</p>
+<h4 id="dersin-amacinin-belirtilmesi">Dersin Amacının Belirtilmesi</h4>
+<p>Dersin amacı (etkili arama stratejilerini açıklamak ve bu stratejilere başvurmanın arama sonuçları üzerindeki etkisini anlamak) açık hale getirilmelidir. Isınma sorularının ardından hedefleri netleştirmek daha kolay olacaktır.</p>
+<h4 id="ders-iceriginin-sunulmasi">Ders İçeriğinin Sunulması</h4>
+<p>İçeriği sunarken, öğrenenlerle etkileşime girdiğinizden emin olun ve onları aktif katılıma teşvik edin.</p>
+<h5 id="dersten-once">Dersten Önce:</h5>
+<ul>
+<li>Dersten önce, katılımcıların uygulama yapması için sorgular hazırlayın (sorguları belirleyin, veri tabanlarında ilgili aramaları yapın, aynı sorgular için farklı veri tabanlarını deneyin)</li>
+<li>Dersten önce, uygulama için hangi kaynakların ve veri tabanlarının kullanılacağına karar verin.</li>
+</ul>
+<h5 id="ders-sirasinda">Ders Sırasında:</h5>
+<ul>
+<li>Dersin başında katılımcılara etkili bir arama stratejisinin neden önemli olduğunu sorun</li>
+<li>Dersin başında katılımcılara etkili bir arama stratejisinin bilgi erişim üzerindeki etkisinin ne olduğunu sorun</li>
+<li>Dersin başında, katılımcılardan verilen sorgular hakkında arama yapmalarını ve sonuçları kaydetmelerini isteyin.</li>
+</ul>
+<h5 id="dersten-sonra">Dersten Sonra:</h5>
+<ul>
+<li>Konuları açıkladıktan sonra, katılımcılardan dersin başında yaptıkları aramaları tekrar yapmalarını isteyin. Örneğin, Boole işleçlerini açıkladıktan sonra, katılımcılardan Boole işleçlerini kullanarak aynı aramayı yapmalarını isteyin</li>
+<li>Önceki kaydedilen sonuçları yeni sonuçlarla karşılaştırın</li>
+<li>Bazı teknikler (örneğin kesme işaretleri, joker işaretleri vb.) veri tabanına göre farklılık gösterebilir. Aynı sorguları farklı veri tabanlarında gerçekleştirin</li>
+<li>Sonuçları katılımcılarla tartışın</li>
+</ul>
+<h5 id="oneriler">Öneriler:</h5>
+<ul>
+<li>Derslerinizi uygulama örnekleri ve alıştırmalarla desteklediğinizden emin olun.</li>
+</ul>
+<h4 id="sonuc">Sonuç</h4>
+<p>Dersin kısa bir özetini yapın ve vermek istediğiniz en önemli içerik ve uygulamaların öne çıkmasını sağlayacak birkaç soru sorun. Örneğin:</p>
+<p> Etkili arama stratejileri neden önemlidir?</p>
+<p>Tartışmadan sonra, arama stratejilerinin bilgi erişim için çok önemli olduğunun ve araştırmacılara aramalarını sürdürmek için kapsamlı bir plan sağladığının anlaşıldığından emin olun. Etkili arama stratejilerinin bilincinde olmak, katılımcıların bilgi ihtiyaçlarını eksiksiz ve etkin bir şekilde karşılamasını sağlayacaktır.</p>
+</span>
+<h2 id="icerik-etkili-arama-stratejileri">İçerik: Etkili Arama Stratejileri</h2>
+<h3 id="giris">Giriş</h3>
+<p>Haber okuryazarlığı, haberin toplumdaki rolünün anlaşılmasını, haber arama motivasyonunu ve haber bulma, tanımlama, ayırt etme, eleştirel olarak değerlendirme ve oluşturma becerisini içerir (Malik, Cortesi &amp; Gasser, 2013, s. 8-9). Daha genel olarak ifade etmek gerekirse: Okuryazar olmak için (bilgi, haber, veri, finans vb.), insanların ihtiyaçlarını karşılayacak bilgileri bulma bilgi ve becerilerine sahip olmaları gerekir.</p>
+<p>Araştırma konusuyla ilgili bilgileri bulmak için etkili bir arama stratejisi önemlidir. Genel anlamda, bir arama stratejisi, araştırma hedeflerine ulaşmak için kapsamlı bir plandır. Çevrimiçi aramaya (etkili bir arama stratejisi uygulamaya) başlamadan önce, sorgunun bilinen bir öğe mi (known-item) yoksa bir konu araması mı (subject search) olduğuna karar vermek gerekir. Bilinen öğe araması, gerçek (veya bilinen) bir kaynak için yapılan sorgudur. Bu tür bir aramada, yazar adı, başlık, yayın adı vb. gibi bir öğeyi tanımlayan bilgiler kullanılır. Konu araması, bir konuyla ilgili bilgi aramak için yapılan sorgudur. "Bu en zor arama türüdür çünkü neye ihtiyacınız olduğunu ve neyi güvenle reddedebileceğinizi tam olarak belirleyemezsiniz"(Fulton &amp; McGuinness, 2016, s.123). Etkili arama stratejilerinin özellikle bu tür aramalar için önemli ve belirleyici olduğunu belirtmekte fayda vardır.</p>
+<p>Sorgu tipine karar verildikten sonra ilgili kaynak/veritabanı seçilmelidir (ayrıca bakınız Modül 12). Bundan sonra faset analizi ve mantıksal birleştirme yapılmalıdır. “Faset, tek bir kavramı veya fikri anlatan bir kelime veya kısa bir ifadedir (short phrase)” (Markey, 2019, s. 98). Örneğin: “Sahte haber” ile “sosyal medya” arasında ilişki var mıdır sorgusunun fasetleri sahte haber ve sosyal medyadır.</p>
+<p>Ön araştırma hazırlığından sonra etkili bir arama stratejisi uygulanmalıdır. Bu bölümde, etkili bir arama stratejisi geliştirmek için gerekli bazı arama fonksiyonları ve işleçleri incelenecektir.</p>
+<h3 id="boole-mantigi">Boole Mantığı</h3>
+<p>İlgili öğelere erişmek için eş anlamlıları ve farklı kavramları bir araya getirmeye imkân sağlayan Boole işleçleri veri tabanlarının çoğunda ve arama motorlarında kullanılır (Alexander, 2003, s. 62).</p>
+<p>Boole mantığı, bir aramadaki terimler arasındaki mantıksal ilişkiyi ifade eder. AND, OR ve NOT temel Boole işleçleridir. Bu işleçler aramayı genişletir veya daraltır.</p>
+<ul>
+<li>AND iki terimin arasına eklenir: Bu işleç, arama sistemine her iki terimi de içeren kaynakları bulmasını söyler,</li>
+<li>OR iki terimin arasına eklenir: Bu işleç, arama sistemine her iki terimden birini içeren kaynakları bulmasını söyler,</li>
+<li>NOT iki terimin arasına eklenir: A ve B, bu işleç arama sistemine ikinci terim B'yi içeren kaynakları ilk terim A'dan hariç tutmasını söyler (Markey, 2019, s. 100).</li>
+</ul>
+<p><img src="../img/module_14/figure_tr_01.jpg"/></p>
+<div class="well">
+<p>Örnek 1: Web of Science Veri Tabanında Konu (Topic) Araması Yapmak</p>
+<p>Arama Terimleri: misinformation, disinformation</p>
+<p>Boole İşleçleri: AND, OR, NOT</p>
+<p><img src="../img/module_14/figure_06.jpg"/></p>
+<p>Yukarıdaki aramada:</p>
+<p># 1 Başlık, öz ve anahtar kelime alanlarında (topic) misinformation geçen sonuçları getirecektir.</p>
+<p># 2 Başlık, öz ve anahtar kelime alanlarında (topic) disinformation geçen sonuçları getirecektir.</p>
+<p># 3 Başlık, öz ve anahtar kelime alanlarında (topic) misinformation ve disinformation geçen sonuçları getirecektir.</p>
+<p># 4 Başlık, öz ve anahtar kelime alanlarında (topic) arama terimlerinden herhangi birinin geçtiği (misinformation veya disinformation) ya da her ikisinin de geçtiği (misinformation ve disinformation) sonuçları getirecektir.</p>
+<p># 5 Başlık, öz ve anahtar kelime alanlarında (topic) yalnızca misinformation geçen ama disinformation geçmeyen sonuçları getirecektir.</p>
+</div>
+<div class="well">
+<p>Örnek 2: Web of Science Veri Tabanında Konu (Topic) Araması Yapmak</p>
+<p>Arama Terimleri: posttruth, post truth, post-truth</p>
+<p>Boole İşleçleri: OR</p>
+<p><img src="../img/module_14/figure_05.jpg"/></p>
+<p>Yukarıdaki aramada:</p>
+<p># 1 Başlık, öz ve anahtar kelime alanlarında (topic) posttruth geçen sonuçları getirecektir.</p>
+<p># 2 Başlık, öz ve anahtar kelime alanlarında (topic) “post truth” geçen sonuçları getirecektir.</p>
+<p># 3 Başlık, öz ve anahtar kelime alanlarında (topic) post-truth geçen sonuçları getirecektir.</p>
+<p># 4 Başlık, öz ve anahtar kelime alanlarında (topic) posttruth, “post truth” veya post-truth arama terimlerinden herhangi birisininin geçtiği ya da posttruth ve ”post truth”; posttruth ve post-truth; “post truth” ve post-truth gibi herhangi ikisinin geçtiği ya da her üç arama teriminin de aynı dokümanda geçtiği sonuçları getirecektir.</p>
+</div>
+<div class="well">
+<p>Örnek 3: Web of Science Veri Tabanında Başlık (Title) Alanında Arama Yapmak</p>
+<p>Arama Terimleri: www, world wide web, “world wide web”</p>
+<p>Boole İşleçleri: OR</p>
+<p><img src="../img/module_14/figure_08.jpg"/></p>
+<p>Yukarıdaki aramada:</p>
+<p># 1 Başlık (Title) alanında www geçen sonuçları getirecektir.</p>
+<p># 2 Başlık (Title) alanında world wide web geçen sonuçları getirecektir.</p>
+<p># 3 Başlık (Title) alanında world wide web ve www’nin birlikte geçtiği ya da bu terimlerden sadece birinin geçtiği sonuçları getirecektir.</p>
+<p># 4 Başlık (Title) alanında “world wide web” ve www’nin birlikte geçtiği ya da bu terimlerden sadece birinin (“world wide web” veya www) geçtiği sonuçları getirecektir.</p>
+</div>
+<div class="well">
+<p>Örnek 4: Web of Science Veri Tabanında Konu (Topic) Araması Yapmak</p>
+<p>Arama Terimleri: propaganda, political</p>
+<p>Boole İşleçleri: NOT</p>
+<p><img src="../img/module_14/figure_07.jpg"/></p>
+<p>Yukarıdaki aramada:</p>
+<p># 1 Başlık, öz ve anahtar kelime alanlarında (topic) propaganda geçen sonuçları getirecektir.</p>
+<p># 2 Başlık, öz ve anahtar kelime alanlarında (topic) political geçen sonuçları getirecektir.</p>
+<p># 3 Başlık, öz ve anahtar kelime alanlarında (topic) propaganda arama teriminin geçtiği ama political teriminin geçmediği sonuçları getirecektir.</p>
+</div>
+<h4 id="ic-ice-yerlestirme-nesting">İç İçe Yerleştirme (Nesting)</h4>
+<p>İç içe yerleştirme (nesting), arama mantığını ve Boole işleçlerinin gerçekleştirileceği sırayı (öncelik sırasını) düzenlemek için kullanılır. Genellikle parantez kullanılarak gösterilir (Alexander, 2003, s. 62). İç içe yerleştirmede benzer kavramları bir arada tutmak için parantez kullanılır ve sisteme önce parantez içindeki arama terimlerinin işleme alınması söylenir. Sistem, Boole komutunu önce en içteki parantez içindeki ifadeyi okuyarak, ardından en dıştaki parantezlere doğru okumaya devam ederek işletir.</p>
+<div class="well">
+<p>Örnek 1: Topic = ((news OR media) AND literacy) NOT "new media"</p>
+<p>Yukarıdaki örnekte veri tabanı önce “news literacy” VEYA “media literacy” konulu dokümanları bulacak ve "new media" terimini içeren dokümanları erişim çıktılarının dışında tutacaktır.</p>
+</div>
+<div class="well">
+<p>Örnek 2: Web of Science Veri Tabanında Konu (Topic) Araması Yapmak</p>
+<p>Arama Terimleri: news literacy, media literacy, information literacy, post-truth, fake news, new media</p>
+<p>Boole İşleçleri: AND, OR, NOT, NESTING</p>
+<p><img src="../img/module_14/figure_01.jpg"/></p>
+<p>Yukarıdaki aramada:</p>
+<p># 1 numaralı sorguda önce içinde “news literacy” ya da “media literacy” terimlerinden en az birinin geçtiği belgeler belirlenir, daha sonra bu belgelerde aynı zamanda “information literacy” teriminin geçip geçmediğine bakılır ve geçenlere erişilir.</p>
+<p># 2 numaralı sorguda önce “news literacy” ve “information literacy” ya da “media literacy” ve “information literacy” konulu (topics) belgeler bulunur ve “fake news” veya post-truth veya "new media” konulu belgeler kapsam dışı bırakılır.</p>
+</div>
+<h4 id="alistirma">Alıştırma</h4>
+<ol>
+<li>Aşağıdaki sorguları kullanarak bir veri tabanında arama yaptığınızı düşünün. Bu sorguların kullanılması durumunda erişilen belgelerin içeriğini tanımlamaya çalışınız. Sorguları disiplinlerarası bir veri tabanında gerçekleştiriniz (örneğin ScienceDirect, Academic Search Ultimate).
+          <ul>
+<li>magazines <strong>OR</strong> journals <strong>NOT </strong>books</li>
+<li>(magazines <strong>OR</strong> journals) <strong>NOT</strong> books</li>
+<li>(magazines <strong>OR</strong> journals) <strong>AND</strong> books</li>
+<li>magazines <strong>OR </strong>(journals <strong>AND</strong> books)</li>
+<li>(magazines <strong>OR</strong> (journals <strong>NOT</strong> books)) <strong>AND </strong>libraries</li>
+</ul>
+</li>
+<li>İlginizi çeken bir konu ile ilgili birkaç terim seçiniz. Bu terimleri kullanarak arama yapmak için Boole işleçlerinin yardımıyla farklı kombinasyonları deneyiniz.</li>
+</ol>
+<h3 id="denetimli-soz-dagarciklari-controlled-vocabularies">Denetimli Söz Dağarcıkları (Controlled Vocabularies)</h3>
+<p>Veri tabanları, belgeleri dizinlemek için denetimli söz dağarcıkları (controlled vocabularies) kullanırlar ve bu arama açısından veri tabanları ve Web arasındaki en önemli farklardan biridir (Fulton &amp; McGuinness, 2016, s.131).</p>
+<p>Denetimli söz dağarcığı, “içeriği dizinlemek ve/veya tarama (browsing) veya arama (searching) yoluyla içeriğe erişmek için kullanılan sözcük ve sözcük öbeklerinin (phrase) organize bir düzenlemesidir” (Harpring, 2010). Başka bir deyişle, denetimli söz dağarcığı eş anlamlı sözcükler dizisi ya da tercih edilen terimler listesi şeklinde eşdeğer terimlerin listesidir. Geniş (broader), dar (narrower), ilgili (related) ve yerine kullanılan (used for) terimler ile terimler arasındaki hiyerarşik ilişkileri tanımlar (Morville ve Rosenfeld, 2007, s. 194). Arama etkinliğini (efficiency) en üst düzeye çıkarmak ve ilgili belgelere erişmek için denetimli söz dağarcığının kullanılması önerilir. Kullanıcının seçtiği terim ile sistem tarafından kullanılan terimin aynı olmaması durumunda, veri tabanları sistemde kullanılan uygun terimlerin veya tanımlayıcıların seçimini kolaylaştırmak için çevrimiçi gömü (thesaurus)/konu terimleri (subject terms)/ dizinler (indexes) sağlar (Fulton &amp; McGuinness, 2016, s. 132). Denetimli söz dağarcıkları, aynı zamanda konu başlıkları (subject headings), gömü (thesaurus), tanımlayıcı (descriptors) ya da otorite kontrol (authority control) olarak bilinir (Bell, 2015, s. 33). "Gömü (thesaurus), belirli bir denetimli söz dağarcığı için resmi (formal) bir terimdir... Bir gömü terimler arasındaki ilişkileri (daha geniş, daha dar, ilgili) göstererek konu başlıklarının listesini hiyerarşik bir biçimde sağlayabilir ve kullanılacak en iyi terimlere işaret edebilir” (Bell, 2015, s. 48).</p>
+<ul>
+<li>Geniş terim (Broader terms - BT) gömüdeki iki denetimli söz dağarcığı terimi arasındaki hiyerarşik ilişkiyi gösterir. Bütünü (whole) ya da tanımlı semantik kavramın daha geniş bir kategorisini (genus) belirten geniş terim ya bir bütün-parça (whole–part) ya da cins-tür (genus–species) ilişkisini ifade eder (Markey, 2019, s. 367).</li>
+<li>Dar terim (Narrower terms - NT) gömüdeki iki denetimli söz dağarcığı terimi arasındaki hiyerarşik ilişkiyi gösterir. Parçayı (part) ya da türü (species) belirten dar terim ya bir bütün-parça (whole–part) ya da cins-tür (genus–species) ilişkisini ifade eder (Markey, 2019, s. 373).</li>
+<li>İlgili terim (Related terms - RT) “gömüdeki başka bir denetimli söz dağarcığı terimiyle koordineli olan denetimli söz dağarcığı terimini gösterir. Her iki terim de hiyerarşide aynı seviyede olduğu için hiyerarşik olarak ilişkili değildir. Çağrışımsal ilişki (associative relationship) olarak da adlandırılır” (Markey, 2019, s. 375).</li>
+<li>Yerine kullanılmış (Used for - UF) “bir otorite kaydında, kaydın onaylı (authorised) adı, konusu veya başlığı için kullanılmayan eş anlamlıların bir listesini” gösterir (Markey, 2019, s. 379).</li>
+</ul>
+<div class="well">
+<p>Örnek 1: Library, Information Science &amp; Technology Gömüsünde (Thesaurus) Tarama</p>
+<p>Terim: literacy</p>
+<p><img src="../img/module_14/figure_09.jpg"/></p>
+<p>Literacy, Library, Information Science &amp; Technology veri tabanındaki bilgi öğelerini (information items) tanımlamak için kullanılan geçerli bir arama terimidir. Education, literacy için daha geniş bir terimdir (broader term); computer literacy ve metaliteracy daha dar terimlere (narrower term) örnektir. Illiterate persons ve readership ilgili terimlere (related terms) bazı örneklerdir. Literacy, illiteracy (Used for) yerine kullanılmalıdır.</p>
+</div>
+<p>Denetimli Söz Dağarcıklarının avantajları Bell (2015, s. 33-34) tarafından şu şekilde belirtilmiştir:</p>
+<ul>
+<li>Bir terimin tüm olası eş anlamlılarını veya alternatif yazımlarını düşünmekten kurtarır. Örneğin, “clothing” ile ilgili tüm belgeler için konu başlığı clothing olarak belirlenmişse, dress, costume, outfit gibi ilgili diğer terimleri düşünmenize gerek yoktur.</li>
+<li>Denetimli söz dağarcığının kullanılması, aramanızı daha eksiksiz hale getirmelidir (eğer dizinciler terimlere konu başlığı atama konusunda güvenilir/tutarlıysa).</li>
+<li>Konu başlıkları listeleri, birden fazla anlamı olan kelimelerle ilgili belirsizliği giderir (örneğin, mercury—a planet, a car, a god, or a metal?). Otorite kontrolü (authority control), yazar adları için, birden fazla adla bilinen bir yazara bakmanın bir yolunu sağlar (örneğin, Mark Twain/Samuel Clemens).</li>
+<li>Bilinmeyen bir konu alanına güvenli ve yararlı bir giriş noktası sağlar. Konu hakkında hiçbir şey bilmeseniz bile, konu listesindeki terimlerin doğru ve uygun olduğuna dair güvenceniz vardır. Listeye göz atarak ve terimler hakkında bir fikir edinerek (özellikle "bakınız (see)" veya "kullan (use)" veya "ayrıca bakınız" referansları varsa), bir arama stratejisi geliştirmenize veya daraltmanıza yardımcı olacak fikirler edinebilirsiniz.</li>
+</ul>
+<h3 id="alan-aramasi-field-searching">Alan Araması (Field Searching)</h3>
+<p>Alan araması, arama yapan kişinin arama terimlerini ve sözcük öbeklerini (phrases) belirli alanlarla sınırlandırmasına ve daha kısa ve ilgili sonuçlar bulunmasına olanak tanır (Alexander, 2003, s. 62). Aramayı belirli bir alanla sınırlamak, örneğin belirli bir ad için yalnızca "yayın adı" alanını aramak, sistemin arama işlem süresini azaltmaya da yardımcı olabilir.</p>
+<p>Veri tabanı kayıtları, kaynaklar hakkındaki bilgileri düzenlemek ve yazar, başlık, özet gibi belirli bir veri türünü tanımlamak için alanları kullanır. “Arama sistemleri, alanlardaki değerleri (values) dizinlediğinde, değerlerin çekildiği alanların kaydını tutar” (Markey, 2019, s. 112).</p>
+<p>Alan adları veri tabanına bağlı olarak değişebilir. Alan adlarına bazı örnekler: yazar (author), yazarın kurumu (author affiliation), başlık (title), kaynak (source) (yayın adı, dergi veya kitap başlığı), anahtar kelime (keywords), konu ( subject, topic), fon sağlayıcı (funding agency), yıl (year) gibi. Bazı veri tabanları arama yapmak için alan kodlarını kullanır. Örneğin; AU: Author; TS: Topic gibi. Bu kodlar veri tabanına özeldir.</p>
+<div class="well">
+<p>Örnek 1: IEEE Xplore Veri Tabanındaki Alan Adları ve Açıklamaları</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>Field Name</p>
+</td>
+<td>
+<p>Definition</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Abstract</p>
+</td>
+<td>
+<p>Brief summary or statement of the contents of a journal article, conference paper, standard, book, book chapter, or course.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Author Affiliation</p>
+</td>
+<td>
+<p>Institutional affiliation of authors listed in documents (university, government agency, corporation, etc.).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Author Keywords</p>
+</td>
+<td>
+<p>Terms provided by the author which describe the topics or subjects of the document.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Authors</p>
+</td>
+<td>
+<p>Name of the author or authors listed in the document.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Document Title</p>
+</td>
+<td>
+<p>Title of an individual document (journal article, conference paper, standard, book chapter, or course).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Full Text &amp; Metadata</p>
+</td>
+<td>
+<p>Full Text refers to the text of a paper, article, standard, etc. Metadata is the detailed information that describes the full text, like author names, publish date, and DOI.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Index Terms</p>
+</td>
+<td>
+<p>Combined field which allows users to search the Author Keywords, IEEE Terms, INSPEC Terms, and Mesh Terms.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Publication Title</p>
+</td>
+<td>
+<p>Title of a publication (journal, conference, or book).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Kaynak: IEEE Xplore: Resources and Help</p>
+</div>
+<div class="well">
+<p>Örnek 2: Web of Science veri tabanında alan adları ile arama yapmak</p>
+<p>2.1. Web of Science veri tabanında alan adlarını (konu (topic), başlık (title), yazar (author), yayın adı (publication name), yayımlanma yılı (year published), doküman türü (document type) ve organizasyon (organisation-enhanced)) kullanarak arama yapmak</p>
+<p><img src="../img/module_14/figure_13.jpg"/></p>
+<p>2.2. Web of Science veri tabanında yapılan yukarıdaki aramanın sonucu</p>
+<p><img src="../img/module_14/figure_10.jpg"/></p>
+</div>
+<h3 id="yakinlik-aramasi-proximity-searching">Yakınlık Araması (Proximity Searching)</h3>
+<p>Yakınlık araması, A teriminin B teriminden ne kadar uzakta olması gerektiğini belirtmenize olanak tanır. Örneğin, Avrupa Birliği'nde veri koruması (data protection in the European Union) hakkında bir şey bulmaya çalışıyorsanız, aşağıdaki gibi bir arama stratejisi:</p>
+<p>TS = "European Union" AND "data protection"</p>
+<p>ilgili sonuçlar mutlaka getirecektir ama birçok ilgisiz sonuç getirme olasılığı da vardır. Çünkü arama terimleri erişilen belgenin herhangi bir yerinde geçebilir. Örneğin:</p>
+<p><img src="../img/module_14/figure_12.jpg"/></p>
+<p>Veri tabanı sistemlerinin çoğu, kişinin arama terimleri arasındaki ilişkinin kurallarını belirlediği daha sofistike arama stratejileri oluşturmasına izin verir. Bir başka ifadeyle, erişim sağlanan belgelerde arama terimlerinin birbirine ne kadar yakın olması gerektiği ve bazen de hangi sırada geçmesi gerektiği belirtebilir. Bu yakınlık araması (proximity searching) olarak bilinir (Bell, 2015, s. 49). Yakınlık araması, erişilen belgelerde daha fazla duyarlık (precision) elde edilmesine yardımcı olur.</p>
+<p>Yakınlık araması, yakınlık işleçleri olarak adlandırılan özel işleçler kullanır.</p>
+<h4 id="yakinlik-islecleri-proximity-operators">Yakınlık İşleçleri (Proximity Operators)</h4>
+<p>Markey’e (2019, s. 375) göre yakınlık işleci, bir arama sisteminde aşağıdaki iki kriteri belirleyen bir işleçtir:</p>
+<ol>
+<li>Metinde kelimelerin ne kadar yakın geçmesi gerektiği</li>
+<li>Kelime sırasının önemli olup olmadığı</li>
+</ol>
+<p>Yakınlık işleçleri bir aramayı daraltmaya veya genişletmeye ve arama sonuçlarını iyileştirmeye yardımcı olur. Örneğin bir veri tabanında “fake news” NEAR3 “false information” ya da “fake news” AROUND (3) “false information” şeklinde yapılan bir arama “fake news” AND “false information” şeklinde yapılan aramadan daha spesifik sonuçlar getirecektir.</p>
+<p>İşleçlerin adları ve sözdizimi (sentaks) sistemden sisteme değişebilmektedir.</p>
+<p>Bazı örnekler:</p>
+<ul>
+<li>WITHIN → Wn</li>
+</ul>
+<p>misinformation W2 social media</p>
+<p>Yukarıdaki arama; misinformation arama terimi social media arama teriminin iki kelime kadar uzağında (within) ise erişim sağlanmalıdır anlamına gelir. Örneğin misinformation W2 social media şeklinde girilen bir sorgu EBSCOhost veri tabanında şu sonuçları getirecektir:</p>
+<p>… misinformation sharing on social media…</p>
+<p>…misinformation on social media...</p>
+<ul>
+<li>PRE → Pre/n veya P/n</li>
+</ul>
+<p>"European Union" PRE/5 framework</p>
+<p>Yukarıdaki arama; European Union arama teriminin framework teriminden önce ve en fazla 5 kelime uzağında geçmesi gerektiği anlamına gelir. Örneğin, "European Union" PRE/5 framework şeklinde girilen bir sorgu ProQuest veri tabanında şu sonuçları getirecektir:</p>
+<p>...in the European Union Legal Framework…</p>
+<p>…European Union and Turkey in the Framework of …</p>
+<p>...European Union Common Agricultural Policy under WTO Framework...</p>
+<ul>
+<li>NEAR → Near/n veya N/n veya Nn</li>
+</ul>
+<p>disadvantaged NEAR/5 children</p>
+<p>Yukarıdaki arama; kelime sırası önemli olmaksızın, disadvantaged ve children arama terimlerinin en fazla 5 kelime arayla geçmesi gerektiği anlamına gelir.</p>
+<p>Örneğin, disadvantaged NEAR/5 children şeklinde girilen bir sorgu IEEE Xplore veri tabanında şu sonuçları getirecektir:</p>
+<p>...school for children from disadvantaged circumstances</p>
+<p>… disadvantaged primary school children..</p>
+<p>...disadvantaged, preschool, gifted children…</p>
+<p>…. children from among culturally different/educationally disadvantaged….</p>
+<p>Örnek 1: Web of Science Veri Tabanında Konu (Topic) Araması Yapmak</p>
+<p>Arama Terimleri: “fake news”, “false information”</p>
+<p>Yakınlık İşleci: NEAR</p>
+<p><img height="156" src="https://lh4.googleusercontent.com/Z4FUr9jeUT_LVMKIR3QGvH5RERPelgoSU4PoB0gIgQV6_X8-kDg-_0eepUFly5KAdbWFO9i8fFclyGBA9S1wW_8A5XwwKCHY6nX6cXCMd1idc5Zxbp3cPTmtdC_mJJOx1YI6pJ0" width="601"/></p>
+<p>Yukarıdaki aramada:</p>
+<p># 2 kelime sırasına bakılmaksızın, “fake news” ve “false information” terimlerinin arasında en fazla üç kelimenin geçtiği sonuçları getirecektir.</p>
+<div class="well">
+<p>Örnek 2: Google’da Arama Yapmak</p>
+<p>Arama Terimleri: “fake news”, “false information”</p>
+<p>Yakınlık İşleci: AROUND</p>
+<p><img src="../img/module_14/figure_16_17.jpg"/></p>
+</div>
+<p>Bazı veri tabanları ve kaynaklarda, yakınlık işleci adjacency ve nearby şeklinde ikiye ayrılmaktadır. Aralarındaki fark kelime sırasıdır.</p>
+<p>Adjacency (yakınlık) işleçleri arama terimlerinin birbirine yakın (adjacent) olması gerektiğini ve kelime sırasının önemli olduğunu belirtir (Markey, 2019, s. 365). Within (W), Pre, ve ~ adjacency (yakınlık) işleçlerine örnek gösterilebilir.</p>
+<p>“Bandwagon effect” ya da “bandwagon worker effect” ile eşleşen “effect of bandwagon” ile eşleşmeyen sonuçlara erişmek için örnek aramalar:</p>
+<p>EBSCOhost: bandwagon W2 effect</p>
+<p>ProQuest: bandwagon PRE/2 effect</p>
+<p>Taylor &amp; Francis Online: “bandwagon effect” ~2</p>
+<p>Nearby (yakınlık) işleçleri, arama kelimelerinin araya giren bir veya daha fazla kelimeyle ayrıldığını ve arama kelimelerinin sırasının önemli olmadığını belirtir (Markey, 2019, s. 373). NEAR, N ve ~ Nearby (yakınlık) işleçlerine örnek gösterilebilir.</p>
+<p>“European Union general data protection”, “data protection in the European Union”, “European Union developments on data protection” ile eşleşen sonuçlara erişmek için örnek aramalar:</p>
+<p>EBSCOhost: “data protection” N2 “European Union”</p>
+<p>ProQuest: bandwagon NEAR/2 effect</p>
+<p>Taylor &amp; Francis Online: "data protection" "european union"~2</p>
+<h4 id="sozcuk-obegi-aramasi-phrase-searching">Sözcük Öbeği Araması (Phrase Searching)</h4>
+<p>Sözcük öbeği (phrase) araması, sözcük öbeği (örneğin, “dijital okuryazarlık”) olarak aramak istediğiniz terimlerin tırnak işareti içine alınarak belirtilmesidir. Arama terimlerinizin, tam olarak belirtildiği şekilde eşleştirmesini sağlar.</p>
+<p>Bu yaklaşım, her iki terimin de geçtiği ama tam eşleşme şeklinde doğrudan birlikte geçmediği sonuçları kapsam dışı bırakarak aramayı daraltmaya yardımcı olur (Fulton ve McGuinness, 2016, s. 136). Birçok veri tabanı (EBSCO, WoS, JSTOR vb.) ve Google, Bing vb. arama motorlarının tümü, aranacak terimlerin tam olarak belirtilen sözcük öbeği şeklinde aranması için çift tırnak içine alma kuralına uyar (Bell, 2015, s. 53).</p>
+<ul>
+<li>ScienceDirect veya Scopus gibi bazı veri tabanlarında, sözcük öbeği aramasında noktalama işaretleri yok sayılır. Örneğin, aşağıdaki gibi bir sözcük öbeği araması:</li>
+</ul>
+<p>”heart-attack” ve “heart attack”</p>
+<p>aynı sonuçları getirecektir.</p>
+<ul>
+<li>Scopus gibi bazı veri tabanlarında aradığınız şeyin tam olarak eşleşmesi için parantez {} kullanılmalıdır. Örneğin, parantez {} kullanılarak yapılan aşağıdaki gibi tam eşleşme araması:</li>
+</ul>
+<p>“heart attack” ve {heart attack}</p>
+<p>aynı sonuçları getirmeyecektir. Çünkü “heart attack” sorgusu “heart attacks” içeren sonuçları da getirir fakat {heart attack} sorgusu “heart attacks” içeren sonuçları getirmez.</p>
+<h3 id="kesme-ve-joker-karakterler">Kesme ve Joker Karakterler</h3>
+<h4 id="kesme-truncations">Kesme (Truncations)</h4>
+<p>Kesme, aynı terimin türevlerini, örneğin çoğul halini, arayarak aramayı genişletmenin etkili bir yoludur. Kesme, bir sözcük kökü ile arama yapılmasına ve bu harflerle başlayan herhangi bir sözcüğe erişime izin verir (Bell, 2015, s. 54). Böyle bir arama yapmak için *, ?, $ gibi kesme sembolleri sözcüğün köküne eklenir.</p>
+<p>Örneğin:</p>
+<ul>
+<li>library, libraries, librarian, ve librarianship terimlerini içeren belgelere erişmek için kelime köküne yıldız (asterisk) işareti (*) eklenir: librar*</li>
+<li>information behaviour, information behaviour, informational behaviour, informational behaviour, information-behaviour, informativeness behaviour terimlerini içeren belgelere erişmek için kelime köklerine yıldız (asterisk) işareti (*) eklenir: informa* beha*</li>
+</ul>
+<p>Kesme sembollerinin veri tabanına veya arama motoruna göre değişebileceğinin farkında olunmalıdır (Fulton &amp; McGuinness, 2016, s. 137). En sık kullanılanlar:</p>
+<p>- *</p>
+<p>- ?</p>
+<p>- !</p>
+<p>- $</p>
+<p>Kök başlı başına bir kelime olduğunda, o kelime/kök de arama sonuçlarına eklenecektir (Bell, 2015, s. 54). Örneğin:</p>
+<ul>
+<li>journal* şeklinde yapılan bir arama; journal, journals, journalism, journalist, journalists, journalists’, journalistic, journaling kelimelerini içeren kayıtlara erişecektir.</li>
+</ul>
+<p>Kelimeleri çok fazla kesmek belirli bir konuya ait olma (specificity) ya da belirgin olma niteliğini düşürür. Örneğin,</p>
+<p>- cat* şeklinde bir arama cat, catalyst, catalogues, catastrophic vb. terimlerin geçtiği kayıtları getirecektir. Eğer “memeli hayvan” olan cat (kedi) ile ilgili bir arama yapılmak isteniyorsa, cat ya da cats şeklinde bir sorgu daha doğru sonuçlar getirecektir.</p>
+<p>Bazı veri tabanlarında kelimelerin çoğul halleri ve yazım çeşitleri otomatik olarak dahil edilir. Örneğin ScienceDirect veri tabanında:</p>
+<p>“color code” ya da “colour code” ya da “colour codes”</p>
+<p>aynı sonuçları getirecektir.</p>
+<h4 id="joker-karakterler-wildcards">Joker Karakterler (Wildcards)</h4>
+<p>Joker karakterler, kesme karakterlere benzer şekilde çalışır. *, ?, ! gibi semboller, farklı şekillerde yazılabilen terimleri aramak için kullanılır. Amerikan ve Birleşik Krallık İngilizcesinde yazımları farklı olan terimlerin (licence ve license gibi) aranmasında faydalıdır.</p>
+<p>Genellikle tek bir harfin yerine terim içerisine bir sembol eklenir (Fulton ve McGuinness, 2016, s. 13).</p>
+<p>Örneğin,</p>
+<ul>
+<li>“?” (joker) kullanımı → licen?e şu sonuçları getirecektir → licenCe, licenSe</li>
+</ul>
+<p>Bazı sözcüklerin tekil ve çoğul hallerine erişmek için "?" (joker) kullanılabilir. Örneğin hem woman hem de women için::</p>
+<ul>
+<li>wom?n → womAn, womEn</li>
+</ul>
+<p>Joker karakterler sıklıkla yalnızca bir harfin yerine kullanılır (Bell, 2015, s. 56), ancak bazı veri tabanlarında "sıfır-bir" karakter yerine ya da hiç karakter içermeme de dahil olmak üzere herhangi bir karakter grubu yerine kullanılabilir.</p>
+<p>Örneğin, Web of Science veri tabanında joker karakter kullanımı:</p>
+<p>- Yıldız imi (*), herhangi bir harf grubunu temsil eder, buna hiç harf olmaması da dahildir.</p>
+<p>f*food fastfood, futurefood, frankenfood, fishfood, fitfood</p>
+<p>- Soru işareti (?) herhangi bir (tek) harfi temsil eder.</p>
+<p>organi?e organiSe, organiZe</p>
+<p>- Dolar işareti ($) sıfır ya da bir harfi temsil eder.</p>
+<p>colo$r color, coloUr</p>
+<p>Joker karakterler bir arama sözcüğünde birleştirilebilir. Örneğin,</p>
+<ul>
+<li>organi?ation* → organisation, organization, organizations, organizational</li>
+</ul>
+<h4 id="notlar">Notlar</h4>
+<p>1- Veri tabanına bağlı olarak joker karakterler (wildcards) yerine kullanılan sembollerin kesme (truncation) karakterlerle aynı olduğunu ama sonuçların farklı olduğunu dikkate alınız. Örneğin bir veri tabanı kesme (truncation) için “!”, joker (wildcards) için “*” sembollerini kullanırken bir başkası tam tersi şeklinde kullanabilir (Bell, 2015, s. 56).</p>
+<p>2- Bazı veri tabanlarında joker (wildcards) ve kesme (truncation) karakterler arasında fark olmadığını dikkate alınız. Örneğin, Scopus veri tabanında joker karakter olarak “*” kullanmak,</p>
+<p>criminal* liab*</p>
+<p>criminally liable ve criminal liability gibi sonuç getirecektir.</p>
+<p>3- Bazı veri tabanlarının sözcüklerin çoğul hallerini ve yazım biçimlerini otomatik olarak dahil ettiğini dikkate alınız. Örneğin,</p>
+<p>heart attack</p>
+<p>heart attacks içeren sonuçları da getirir</p>
+<p>anesthesia</p>
+<p>anaesthesia içeren sonuçları da getirir</p>
+<p>4- Bazı veri tabanlarında, sözcüklerin tekil halleri kullanıldığında birçok sözcüğün tekil, çoğul ve iyelik belirten (possessive) formlarına erişildiğini dikkate alınız. Örneğin,</p>
+<p>criterion</p>
+<p>criteria ve criterion terimlerini bulur.</p>
+<p>5- Bazı veri tabanlarında joker (wildcard) karakter ile bir terim arasına tire imi (hyphen) (-) geldiğinde, joker karakterin düştüğünü dikkate alınız. Örneğin,</p>
+<p>*-art şu şekilde aranacaktır: art</p>
+<p>art-* şu şekilde aranacaktır: art</p>
+<p>(Scopus, 2021).</p>
+<h3 id="aramalari-daraltma-refining">Aramaları Daraltma (Refining)</h3>
+<p>Hemen hemen tüm veri tabanları ve arama motorları arama sonuçlarının sınırlandırılması (limits) ya da daraltılması (narrow) için seçenekler sunar.</p>
+<p>Arama sonuçlarını daraltmak veya sınırlandırmak için kullanılan sınırlayıcılardan bazıları şunlardır: Yayın yılı (publication years), makale/belge türü (article/document type) (araştırma makalesi, kitap bölümü gibi), kaynak türü (source type) (kitap, dergi gibi), yayın adı (publication title), yazar (author), konu alanları (subject areas) (nörolojik bilim, psikoloji gibi), anahtar kelime (keyword), erişim türü (access type) (açık erişim gibi), adres/kurum (affiliation) (University of Iowa gibi) ve dil (language) (İspanyolca gibi).</p>
+<p>Örnek 1: Web of Science veri tabanında "sonuçları daraltma" örneği:</p>
+<p><img src="../img/module_14/figure_19.jpg"/></p>
+<h2 id="test">Test</h2>
+<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="350" src="https://essential.bilgiyonetimi.net/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=163" title="EM - TR:  M14 - T1" width="843"></iframe><script charset="UTF-8" src="https://essential.bilgiyonetimi.net/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js"></script></p>
+<h2 id="kaynakca">Kaynakça</h2>
+<p>Alexander, J.O. (2003). Library Applications. H. Bidgoli (Ed.), In Encyclopedia of Information Systems, (p. 57-76). Elsevier.</p>
+<p>Bates, M.J. (1979). Information Search Tactics. Journal of the American Society for Information Science, 30, 205-214.</p>
+<p>Bell, S.S. (2015). Librarian’s Guide to Online Searching: Cultivating Database Skills for Research and Instruction. California: Libraries Unlimited.</p>
+<p>EBSCO Connect (2018). Searching with Boolean Operators. Retrieved from https://connect.ebsco.com/s/article/Searching-with-Boolean-Operators?language=en_US</p>
+<p>Fulton, C. and McGuinness, C. (2016). Digital Detectives: Solving Information Dilemmas in an Online World. Amsterdam: Chandos Publishing.</p>
+<p>Harpring, P. (2010). Introduction to controlled vocabularies: Terminology for art, architecture, and other cultural works. J. Paul Getty Trust. Retrieved from<a href="http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/index.html" target="_blank"> http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/index.html</a>.</p>
+<p>IEEE Xplore: Resources and Help. (2021). Retrieved from https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/command-search#summary-of-data-fields</p>
+<p>Malik, M., Cortesi, S.C., and Gasser, U. (October 18, 2013). The Challenges of Defining 'News Literacy'. Berkman Center Research Publication No. 2013-20, DOI: http://dx.doi.org/10.2139/ssrn.2342313</p>
+<p>Markey, K. (2019). Online Searching: A Guide to Finding Quality Information Efficiently and Effectively (2nd edition). Lanham: Rowman &amp; Littlefield.</p>
+<p>Morville, P. and Rosenfeld, L. (2007). Information Architecture for the World Wide Web. Farnham: O'Reilly.</p>
+<p>Scopus: Access and use Support Center. (2021). Retrieved from https://service.elsevier.com/app/answers/detail/a_id/11213/c/10545/supporthub/scopus/</p>
+<h2 id="onerilen-kaynaklar">Önerilen Kaynaklar</h2>
+<p>Brown, C.C. (2021). Librarian's Guide to Online Searching: Cultivating Database Skills for Research and Instruction (6th Edition). Libraries Unlimited.</p>
+<p>Dotto, C. &amp; Smith, R. (October 2019). First Draft's Essential Guide to: Newsgathering and Monitoring on the Social Web. Retrieved from https://firstdraftnews.org/wp-content/uploads/2019/10/Newsgathering_and_Monitoring_Digital_AW3.pdf?x35395</p>
+<p>Li, L. (2014). Scholarly information discovery in the networked academic learning environment. Oxfordshire, [England] : Chandos Publishing.</p>
+<p>Mann, T. (2015). The Oxford Guide to Library Research (4th ed.). Oxford University Press.</p>
+<h2 id="onerilen-videolar">Önerilen Videolar</h2>
+<p>Boucher, A., Riesen, K., &amp; Simpson, L. <a href="https://youtu.be/GM2l_JLwf0s" target="_blank">Basic Search Strategies for Systematic Reviews</a>.</p>
+</div><!--/span-->
+</div><!--/row-->
+</div><!--/.fluid-container-->
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/jquery.tocify.js"></script>
+<script src="../js/prettify.js"></script>
+<script src="../js/user_control.js"></script>
+<script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3,h4,h5"
+            }).data("toc-tocify");
+
+            prettyPrint();
+            $(".optionName").popover({ trigger: "hover" });
+
+        });
+    </script>
+</body>
+</html>

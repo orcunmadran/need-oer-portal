@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>MODUL 14: UČINKOVITE STRATEGIJE ISKANJA</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="This course is designed to help individuals to become smart consumers of news and informed participants in civic life." name="description"/>
+<meta content="ESSENTIAL Project Turkish Team" name="author"/>
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet"/>
+<link href="css/jquery.tocify.css" rel="stylesheet"/>
+<link href="css/prettify.css" rel="stylesheet" type="text/css">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- Le fav icon -->
+<link href="../assets/ico/favicon.ico" rel="shortcut icon"/>
+<style>
+    body {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .headerDoc {
+      color: #005580;
+    }
+
+@media (max-width: 767px) {
+    #toc {
+        position: relative;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+    </style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VFJPMP12NF"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VFJPMP12NF');
+  </script>
+</link></head>
+<body>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span3">
+<div id="toc">
+<center>
+<br/>
+<code class="trainee">Za udeležence</code>
+<code class="trainer">Za izvajalce</code>
+<code class="select"><a href="?userType=trainee">Trainees Edition</a></code>
+<code class="select"><a href="?userType=trainer">Trainers Edition</a></code>
+<a href="#top"><img src="img/index/essential_logo.jpg" width="75%"/></a>
+<p><a class="btn btn-secondary btn-small" href="index.html">VSI MODULI</a></p>
+</center>
+</div><!--/.well -->
+</div><!--/span-->
+<div class="span9">
+<div class="hero-unit">
+<h1 id="modul-14-ucinkovite-strategije-iskanja">MODUL 14: UČINKOVITE STRATEGIJE ISKANJA</h1>
+</div>
+<h2 id="opis-modula">Opis modula</h2>
+Glavni namen tega modula je razložiti nekatere iskalne funkcije in operatorje, ki so potrebni za razvoj učinkovite strategije iskanja.
+
+ 
+Sekundarni namen je usmerjanje predavateljev, ki želijo vsebino tega modula uporabiti pri usposabljanju svojih udeležencev.
+
+ 
+
+V skladu s temi cilji so v tem modulu obravnavani Boolova logika, nadzorovani besednjaki, iskanje po poljih, iskanje po bližnjici, krajšanje in nadomestni znaki, omejitve do iskanja z omejitvami ter smernice za poučevanje te teme.
+
+Udeleženci, ki bodo uspešno zaključili ta modul, bodo znali,
+<ul>
+<li>razumeti, zakaj je pomembna učinkovita strategija iskanja,</li>
+<li>razumeti Boolovo logiko in opredeliti operatorje (IN, ALI, NE),</li>
+<li>razumeti pomen nadzorovanih besednjakov,</li>
+<li>razumeti iskanje po poljih in opredeliti osnovna polja,</li>
+<li>opredeliti operatorje bližine ter razlikovati med sosedskimi in bližnjimi operatorji,</li>
+<li>razumeti, zakaj in kako uporabljati krajšanje in nadomestne znake.</li>
+</ul>
+ 
+
+Poleg tega bodo izvajalci usposabljanja, ki bodo uspešno zaključili ta modul, lahko dokazali, da razumejo smernice za poučevanje tega predmeta.
+ 
+<h2 id="struktura-modula">Struktura modula</h2>
+Ta modul je sestavljen iz naslednjih delov:
+<ul>
+<li>Opis modula (objectives, description of the content, and learning outcomes)</li>
+<li>Struktura modula</li>
+<li>Smernice za udeležence usposabljanja</li>
+<li>Smernice za izvajalce usposabljanja (kako se pripraviti, metode za uporabo in nasveti za izvajalce usposabljanja)</li>
+<li>Vsebina (študijsko gradivo in vaje)</li>
+<li>Kviz</li>
+<li>Viri (reference in priporočeni viri ter videoposnetki)</li>
+</ul>
+ 
+
+Glavni cilji modula, opis vsebine in učni rezultati so pojasnjeni v delu Opis modula. Smernice za udeležence usposabljanja vključujejo navodila in predloge za udeležence izobraževanja. Smernice za izvajalce usposabljanja vodijo izvajalce usposabljanja skozi različne faze usposabljanja in vsebujejo nasvete, ki bi lahko bili koristni pri poučevanju predmeta. Vsebina vključuje vsa študijska gradiva in vaje, povezane z vsebino. Kviz vključuje vprašanja z več možnostmi izbire in/ali resnična/nepravilna vprašanja, s katerimi lahko udeleženci usposabljanja preverijo svoj napredek. Viri vsebujejo dve komponenti: reference in priporočene vire za nadaljnje branje in študij. Reference so seznam virov, navedenih v vsebinskem delu. Priporočeni viri so sestavljeni iz seznama dodatnih virov in videoposnetkov, ki jih priporočamo za branje in gledanje, da bi se naučili več o temi.
+<h2 id="smernice-za-udelezence-usposabljanja">Smernice za udeležence usposabljanja</h2>
+<p>Od udeležencev izobraževanja se pričakuje, da bodo prebrali besedilo, si ogledali priporočene videoposnetke in izvedli vaje. Za dodatne informacije lahko poiščejo predlagane vire. Po končanem študiju vsebine učencem priporočamo, da opravijo kviz za oceno svojega napredka. Po potrebi lahko ponovno pregledajo študijsko gradivo.</p>
+<h2 id="smernice-za-izvajalce-usposabljanja">Smernice za izvajalce usposabljanja</h2>
+<span class="trainer">
+<p style="font-weight: 400;">Smernice za izobraževalce vključujejo predloge in nasvete o tem, kako predstaviti vsebino tega modula odraslim.</p>
+<h3 id="priprava" style="font-weight: 400;">Priprava</h3>
+<p style="font-weight: 400;">Priporočamo pripravo predstavitve (PowerPoint/Prezi/Canva), ki je podprta z vizualnim gradivom in prikazuje rezultate iskanja v podatkovnih bazah/iskalnikih. Med tečajem se priporoča tudi predstavitev v realnem času.</p>
+<h3 id="kako-zaceti" style="font-weight: 400;">Kako začeti</h3>
+<p style="font-weight: 400;">Na začetku lahko uporabite kratek kviz (3 do 5 vprašanj) v programu Kahoot ali vprašanja z Mentimetrom, da udeležence vključite v razpravo o temi. Kviz se lahko uporablja tudi kot motivacijsko orodje, pa tudi kot orodje za preverjanje obstoječega znanja udeležencev o temi. Nekateri primeri vprašanj so lahko naslednji: Kaj so Boolovi operatorji? Kaj so okrajšave?  Kako lahko uporabimo narekovaje za iskanje po frazah?</p>
+<h3 id="ucne-metode" style="font-weight: 400;">Učne metode</h3>
+<p style="font-weight: 400;">Med usposabljanjem se lahko kombinirajo različne učne metode. Na primer:</p>
+<ul>
+<li style="font-weight: 400;">predavanje</li>
+<li style="font-weight: 400;">diskusija</li>
+<li style="font-weight: 400;">delo v skupinah</li>
+<li style="font-weight: 400;">samorefleksija</li>
+</ul>
+<h3 id="nasveti-za-izobrazevalca" style="font-weight: 400;">Nasveti za izobraževalca</h3>
+<h4 id="ogrevanje" style="font-weight: 400;">Ogrevanje</h4>
+<p style="font-weight: 400;">Učinkovit način vključevanja udeležencev in njihovih pričakovanj glede tega, kaj se bodo naučili, je postaviti nekaj predhodnih vprašanj o temi. Udeležence usposabljanja lahko na primer prosite, da opravijo spletno iskanje za eno ali več dogovorjenih poizvedb. Dejavnost se lahko izvede na naslednji način:</p>
+<ul>
+<li style="font-weight: 400;">Pripravite različne poizvedbe, pri katerih je treba uporabiti iskalne strategije.</li>
+<li style="font-weight: 400;">Za vsako poizvedbo izberejo podatkovno zbirko.</li>
+<li style="font-weight: 400;">Prosite udeležence, da za te poizvedbe izvedejo spletna iskanja.</li>
+<li style="font-weight: 400;">Prosite udeležence, da shranijo svojo iskalno strategijo in rezultate.</li>
+<li style="font-weight: 400;">Prosite udeležence, da svoje rezultate delijo z drugimi udeleženci in o njih razpravljajo.</li>
+</ul>
+<p style="font-weight: 400;">Po izmenjavi mnenj se prepričajte, da udeleženci razumejo, da različne iskalne strategije prinašajo različne rezultate. Udeleženci morajo razumeti prednosti učinkovitih strategij iskanja.</p>
+<h4 id="predstavitev-ucnih-ciljev" style="font-weight: 400;">Predstavitev učnih ciljev</h4>
+<p style="font-weight: 400;">Jasno je treba opredeliti cilj učne ure (razložiti učinkovite iskalne strategije in razumeti vpliv uporabe teh strategij na rezultate iskanja). Po vprašanjih za ogrevanje bo lažje pojasniti cilje.</p>
+<h4 id="predstavitev-ucnih-vsebin" style="font-weight: 400;">Predstavitev učnih vsebin</h4>
+<p style="font-weight: 400;">Med predstavljanjem vsebine poskrbite za interakcijo z udeleženci in jih spodbudite k aktivnemu sodelovanju.</p>
+<p style="font-weight: 400;"><strong> </strong></p>
+<p style="font-weight: 400;"><strong>Pred</strong></p>
+<ul>
+<li style="font-weight: 400;">Pred lekcijo pripravite poizvedbe, s katerimi bodo udeleženci vadili iskanje (določite poizvedbe, izvedite iskanja za te poizvedbe in preizkusite različne podatkovne zbirke za poizvedbe).</li>
+<li style="font-weight: 400;">Odločite se, katere vire in podatkovne zbirke boste uporabili za vajo.</li>
+</ul>
+<p style="font-weight: 400;"></p>
+<p style="font-weight: 400;"><strong>Med</strong></p>
+<ul>
+<li style="font-weight: 400;">Udeležence vprašajte za mnenje o tem, zakaj je pomembna učinkovita iskalna strategija.</li>
+<li style="font-weight: 400;">Udeležence vprašajte, kakšen je učinek učinkovite iskalne strategije na iskanje informacij.</li>
+<li style="font-weight: 400;">Udeležence prosite, naj izvedejo iskanje o danih poizvedbah in shranijo rezultate.</li>
+</ul>
+<p style="font-weight: 400;"><strong> </strong></p>
+<p style="font-weight: 400;"><strong>Nato</strong></p>
+<ul>
+<li style="font-weight: 400;">Po razlagi tem prosite udeležence, naj izvedejo ista iskanja, kot so jih izvedli na začetku lekcije. Na primer, po razlagi logičnih operatorjev prosite udeležence, naj izvedejo isto poizvedbo z uporabo logičnih operatorjev.</li>
+<li style="font-weight: 400;">Primerjajte prejšnje shranjene rezultate z novimi rezultati.</li>
+<li style="font-weight: 400;">Nekatere tehnike (na primer krajšanje, nadomestni znaki itd.) se lahko razlikujejo od podatkovne zbirke do podatkovne zbirke. Izvedite enake poizvedbe v različnih zbirkah podatkov</li>
+<li style="font-weight: 400;">Razpravljajte o rezultatih z udeleženci.</li>
+</ul>
+<p style="font-weight: 400;"><strong> </strong></p>
+<p style="font-weight: 400;"><strong>Predlogi</strong></p>
+<ul>
+<li style="font-weight: 400;">Pouk podprite s praktičnimi primeri in vajami.</li>
+</ul>
+<h4 id="zakljucek" style="font-weight: 400;">Zaključek</h4>
+<p>Na kratko povzemite lekcijo in postavite vprašanja, ki bi pomagala poudariti najpomembnejše vsebine in prakse, ki bi jih radi poudarili. Na primer:</p>
+<ul>
+<li>Zakaj so pomembne učinkovite iskalne strategije?</li>
+</ul>
+<p>Po razpravi se prepričajte, da udeleženci usposabljanja razumejo, da so iskalne strategije zelo pomembne za iskanje informacij in da raziskovalcem omogočajo celovit načrt za izvedbo iskanja. Poznavanje učinkovitih strategij iskanja bo udeležencem omogočilo temeljito in učinkovito zadovoljevanje informacijskih potreb.</p>
+</span>
+<div>
+<h2 id="vsebina-ucinkovite-strategije-iskanja"><span lang="SL">Vsebina: Učinkovite strategije iskanja</span></h2>
+</div>
+<h3 id="uvod">Uvod</h3>
+<p>Novičarska pismenost vključuje razumevanje vloge novic v družbi, motivacijo za iskanje novic ter sposobnost iskanja, identifikacije, prepoznavanja, kritičnega vrednotenja in ustvarjanja novic (Malik, Cortesi in Gasser, 2013, str. 8-9). Če se izrazimo bolj splošno: da bi bili ljudje pismeni (na področju informacij, novic, podatkov, financ itd.), morajo imeti spretnosti in znanje za iskanje informacij, ki bodo zadovoljile njihove potrebe.</p>
+<p>Učinkovita iskalna strategija je pomembna za iskanje informacij, ki so pomembne za raziskovalne teme. Na splošno je iskalna strategija celovit načrt za doseganje raziskovalnih ciljev. Pred začetkom spletnega iskanja (izvajanjem učinkovite iskalne strategije) je treba ugotoviti, ali je poizvedba iskanje po znanih predmetih ali predmetno iskanje. Iskanje po znanem predmetu je poizvedba po dejanskem (ali znanem) viru. Pri tej vrsti iskanja uporabimo informacije, ki opisujejo predmet, kot so ime avtorja, naslov, ime publikacije itd. Predmetno iskanje je poizvedba po informacijah o določeni temi. "To je najzahtevnejša vrsta iskanja, saj ne morete natančno določiti, kaj potrebujete in kaj lahko varno zavrnete" (Fulton &amp; McGuinness, 2016, str. 123). Omeniti velja, da so pri tej vrsti iskanja še posebej pomembne in odločilne učinkovite iskalne strategije.</p>
+<p>Po odločitvi o vrsti poizvedbe je treba izbrati ustrezen vir/podatkovno zbirko (glejte tudi modul 12). Nato je treba opraviti analizo faset in logično kombinacijo. "Faseta je beseda ali zelo kratka besedna zveza, ki opisuje en sam koncept ali idejo" (Markey, 2019, str. 98). Na primer: ali obstaja povezava med "lažnimi novicami" in "družbenimi mediji"; za to poizvedbo so fasete: <em>lažne novice</em> in <em>družbeni mediji</em>.</p>
+<p>Po predhodni pripravi iskanja je treba uporabiti učinkovito iskalno strategijo. V tem razdelku bodo obravnavane nekatere iskalne funkcije in operaterji, potrebni za pripravo učinkovite iskalne strategije.</p>
+ 
+<div>
+<h3 id="boolova-logika"><span lang="SL">Boolova logika</span></h3>
+</div>
+<p>V večini informacijskih podatkovnih zbirk in iskalnikov se uporabljajo logični operatorji, ki omogočajo združevanje sinonimov in variantnih pojmov za dostop do ustreznih elementov (Alexander, 2003, str. 62).</p>
+<p>Boolova logika se nanaša na logično razmerje med pojmi v iskanju. IN, ALI in NE so osnovni Boolovi operatorji. Ti operatorji razširjajo ali zožujejo iskanje.</p>
+<ul>
+<li>IN (angl. AND) se vstavi med dva izraza: Ta operator sporoča iskalnemu sistemu, naj poišče vire, ki vsebujejo oba izraza,</li>
+<li>ALI (angl. OR) je vstavljen med dva izraza: Ta operator iskalnemu sistemu narekuje, da najde vire, ki vsebujejo oba izraza,</li>
+<li>NE (angl. NOT) je vstavljen med dva izraza: Ta operator pove iskalnemu sistemu, da iz prvega izraza A izključi vire, ki vsebujejo drugi izraz B (Markey, 2019, str. 100).</li>
+</ul>
+<img src="img/part_03-module_14/figure_02_03_04.png">
+<div class="well">
+<p><em>Primer 1</em>: Iskanje teme v podatkovni zbirki Web of Science</p>
+<p>Iskalni izrazi: napačne informacije, dezinformacije</p>
+<p>Boolovi operatorji: IN, ALI, NE</p>
+<img src="img/part_03-module_14/figure_06.png"/>
+<p>V zgornjem iskanju:</p>
+<p># 1 boste našli zapise na temo <em>napačnih informacij</em>.</p>
+<p># 2 bo našel zapise na temo <em>dezinformacij.</em></p>
+<p># 3 bo našel zapise, ki vsebujejo temi <em>napačne informacije</em> in <em>dezinformacije.</em></p>
+<p># 4 bo našel zapise, ki vsebujejo teme na posamezne iskalne izraze <em>napačne informacije</em> ali <em>dezinformacije</em>; ali teme na oba iskalna izraza, uporabljena skupaj.</p>
+<p># 5 bo našel samo zapise, ki vsebujejo temo <em>napačne informacije</em>, in izključil zapise na temo <em>dezinformacij</em>.</p>
+<p><em>Primer 2</em>: Iskanje teme v podatkovni zbirki Web of Science</p>
+<p>Iskalni izrazi: postresnica, post resnica, post-resnica</p>
+<p>Boolovi operatorji: ALI</p>
+</div>
+<div class="well">
+<img src="img/part_03-module_14/figure_05.png"/>
+<p>V zgornjem iskanju:</p>
+<p># 1 bo našel zapise na temo <em>postresnica</em>.</p>
+<p># 2 bo našel zapise na temo <em>post resnica</em>.</p>
+<p># 3 bo našel zapise na temo <em>post-resnica</em>.</p>
+<p># 4 bo našel zapise, ki vsebujejo posamezne iskalne izraze <em>postresnica</em> ali <em>post resnica</em> ali <em>post-resnica</em>; ali kombinacije, kot so <em>postresnica</em> in <em>post resnica</em>, <em>postresnica</em> in <em>post-resnica</em>, <em>post resnica</em> in <em>post-resnica</em>; ali vse tri iskalne izraze skupaj v istem zapisu.</p>
+<p></p>
+<p><em>Primer 3</em>: Iskanje naslovov v podatkovni zbirki Web of Science</p>
+<p>Iskalni izrazi: www, svetovni splet, "world wide web"</p>
+<p>Boolovi operatorji: ALI</p>
+</div>
+<div class="well">
+<img src="img/part_03-module_14/figure_08.png"/>
+<p>V zgornjem iskanju:</p>
+<p># 1 bo našel zapise z <em>www</em> v naslovu.</p>
+<p># 2 bo našel zapise s <em>svetovnim spletom</em> v naslovu.</p>
+<p># 3 bo našel zapise, ki imajo v naslovu skupaj <em>svetovni splet</em> in <em>www</em>; ali zapise, ki imajo v naslovu samo enega od iskalnih izrazov.</p>
+<p># 4 bo našel zapise, v katerih sta v naslovu navedena tako "<em>world wide web</em>" kot <em>www</em>; ali zapise, v katerih je v naslovu samo eden od iskalnih izrazov.</p>
+<p></p>
+<p><em>Primer 4</em>: Iskanje teme v podatkovni zbirki Web of Science</p>
+<p>Iskalni izrazi: propaganda, politična</p>
+<p>Boolovi operatorji: NE</p>
+</div>
+<div class="well">
+<img src="img/part_03-module_14/figure_07.png"/>
+<p>V zgornjem iskanju:</p>
+<p># 1 bo našel zapise na temo <em>propagande.</em></p>
+<p># 2 bo našel zapise na temo <em>politične</em>.</p>
+<p># 3 bo našel zapise na temo <em>propaganda</em>, vendar bo izključil zapise na temo <em>politika</em>.</p>
+<h4 id="gnezdenje">Gnezdenje</h4>
+<p>Gnezdenje se uporablja za organizacijo logike iskanja in vrstnega reda izvajanja logičnih ukazov. Gnezdenje je običajno označeno z oklepaji (Alexander, 2003, str. 62). Z gnezdenjem se oklepaji uporabljajo za to, da so pojmi, ki so si podobni, skupaj, in da se zbirki podatkov ukaže, naj najprej poišče iskalne izraze v oklepajih. Sistem obdela Boolov ukaz tako, da najprej prebere izjavo v najglobljem oklepaju in nato nadaljuje z branjem navzven do skrajnega oklepaja.</p>
+<p></p>
+<p><em>Primer 1</em>: Tema = ((novice ALI mediji) IN pismenost) NE "novi mediji"</p>
+<p>V zgornjem primeru bo zbirka podatkov najprej poiskala dokumente o novicah ALI medijski pismenosti in izločila dokumente, ki vsebujejo "novi mediji".</p>
+<p></p>
+<p><em>Primer 2</em>: Iskanje teme v podatkovni zbirki Web of Science</p>
+<p>Iskalni izrazi: novičarska pismenost, medijska pismenost, informacijska pismenost, post-resnica, lažne novice, novi mediji</p>
+<p>Boolovi operatorji: IN, ALI, NE in GNEZDENJE</p>
+<img src="img/part_03-module_14/figure_01.png"/>
+</div>
+<div class="well">
+<p>V zgornjem iskanju:</p>
+<p># 1 bo našel zapise na temo <strong>novinarska in informacijska pismenost</strong> ali <strong>medijska in informacijska pismenost</strong>.</p>
+<p># 2 bo najprej našel zapise na teme <strong>novinarska in informacijska pismenost</strong>; ali <strong>medijska in informacijska pismenost</strong> ter izključil dokumente, ki <strong>vključujejo "lažne novice" ali "post-resnica" ali "novi mediji"</strong>.</p>
+<h4 id="vaje">Vaje</h4>
+<ol>
+<li style="font-weight: 400;">Upoštevajte te trditve. Poskusite opisati z besedami, kakšna bi bila vsebina dokumentov, pridobljenih na podlagi teh izjav. Izjave preizkusite v eni multidisciplinarni podatkovni zbirki (npr. <em>ScienceDirect</em>, <em>Academic Search Ultimate</em>).</li>
+</ol>
+<p>revije <strong>ALI</strong> časopisi <strong>NE</strong> knjige</p>
+<p><strong>(</strong>revije <strong>ALI</strong> časopisi<strong>)</strong> <strong>NE</strong> knjige</p>
+<p><strong>(</strong>revije <strong>ALI</strong> časopisi<strong>)</strong> <strong>IN</strong> knjige</p>
+<p>revije <strong>ALI</strong> <strong>(</strong>časopisi <strong>IN</strong> knjige<strong>)</strong></p>
+<p><strong>(</strong>revije <strong>ALI</strong> <strong>(</strong>časopisi <strong>NE</strong> knjige<strong>))</strong> <strong>IN</strong> knjižnice</p>
+<ol start="2">
+<li style="font-weight: 400;">Izberite nekaj izrazov, ki se nanašajo na temo, ki vas zanima, in za iskanje po njih preizkusite več Boolovih kombinacij.</li>
+</ol>
+</div>
+<h3 id="nadzorovani-slovarji">Nadzorovani slovarji</h3>
+<p>Podatkovne zbirke za indeksiranje zapisov uporabljajo nadzorovane slovarje; to je ena najpomembnejših razlik med podatkovnimi zbirkami in spletom z vidika iskanja (Fulton &amp; McGuinness, 2016, str. 131).</p>
+<p>Nadzorovani slovar je "organizirana ureditev besed in besednih zvez, ki se uporablja za indeksiranje vsebine in/ali za pridobivanje vsebine z brskanjem ali iskanjem" (Harpring, 2010). Z drugimi besedami, nadzorovani slovar je seznam enakovrednih izrazov v obliki kroga sinonimov ali seznam prednostnih izrazov. Opredeljuje hierarhične odnose med izrazi s širšimi, ožjimi, sorodnimi izrazi (Morville &amp; Rosenfeld, 2007, str. 194). Za čim večjo učinkovitost iskanja in pridobivanje sorodnih zapisov je priporočljivo uporabljati izraze iz kontroliranega besednjaka. V primeru, da izraz, ki ga izbere uporabnik, in izraz, ki ga uporablja sistem, nista enaka, podatkovne zbirke zagotavljajo spletne tezavre/področne izraze/indekse, da bi olajšali izbiro ustreznih izrazov ali deskriptorjev, uporabljenih v sistemu (Fulton &amp; McGuinness, 2016, str. 132). Nadzorovani slovar je znan tudi kot predmetna gesla, tezaver, deskriptorji ali nadzor avtoritete (Bell, 2015, str. 33). "Tezaver je uradni izraz za posebno vrsto nadzorovanega besedišča [...]. Tezaver lahko seznam predmetnih gesel podaja hierarhično, pri čemer prikazuje odnose med izrazi (širši, ožji, sorodni), in lahko zagotavlja napotke za najboljše izraze, ki jih je treba uporabiti" (Bell, 2015, str. 48).</p>
+<ul>
+<li><em>Širši izrazi</em> prikazujejo "hierarhično razmerje med dvema izrazoma kontroliranega slovarja v tezavru, ki izraža bodisi razmerje med celoto in delom ali vrsto, pri čemer širši izraz označuje celoto ali vrsto" (Markey, 2019, str. 367).</li>
+<li><em>Ožji izrazi</em> kažejo "hierarhično razmerje med dvema izrazoma kontroliranega slovarja v tezavru, ki izraža razmerje med celotnim delom ali vrsto, pri čemer ožji izraz označuje del ali vrsto" (Markey, 2019, str. 373).</li>
+<li><em>Sorodni izrazi</em> prikazujejo "izraz iz kontroliranega slovarja v tezavru, ki je usklajen z drugim izrazom iz kontroliranega slovarja. Ker sta oba termina na isti ravni v hierarhiji, nista hierarhično povezana. Imenuje se tudi asociativno razmerje" (Markey, 2019, str. 375).</li>
+<li><em>Uporablja se za</em> prikazuje "v avtoritetnem zapisu seznam neuporabljenih sopomenk za avtorizirano ime, predmet ali naslov zapisa" (Markey, 2019, str. 379).</li>
+</ul>
+<p>Primer 1: Brskanje po tezavru Library, Information Science &amp; Technology (slov. za knjižnico, informacijsko znanost in tehnologijo)</p>
+<p>Izraz: pismenost</p>
+<p>Ko v tezaver vnesete iskalni izraz, na primer <strong><em>pismenost</em></strong>, lahko dobite zapis, ki je videti nekako takole:</p>
+<div class="well">
+<img src="img/part_03-module_14/figure_09.png"/>
+</div>
+ 
+<p><em>Pismenost je veljavni iskalni izraz, ki se uporablja za opis informacijskih elementov v podatkovni zbirki Library, Information Science &amp; Technology. Izobraževanje je širši izraz za pismenost; primera ožjih izrazov sta računalniška pismenost in meta-literatura. Nepismene osebe in bralci so nekateri primeri sorodnih izrazov. Pismenost je treba uporabljati namesto </em>(Uporablja se za)<em> nepismenosti.</em></p>
+<p>Bell (2015, str. 33-34) navaja naslednje prednosti nadzorovanega slovarja:</p>
+<ul>
+<li>Prihrani vam razmišljanje o vseh možnih sopomenkah ali alternativnih črkovanjih izraza. Če je na primer oblačilo določeno kot predmetni naslov za vse dokumente, ki so povezani z "oblačili", vam ni treba razmišljati o drugih sorodnih izrazih, kot so; obleka, kostum, oprava itd.</li>
+<li>Z uporabo nadzorovanega slovarja bi moralo biti vaše iskanje popolnejše (če so indikatorji zanesljivi/dosledni pri dodeljevanju predmetnih naslovov za izraze).</li>
+<li>Seznami predmetnih rubrik razločujejo besede, ki imajo več pomenov. Pri imenih avtorjev nadzor avtoritete omogoča iskanje avtorja, znanega pod več imeni (npr. Mark Twain/Samuel Clemens).</li>
+</ul>
+<span style="font-weight: 400;">Zagotavlja varno in koristno vstopno točko v neznano tematsko področje. Tudi če o predmetu ne veste ničesar, imate zagotovilo, da so izrazi na predmetnem seznamu pravilni in ustrezni. Z brskanjem po seznamu in pridobivanjem občutka za izraze (zlasti če so na njem navedbe "glej" ali "uporabljaj" ali "glej tudi") lahko pogosto dobite ideje, ki vam pomagajo razviti ali izpopolniti strategijo iskanja</span>.
+<h3 id="iskanje-po-podrocjih">Iskanje po področjih</h3>
+<p>Iskanje po področjih omogoča iskalcu, da iskalne izraze in fraze omeji na posamezna področja, kar zagotavlja bolj jedrnate in ustrezne rezultate iskanja (Alexander, 2003, str. 62). Omejitev iskanja na določeno polje, na primer iskanje določenega imena samo v polju "ime publikacije", lahko pripomore tudi k skrajšanju časa obdelave iskanja v sistemu.</p>
+<p>Zapisi v podatkovnih zbirkah uporabljajo polja za označevanje informacij o virih in opisovanje določene vrste podatkov, kot so avtor, naslov ali povzetek. "Ko iskalni sistemi indeksirajo vrednosti v poljih, sledijo poljem, iz katerih so bile vrednosti pridobljene" (Markey, 2019, str. 112).</p>
+<p>Imena polj se lahko razlikujejo glede na podatkovno zbirko. Nekaj primerov imen polj: avtor, pripadnost avtorja, naslov, vir (ime publikacije, naslov revije ali knjige), ključne besede, predmet, tema, agencija za financiranje, leto itd. Nekatere podatkovne zbirke za iskanje uporabljajo kode polj, na primer <em>AU: avtor; TS: tema</em>. Te kode so specifične za posamezno podatkovno zbirko.</p>
+<p><em>Primer 1: Imena polj in opredelitve iz podatkovne zbirke IEEE Xplore</em></p>
+<div class="well">
+<table style="font-weight: 400; width: 100.29892886855241%;" width="601">
+<tbody>
+<tr>
+<td style="width: 17.520661157024794%;" width="102"><strong>Ime polja</strong></td>
+<td style="width: 132.23140495867767%;" width="499"><strong>Definicija</strong></td>
+</tr>
+<tr>
+<td style="width: 17.520661157024794%;" width="102">Povzetek</td>
+<td style="width: 132.23140495867767%;" width="499">Kratek povzetek ali izjava o vsebini članka v reviji, prispevka na konferenci, standarda, knjige, poglavja v knjigi ali tečaja.</td>
+</tr>
+<tr>
+<td style="width: 17.520661157024794%;" width="102">Pripadnost avtorja</td>
+<td style="width: 132.23140495867767%;" width="499">Institucionalna pripadnost avtorjev, navedenih v dokumentih (univerza, vladna agencija, korporacija itd.).</td>
+</tr>
+<tr>
+<td style="width: 17.520661157024794%;" width="102">Ključne besede avtorja</td>
+<td style="width: 132.23140495867767%;" width="499">Izrazi, ki jih navede avtor in opisujejo teme ali predmete dokumenta.</td>
+</tr>
+<tr>
+<td style="width: 17.520661157024794%;" width="102">Avtorji</td>
+<td style="width: 132.23140495867767%;" width="499">Ime avtorja ali avtorjev, navedenih v dokumentu.</td>
+</tr>
+<tr>
+<td style="width: 17.520661157024794%;" width="102">Naslov dokumenta</td>
+<td style="width: 132.23140495867767%;" width="499">Naslov posameznega dokumenta (članek v reviji, prispevek na konferenci, standard, poglavje v knjigi ali tečaj).</td>
+</tr>
+<tr>
+<td style="width: 17.520661157024794%;" width="102">Polno besedilo in metapodatki</td>
+<td style="width: 132.23140495867767%;" width="499">Polno besedilo se nanaša na besedilo članka, dokumenta, standarda itd. Metapodatki so podrobne informacije, ki opisujejo celotno besedilo, kot so imena avtorjev, datum objave in DOI.</td>
+</tr>
+<tr>
+<td style="width: 17.520661157024794%;" width="102">Indeksni izrazi</td>
+<td style="width: 132.23140495867767%;" width="499">Kombinirano polje, ki uporabnikom omogoča iskanje po ključnih besedah avtorja, izrazih IEEE, izrazih INSPEC in izrazih mreže.</td>
+</tr>
+<tr>
+<td style="width: 17.520661157024794%;" width="102">Naslov publikacije</td>
+<td style="width: 132.23140495867767%;" width="499">Naslov publikacije (revije, konference ali knjige).</td>
+</tr>
+</tbody>
+</table>
+<p>Vir: <em>IEEEE Xplore: Resources and Help (slov. EEEE Explore: Viri in pomoč)</em></p>
+<p></p>
+<p><em>Primer 2: Iskanje z imeni polj v podatkovni zbirki Web of Science</em></p>
+<em style="font-weight: 400;">2.1. Iskanje z uporabo imen polj (tema, naslov, avtor, ime publikacije, leto objave, vrsta dokumenta in okrepljena organizacija) v podatkovni zbirki Web of Science</em>
+</div>
+<div class="well">
+<img src="img/part_03-module_14/figure_13.png"/>
+<div><i><span lang="SL">2.2. Rezultat zgornjega iskanja v podatkovni zbirki Web of Science</span></i></div>
+<img src="img/part_03-module_14/figure_10.png"/>
+</div>
+<h3 id="iskanje-priblizkov">Iskanje približkov</h3>
+<p>Iskanje približkov omogoča, da določite, da se mora izraz A pojaviti znotraj toliko in toliko besed izraza B. Če bi na primer želeli najti nekaj o <em>varstvu podatkov v Evropski uniji</em>, bi lahko uporabili strategijo iskanja, kot je npr.:</p>
+<p>TS = "Evropska unija" IN "varstvo podatkov"</p>
+<p>bo zagotovo prinesla ustrezne rezultate, vendar tudi veliko nerelevantnih rezultatov, saj se lahko iskalni izrazi pojavijo kjer koli v iskanem dokumentu. Na primer:</p>
+<img src="img/part_03-module_14/figure_12.png"/>
+<p>Večina sistemov podatkovnih zbirk omogoča nastavitev zahtevnejšega iskanja, pri katerem določite pravilo za razmerje med iskalnimi izrazi. To pomeni, da lahko določimo, kako blizu drug drugemu in včasih v kakšnem vrstnem redu se morajo iskalni izrazi pojavljati v besedilu, da jih je mogoče poiskati. To je znano kot iskanje približkov (Bell, 2015, str. 49). Iskanje približkov pomaga doseči večjo natančnost pri pridobljenih dokumentih.</p>
+<p>Pri iskanju približkov se uporabljajo posebni operatorji, ki se imenujejo <em>operatorji približkov</em>.</p>
+<h4 id="operatorji-priblizkov">Operatorji približkov</h4>
+<p>Markey (2019, str. 375) pravi, da je operator približkov operator v sistemu iskanja, ki določa dve merili:</p>
+<p>1 – kako blizu naj se besede pojavljajo v besedilu</p>
+<p>2 – ali je zaporedje besed pomembno</p>
+<p>Operatorji približkov pomagajo zožiti ali razširiti iskanje in izboljšati rezultate iskanja. Na primer: iskanje, "lažne novice" BLIZU 3 "napačne informacije" v zbirki podatkov ali "lažne novice" OKOLI (3) "napačne informacije", bi prineslo bolj specifične rezultate kot iskanje "lažne novice" IN "napačne informacije".</p>
+<p>Žal se imena operatorjev in sintaksa razlikujejo od sistema do sistema.</p>
+<p>Nekaj primerov je (v ang.) :</p>
+<ul>
+<li>WITHIN →        Wn</li>
+</ul>
+<p>Napačne informacije     <strong>Wn</strong>    družbeni mediji</p>
+<p>To pomeni, da se morajo <em>napačne informacije</em> pojaviti v okviru dveh besed v <em>družbenih medijih</em>, da se lahko poiščejo. Kot odgovor na to iskanje bo na primer podatkovna zbirka EBSCOhost vrnila rezultate, kot so:</p>
+<p>… deljenje <strong>napačnih informacij</strong> na <strong>družbenih omrežjih</strong> …</p>
+<p>…<strong> napačne informacije </strong>na<strong> družbenih omrežjih </strong>...</p>
+<ul>
+<li>PRE →        Pre/n   ali        P/n</li>
+</ul>
+<p>"Evropska unija" okvir <strong>PRE/5</strong></p>
+<p>To pomeni, da mora biti iskalni izraz <em>Evropska unija</em> na prvem mestu, pred njim pa mora biti <em>okvir z največ pet besed</em>. Na primer, kot odgovor na to iskanje bo podatkovna zbirka ProQuest vrnila rezultate, kot so:</p>
+<p>... v pravnem <strong>okviru Evropske unije</strong> ...</p>
+<p>... <strong>Evropska unija</strong> in Turčija v <strong>okviru</strong> ...</p>
+<p>... Skupna kmetijska politika <strong>Evropske unije</strong> v <strong>okviru</strong> STO ...</p>
+<ul>
+<li>NEAR →        Near/n             ali        N/n      ali        Nn</li>
+</ul>
+<p>prikrajšani <strong>NEAR/5</strong> otroci</p>
+<p>To pomeni, da se besedi <em>prikrajšani</em> in <em>otroci</em> ne smeta pojaviti v več kot petih besedah, ne glede na besedni red. Na podlagi tega iskanja bo na primer podatkovna zbirka IEEE Xplore vrnila rezultate, kot so:</p>
+<p>... šola za <strong>otroke</strong> iz <strong>prikrajšanih</strong> okoliščin …</p>
+<p>... osnovna šola za <strong>otroke</strong> iz <strong>prikrajšanih</strong> okolij …</p>
+<p>... <strong>prikrajšani</strong>, predšolski, nadarjeni <strong>otroci</strong> ...</p>
+<p>.... <strong>otroci</strong> iz kulturno različnih/izobraževalno <strong>prikrajšanih</strong> okolij ....</p>
+<p></p>
+<p><em>Primer 1</em>: Iskanje teme v podatkovni zbirki Web of Science</p>
+<p>Iskalni izrazi: "lažne novice", "lažne informacije".</p>
+<p>Operatorji bližine: NEAR</p>
+<div class="well">
+<img height="156" src="https://lh4.googleusercontent.com/Z4FUr9jeUT_LVMKIR3QGvH5RERPelgoSU4PoB0gIgQV6_X8-kDg-_0eepUFly5KAdbWFO9i8fFclyGBA9S1wW_8A5XwwKCHY6nX6cXCMd1idc5Zxbp3cPTmtdC_mJJOx1YI6pJ0" width="601"/>
+<p>V zgornjem iskanju:</p>
+<p># 2 bo našel zapise z besedama "lažne novice" in "lažne informacije", ki se morata pojaviti v največ treh besedah, ne glede na besedni red.</p>
+<p></p>
+<p><em>Primer 2</em>: Iskanje v Googlu</p>
+<p>Iskalni izrazi: "lažne novice", "lažne informacije".</p>
+<p>Operatorji približkov: AROUND</p>
+</div>
+<div class="well">
+<img src="img/part_03-module_14/figure_16_17.png"/>
+</div>
+<h5 id="v-nekaterih-podatkovnih-zbirkah-in-virih-se-namesto-izraza-operator-priblizkov-uporabljata-izraza-operator-sosedstva-in-operator-blizine-razlika-med-operatorjema-sosedstva-in-blizine-je-v-besednem-redu">V nekaterih podatkovnih zbirkah in virih se namesto izraza <em>operator približkov</em> uporabljata izraza <em>operator sosedstva</em> in <em>operator bližine</em>. Razlika med operatorjema <em>sosedstva</em> in <em>bližine</em> je v besednem redu.</h5>
+<h5 id="operatorji-sosedstva-dolocajo-da-morajo-biti-iskane-besede-sosednje-pri-cemer-je-pomemben-besedni-red-markey-2019-str-365-kot-primere-operatorjev-sosednosti-lahko-navedemo-within-w-pre-in">Operatorji sosedstva določajo, da morajo biti iskane besede sosednje, pri čemer je pomemben besedni red (Markey, 2019, str. 365). Kot primere operatorjev <em>sosednosti</em> lahko navedemo WITHIN (W), PRE in ~.</h5>
+<p>Primer iskanja rezultatov, ki bi se ujemali z "<strong>učinek množice</strong>" ali "<strong>učinek </strong>delavca<strong> v skupini</strong>", ne bi pa se ujemali z "<strong>učinkom skupine</strong>", bi bil:</p>
+<p></p>
+<p>EBSCOhost:                           bandwagon W2 učinek</p>
+<p>ProQuest:                               bandwagon PRE/2 učinek</p>
+<p>Taylor &amp; Francis Online:         “bandwagon učinek” ~2</p>
+<p></p>
+<p><em>Bližnji operatorji</em> določajo, da so iskane besede ločene z eno ali več vmesnimi besedami in da vrstni red iskanih besed ni pomemben (Markey, 2019, str. 373). Kot primere <em>bližnjih</em> operatorjev lahko navedemo NEAR, N in ~.</p>
+<p>Primer iskanja rezultatov, ki bi ustrezali "splošno <strong>varstvo podatkov</strong> v <strong>Evropski uniji</strong>", "<strong>varstvo podatkov</strong> v <strong>Evropski uniji</strong>", "razvoj <strong>Evropske unije</strong> na področju <strong>varstva podatkov</strong>", bi bil:</p>
+<p></p>
+<p>EBSCOhost:                           “varstvo podatkov” N2 “Evropska unija”</p>
+<p>ProQuest:                               bandwagon NEAR/2 učinek</p>
+<p>Taylor &amp; Francis Online:         "varstvo podatkov" "Evropska unija"~2</p>
+<p></p>
+<h4 id="iskanje-po-frazah">Iskanje po frazah</h4>
+<p>Iskanje po frazah je označeno tako, da so izrazi, ki jih želite iskati, v obliki natančne fraze (npr. <strong>"digitalna pismenost"</strong>) med narekovaji. Z iskanjem po frazah lahko zagotovite, da se bodo vaši iskalni izrazi v rezultatih iskanja prikazali kot natančno ujemanje. Ta pristop pomaga zožiti iskanje, saj izloči rezultate, v katerih se pojavljata oba izraza, vendar ne neposredno skupaj kot natančno ujemanje (Fulton in McGuinness, 2016, str. 136). Številne podatkovne zbirke (EBSCO, WoS, JSTOR itd.) in iskalniki, kot so Google, Bing in drugi, upoštevajo konvencijo, da se iskani izrazi kot natančna fraza zapišejo v dvojne narekovaje (Bell, 2015, str. 53).</p>
+<ul>
+<li>V nekaterih podatkovnih zbirkah, kot sta <em>ScienceDirect</em> ali <em>Scopus</em>, se pri iskanju po frazah ločila ne upoštevajo. Na primer, iskanje po besednih zvezah, kot je npr.:</li>
+</ul>
+<p><strong>"heart-attack" </strong>in<strong> "heart attack"</strong> (slov. srčni napad)</p>
+<p>bo prineslo enake rezultate.</p>
+<ul>
+<li>V nekaterih podatkovnih zbirkah, kot je <em>Scopus</em>, je treba za iskanje natančnega ujemanja uporabiti zavite oklepaje {}. Na primer, iskanje natančnega ujemanja z uporabo zavitih oklepajev, kot je npr.:</li>
+</ul>
+<p><strong>“heart attack” </strong>in<strong> {heart attack} </strong>(slov. srčni napad)</p>
+<p>ne bo prineslo enakih rezultatov. Kajti "heart attack" bo vrnilo tudi "heart attack<strong><u>s</u></strong>", {heart attack} pa ne bo vrnil "heart attacks".</p>
+<h3 id="krajsanje-in-nadomestni-znaki">Krajšanje in nadomestni znaki</h3>
+<h4 id="krajsanje">Krajšanje</h4>
+<p>Krajšanje je učinkovit način razširitve iskanja z iskanjem različic istega izraza, na primer množinskih oblik. Krajšanje omogoča iskanje z besedno osnovo, ki omogoča iskanje katere koli besede, ki se začne s temi črkami (Bell, 2015, str. 54). Za takšno iskanje se besednemu jedru dodajo simboli krajšanja, kot so <strong><em>*, ?, $</em></strong>.</p>
+<p>Na primer:</p>
+<ul>
+<li>za iskanje dokumentov, ki vsebujejo izraze knjižnica, knjižnice, knjižničar in knjižničarstvo, se besedni osnovi <strong><em>knjižni*</em></strong> doda zvezdica (*).</li>
+<li>če vzamemo še zapis besede <em>informacijsko vedenje</em> v angleščini, ki se rahlo razlikuje zaradi britanske in ameriške različice jezika oz. možnosti uporabe vezajev: <em>informa<u>tion</u> beha<u>viour</u>, informa<u>tion</u> beha<u>vior,</u>informa<u>tional </u>beha<u>vior</u>, informa<u>tional</u> beha<u>viour</u>, informa<u>tion</u>-beha<u>viour</u>, informa<u>tiveness</u> beha<u>viour</u></em>: besednemu jedru <strong><em>informa* beha*</em></strong> se doda zvezdica (*)</li>
+</ul>
+<p>Zavedati se je treba, da se lahko simboli krajšanja razlikujejo glede na podatkovno zbirko ali iskalnik (Fulton in McGuinness, 2016, str. 137). Najpogosteje uporabljeni so:</p>
+<p>            *</p>
+<p>            ?</p>
+<p>            !</p>
+<p>            $</p>
+<p>Če je osnova samostojna beseda, bo ta vključena v rezultate iskanja (Bell, 2015, str. 54). Na primer:</p>
+<ul>
+<li><strong>journal* </strong>(slov. dnevnik) prikliče zapise, ki vsebujejo besede <strong>journal</strong>, journals, journalism, journalist, journalists, journalists', journalistic, journaling</li>
+</ul>
+<p>Pretirano krajšanje besed lahko povzroči nizko specifičnost. Na primer:</p>
+<ul>
+<li>cat* prikliče zapise cat, catalyst, catalogs, catastrophic itd. Če je iskalni izraz cat (mammal) (slov. mačka – sesalec), bo poizvedba, kot je cat, ali cats, prinesla natančnejše rezultate.</li>
+</ul>
+<p>V nekaterih podatkovnih zbirkah so množinski števniki in pravopisne različice vključeni samodejno. Na primer, v podatkovni zbirki <em>ScienceDirect</em>:</p>
+<p>"color code" ali "colour code" ali "color codes" (slov. barvna koda).</p>
+<p>bo prinesla enake rezultate.</p>
+<h4 id="nadomestni-znaki">Nadomestni znaki</h4>
+<p>Nadomestni znaki delujejo na podoben način kot krajšanje. Simbol, kot so <strong><em>*, ?, !</em></strong>, se uporablja za iskanje izrazov, ki se lahko pišejo na različne načine. Uporabni so za iskanje izrazov, ki se pišejo tako v ameriškem kot britanskem jeziku (na primer licen<u>c</u>e in licen<u>s</u>e). Simbol se običajno vstavi v besedo in nadomesti eno črko (Fulton in McGuinness, 2016, str. 13).</p>
+<p>Na primer,</p>
+<p>– uporaba "?" (nadomestni znak) → licen?e vrne rezultate → licenCe, licenSe (slov. licenca)</p>
+<p>Z uporabo "?" (nadomestni znak) lahko pridobite edninske in množinske oblike nekaterih besed, na primer ženska, pa tudi ženske:</p>
+<p>– wom<strong>?</strong>n → womAn, womEn</p>
+<p>Nadomestni znaki se najpogosteje uporabljajo za zamenjavo samo ene črke (Bell, 2015, str. 56), v nekaterih podatkovnih zbirkah pa jih lahko uporabite za znak "od nič do enega" ali katero koli skupino znakov, ki prav tako ne vključuje nobenega znaka.</p>
+<p>Na primer, uporaba nadomestnih znakov v podatkovni zbirki Web of Science:</p>
+<ul>
+<li>Zvezdica (*) predstavlja katero koli skupino znakov, vključno z nobenim znakom.</li>
+</ul>
+<p>h<strong>*</strong>rana             hitra hrana, hrana prihodnosti, frankenfood, ribja hrana, fit hrana</p>
+<p></p>
+<p></p>
+<ul>
+<li>Vprašaj (?) predstavlja katerikoli posamezni znak.</li>
+</ul>
+<p>            organizira<strong>?</strong>i                 organiziraTi, organizirAjte</p>
+<p></p>
+<ul>
+<li>Znak za dolar ($) predstavlja nič ali en znak.</li>
+</ul>
+<p>bar<strong>$</strong>a               barva, barvE</p>
+<p></p>
+<p>V iskalnem izrazu lahko kombinirate nadomestne znake. Na primer,</p>
+<p>- organi<strong>?</strong>acija<strong>*</strong> →  ( ang.) organi<strong>s</strong>ation, organi<strong>z</strong>ation, organi<strong>z</strong>ation<strong>s</strong>, organi<strong>z</strong>ation<strong>al</strong></p>
+<h4 id="opombe">Opombe</h4>
+<ol>
+<li style="font-weight: 400;">Upoštevajte, da so simboli, ki se uporabljajo za nadomestne znake, enaki tistim, ki se uporabljajo za krajšanje, vendar se učinek spreminja, odvisno od podatkovne zbirke. Na primer, ena podatkovna zbirka lahko uporablja "!" za krajšanje in "*" za nadomestni znak, medtem ko druga natančno obrne ta dva pomena (Bell, 2015, str. 56).</li>
+</ol>
+<p></p>
+<ol start="2">
+<li style="font-weight: 400;">Upoštevajte, da v nekaterih podatkovnih zbirkah ni razlike med nadomestnimi znaki in krajšavami. Na primer za uporabo "*" kot nadomestnega znaka v podatkovni zbirki <em>Scopus</em>,</li>
+</ol>
+<p>criminal* liab* (slov. kriminalistični laboratorij)</p>
+<p>bo vrnil rezultate, kot sta <strong>criminally liable</strong> in <strong>criminal liability</strong> (slov. kazensko odgovoren in kazenska odgovornost).</p>
+<p></p>
+<ol start="3">
+<li style="font-weight: 400;">Upoštevajte, da so v nekaterih podatkovnih zbirkah množinski števniki in pravopisne različice vključeni samodejno. Na primer:</li>
+</ol>
+<p><em>heart attack (slov. srčni napad)</em></p>
+<p>bo vrnil rezultate, ki vključujejo <em>heart attacks (slov. srčni napadi)</em></p>
+<p><em>anesthesia (slov. anestezija)</em></p>
+<p>vrne rezultate, ki vključujejo <em>anaesthesia (slov. anestezija)</em></p>
+<p><em> </em></p>
+<ol start="4">
+<li style="font-weight: 400;">Upoštevajte, da v nekaterih podatkovnih zbirkah uporaba edninske oblike izraza prikliče edninsko, množinsko in svojilno obliko večine izrazov. Na primer:</li>
+</ol>
+<p><em>criterion</em>  (slov. merilo)</p>
+<p>najde <em>criteria</em> in <em>criterion (slov. kriteriji in merilo)</em></p>
+<p></p>
+<ol start="5">
+<li style="font-weight: 400;">Upoštevajte, da se v nekaterih podatkovnih zbirkah, kadar je med nadomestnim znakom in besedo postavljen vezaj (-), nadomestni znak izpusti. Na primer:</li>
+</ol>
+<p><strong>*-art</strong> bo iskano kot <em>art ( slov. umetnost)</em></p>
+<p><strong>art-*</strong> se bo iskalo kot <em>art</em></p>
+<p><em>(Scopus, 2021).</em></p>
+<h3 id="izboljsevanje-iskanj">Izboljševanje iskanj</h3>
+<p>Skoraj vse podatkovne zbirke in iskalniki omogočajo uporabnikom, da izberejo možnosti za omejitev ali zoženje rezultatov iskanja.</p>
+<p>Na primer: leta objave, vrsta članka/dokumenta (npr. pregledni članki, raziskovalni članki, poglavje v knjigi), vrsta vira (npr. revija, knjiga), naslov publikacije, avtor, predmetna področja (nevroznanost, psihologija itd.), ključna beseda, vrsta dostopa (npr. odprt dostop), pripadnost (npr. Univerza v Iowi) in jezik (npr. španščina).</p>
+<p>To so nekateri od omejevalnikov, ki se uporabljajo za izpopolnjevanje rezultatov iskanja ali za omejevanje rezultatov iskanja.</p>
+<p><em>Primer 1</em>: Primer "izboljšave rezultatov" iz podatkovne zbirke Web of Science:</p>
+<img src="img/part_03-module_14/figure_19.png"/>
+<h2 id="kviz">Kviz</h2>
+<p><iframe allowfullscreen="allowfullscreen" frameborder="0" height="379" src="http://essential.bilgiyonetimi.net/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=130" title="SLO Essential MOOC: Part 3 - Module 14 - Quiz 1" width="936"></iframe><script charset="UTF-8" src="http://essential.bilgiyonetimi.net/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js"></script></p>
+<h2 id="reference">Reference</h2>
+<p>Alexander, J.O. (2003). Library Applications. H. Bidgoli (Ed.), In Encyclopedia of Information Systems, (p. 57-76). Elsevier.</p>
+<p>Bates, M.J. (1979). Information Search Tactics. Journal of the American Society for Information Science, 30, 205-214.</p>
+<p>Bell, S.S. (2015). Librarian’s Guide to Online Searching: Cultivating Database Skills for Research and Instruction. California: Libraries Unlimited.</p>
+<p>EBSCO Connect (2018). Searching with Boolean Operators. Retrieved from <a href="https://connect.ebsco.com/s/article/Searching-with-Boolean-Operators?language=en_US" rel="noopener" target="_blank">https://connect.ebsco.com/s/article/Searching-with-Boolean-Operators?language=en_US</a></p>
+<p>Fulton, C. and McGuinness, C. (2016). Digital Detectives: Solving Information Dilemmas in an Online World. Amsterdam: Chandos Publishing.</p>
+<p>Harpring, P. (2010). Uvod to controlled vocabularies: Terminology for art, architecture, and other cultural works. J. Paul Getty Trust. Retrieved from<a href="http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/index.html" rel="noopener" target="_blank"> http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/index.html</a></p>
+<p>IEEE Xplore: Resources and Help. (2021). Retrieved from <a href="https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/command-search#summary-of-data-fields" rel="noopener" target="_blank">https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/command-search#summary-of-data-fields</a></p>
+<p>Malik, M., Cortesi, S.C., and Gasser, U. (October 18, 2013). The Challenges of Defining 'News Literacy'. Berkman Center Research Publication No. 2013-20, DOI: <a href="http://dx.doi.org/10.2139/ssrn.2342313" rel="noopener" target="_blank">http://dx.doi.org/10.2139/ssrn.2342313</a></p>
+<p>Markey, K. (2019). Online Searching: A Guide to Finding Quality Information Efficiently and Effectively (2nd edition). Lanham: Rowman &amp; Littlefield.</p>
+<p>Morville, P. and Rosenfeld, L. (2007). Information Architecture for the World Wide Web. Farnham: O'Reilly.</p>
+<p>Scopus: Access and use Support Center. (2021). Retrieved from <a href="https://service.elsevier.com/app/answers/detail/a_id/11213/c/10545/supporthub/scopus/" rel="noopener" target="_blank">https://service.elsevier.com/app/answers/detail/a_id/11213/c/10545/supporthub/scopus/</a></p>
+<h2 id="priporoceni-viri">Priporočeni viri</h2>
+<p>Brown, C.C. (2021). Librarian's Guide to Online Searching: Cultivating Database Skills for Research and Instruction (6th Edition). Libraries Unlimited.</p>
+<p>Dotto, C. &amp; Smith, R. (October 2019). First Draft's Essential Guide to: Newsgathering and Monitoring on the Social Web. Retrieved from <a href="https://firstdraftnews.org/wp-content/uploads/2019/10/Newsgathering_and_Monitoring_Digital_AW3.pdf?x35395" rel="noopener" target="_blank">https://firstdraftnews.org/wp-content/uploads/2019/10/Newsgathering_and_Monitoring_Digital_AW3.pdf?x35395</a></p>
+<p>Li, L. (2014). Scholarly information discovery in the networked academic learning environment. Oxfordshire, [England] : Chandos Publishing.</p>
+<p>Mann, T. (2015). The Oxford Guide to Library Research (4th ed.). Oxford University Press.</p>
+<h2 id="priporoceni-videoposnetki">Priporočeni videoposnetki</h2>
+<p>Boucher, A., Riesen, K., &amp; Simpson, L. <a href="https://youtu.be/GM2l_JLwf0s" rel="noopener" target="_blank">Basic Search Strategies for Systematic Reviews</a>.</p>
+</img></div>
+<!--/span-->
+</div><!--/row-->
+</div><!--/.fluid-container-->
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.tocify.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/user_control.js"></script>
+<script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3,h4,h5"
+            }).data("toc-tocify");
+
+            prettyPrint();
+            $(".optionName").popover({ trigger: "hover" });
+
+        });
+    </script>
+</body>
+</html>
