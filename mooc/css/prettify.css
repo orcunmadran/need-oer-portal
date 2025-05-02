@@ -15,6 +15,10 @@
       display: none !important;
     }
 
+    h1 {
+        font-size: 2rem !important;
+    }
+
     #mobile-toc-toggle {
         display: block !important;
         position: fixed !important;
