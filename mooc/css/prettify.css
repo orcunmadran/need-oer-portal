@@ -35,6 +35,7 @@
         border-radius: 0.25rem !important;
         cursor: pointer !important;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+        opacity: 0.5 !important;
     }
 
     #mobile-toc-toggle:hover {
@@ -44,14 +45,18 @@
     #toc.open {
       display: block !important;
       position: fixed;
-      top: 3.5rem;
-      left: 20px;
-      width: 90%;
-      max-height: 80vh;
-      overflow-y: auto;
+      top: 50%; /* Yatay merkezleme */
+      left: 50%; /* Dikey merkezleme */
+      transform: translate(-50%, -50%); /* Gerçek merkezleme */
+      width: 80%; /* Menünün genişliği */
+      max-height: 80vh; /* Maksimum yükseklik */
+      overflow-y: auto; /* Taşan içeriği kaydırılabilir yap */
       background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       margin: 0;
       border-top: 1px solid #ccc;
+      border-radius: 0.5rem; /* Köşeleri yuvarlat */
+      padding: 1rem; /* İç boşluk */
+      z-index: 2000; /* Üstte görünmesi için */
     }
   }
