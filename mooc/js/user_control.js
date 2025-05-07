@@ -102,14 +102,14 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 });
 
-// Reload page on resize
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener('load', function () {
   if (window.location.hash) {
       const target = document.querySelector(window.location.hash);
       if (target) {
+          // Çapa bağlantısına kaydırma yap
           setTimeout(() => {
-              target.scrollIntoView({ behavior: "smooth", block: "start" });
-          }, 500); // Sayfanın tamamen yüklenmesi için bir gecikme ekleyin
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100); // Gerekirse gecikme süresini artırabilirsiniz
       }
   }
 });

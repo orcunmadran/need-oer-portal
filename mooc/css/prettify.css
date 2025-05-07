@@ -7,6 +7,7 @@
   }
   
   @media (max-width: 767px) {
+
     body {
         padding-top: 0 !important;
       }
@@ -43,9 +44,9 @@
     #toc.open {
       display: block !important;
       position: fixed;
-      top: 3.5rem;      /* Butonun altından başlasın */
-      left: 0;
-      width: 100%;
+      top: 3.5rem;
+      left: 20px;
+      width: 90%;
       max-height: 80vh;
       overflow-y: auto;
       background: #fff;
