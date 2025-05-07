@@ -21,21 +21,21 @@
     }
 
     #mobile-toc-toggle {
-        display: block !important;
-        position: fixed !important;
-        top: 0.75rem !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        z-index: 2000 !important;
-        background: #007bff !important;
-        color: #fff !important;
-        border: none !important;
-        padding: 0.5rem 1rem !important;
-        font-size: 1rem !important;
-        border-radius: 0.25rem !important;
-        cursor: pointer !important;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
-        opacity: 0.5 !important;
+      display: block;
+      position: fixed;
+      top: 0.75rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2000;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      opacity: 0.5;
     }
 
     #mobile-toc-toggle:hover {
